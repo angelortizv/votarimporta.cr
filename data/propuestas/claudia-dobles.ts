@@ -1,0 +1,279 @@
+import { AreaName, AreaPropuestas, Propuesta } from "@/lib/data";
+
+export const claudiaDoblesPropuestas: AreaPropuestas[] = [
+  {
+    area: AreaName.Educacion,
+    propuestas: [
+      {
+        problema: "La educación pública no llega al nivel de inversión requerido y la calidad/eficiencia del gasto puede mejorar.",
+        solucion: "Hacer un plan de inversión gradual para acercarse al 8% del PIB, ligado a reformas institucionales, académicas y tecnológicas para mejorar la eficiencia de la inversión.",
+        ejecucion: "1) Definir ruta de incremento anual del presupuesto. 2) Vincular cada aumento a reformas medibles (gestión, currículum y tecnología). 3) Revisar resultados y ajustar el plan conforme a la realidad fiscal."
+      },
+      {
+        problema: "Falta una visión de largo plazo y acuerdos estables para transformar el sistema educativo.",
+        solucion: "Convocar un Acuerdo Nacional por la Educación para definir acciones a 15 años e implementar prioridades en 2026-2030.",
+        ejecucion: "1) Convocar actores (MEP, comunidades educativas, sector productivo, academia). 2) Definir metas a 15 años. 3) Seleccionar reformas prioritarias para 2026-2030. 4) Dar seguimiento público a avances."
+      },
+      {
+        problema: "Centros educativos con conectividad y soporte tecnológico insuficientes; renovación de equipos no planificada.",
+        solucion: "Asegurar conectividad universal, estable y de calidad, con presupuesto para mantenimiento, soporte y renovación, inventarios actualizados y reposición planificada.",
+        ejecucion: "1) Medir conectividad por centro educativo. 2) Presupuestar mantenimiento/soporte/renovación. 3) Mantener inventarios de equipos. 4) Ejecutar reposición planificada con asistencia técnica permanente."
+      },
+      {
+        problema: "Falta acceso territorial a espacios donde estudiantes desarrollen competencias tecnológicas avanzadas.",
+        solucion: "Crear centros de innovación digital educativa (laboratorios de fabricación, programación, robótica y ciencia de datos) al menos uno por región, articulados con INA, CONARE y municipalidades.",
+        ejecucion: "1) Seleccionar centros por región. 2) Equipar laboratorios (fabricación, programación, robótica, datos). 3) Firmar articulación INA/CONARE/munis. 4) Abrir cupos y programas por perfil de estudiante."
+      }
+    ]
+  },
+  {
+    area: AreaName.Tecnologia,
+    propuestas: [
+      {
+        problema: "Trámites públicos lentos y duplicados por falta de integración entre instituciones.",
+        solucion: "Crear ventanillas únicas sectoriales bajo el principio 'una sola vez' e integrar, en un entorno digital seguro, la información entre instituciones para reducir duplicidad de trámites.",
+        ejecucion: "1) Identificar trámites más usados y repetidos. 2) Diseñar ventanilla única por sector. 3) Integrar datos entre instituciones con estándares de seguridad. 4) Medir reducción de tiempo/costo para el usuario."
+      },
+      {
+        problema: "El Estado no comparte datos de forma estandarizada; eso frena servicios digitales y eficiencia.",
+        solucion: "Implementar una plataforma/ecosistema de interoperabilidad estatal obligatoria, priorizando áreas de alto impacto (salud, educación, tributación y trámites empresariales).",
+        ejecucion: "1) Definir estándares comunes de intercambio. 2) Implementar conectores por institución. 3) Priorizar casos de uso (salud/educación/tributos/empresas). 4) Capacitar y certificar funcionarios para operar el sistema."
+      },
+      {
+        problema: "Riesgos de seguridad digital y marco legal desactualizado para datos/ciberseguridad.",
+        solucion: "Modernizar la Ley 8968 de protección de datos y aprobar una Ley de Ciberseguridad con estándares mínimos de prevención y respuesta a incidentes.",
+        ejecucion: "1) Actualizar marco de datos personales. 2) Definir estándares mínimos de ciberseguridad. 3) Establecer protocolos de respuesta a incidentes. 4) Auditorías periódicas de cumplimiento."
+      },
+      {
+        problema: "La contratación pública no está adaptada para compras ágiles de software y nube.",
+        solucion: "Reformar compras públicas para servicios digitales, habilitando modalidades como catálogos digitales y contratos marco.",
+        ejecucion: "1) Ajustar reglas en SICOP para software/nube. 2) Crear catálogos digitales por categoría. 3) Usar contratos marco para compras recurrentes. 4) Publicar métricas de tiempos y costos."
+      },
+      {
+        problema: "Se desaprovecha el valor de los datos públicos para innovación y emprendimiento.",
+        solucion: "Impulsar innovación a partir de datos abiertos para que emprendedores desarrollen aplicaciones de alto impacto social y económico.",
+        ejecucion: "1) Publicar datasets prioritarios en formato abierto. 2) Mantenerlos actualizados. 3) Promover retos/hackathons y programas de apoyo. 4) Escalar soluciones que demuestren impacto."
+      }
+    ]
+  },
+  {
+    area: AreaName.DeporteYCultura,
+    propuestas: [
+      {
+        problema: "El deporte y la recreación no se gestionan como herramienta central de salud pública e integración social.",
+        solucion: "Colocar deporte y recreación como pilares de salud pública, integración social y desarrollo humano, fortaleciendo espacios públicos e infraestructura deportiva.",
+        ejecucion: "1) Articular instituciones y comunidades. 2) Identificar déficit de infraestructura/espacios seguros. 3) Invertir en mejora y mantenimiento. 4) Medir participación y resultados en salud/comunidad."
+      },
+      {
+        problema: "La política deportiva existe pero carece de ejecución sostenida y coordinación efectiva.",
+        solucion: "Asignar presupuesto sostenido para ejecutar la PONADRAF 2020-2030 y consolidar una Secretaría Técnica con capacidad operativa.",
+        ejecucion: "1) Presupuestar por año acciones PONADRAF. 2) Fortalecer Secretaría Técnica. 3) Coordinar con gobiernos locales y sector privado. 4) Publicar avances y ajustes."
+      },
+      {
+        problema: "Falta infraestructura y tecnificación regional para participación inclusiva (niñez, juventudes, personas con discapacidad, etc.).",
+        solucion: "Crear Centros de Tecnificación e Infraestructura Regional, construyendo y equipando centros en regiones estratégicas.",
+        ejecucion: "1) Seleccionar regiones prioritarias. 2) Diseñar centros con enfoque inclusivo/territorial. 3) Construir y equipar. 4) Abrir programas de formación y acceso comunitario."
+      },
+      {
+        problema: "La cultura no está suficientemente integrada al desarrollo territorial y prevención de violencia.",
+        solucion: "Crear Comités Cantonales de Cultura y un programa de Cultura y Juventud para prevención de violencia (formación artística, mediación comunitaria, emprendimientos creativos).",
+        ejecucion: "1) Reformar marco municipal para comités cantonales. 2) Financiar y formar comités. 3) Implementar programas en territorios vulnerables con MSP/MEP/MCJ y gobiernos locales. 4) Medir participación y reducción de riesgos."
+      }
+    ]
+  },
+  {
+    area: AreaName.Pensiones,
+    propuestas: [
+      {
+        problema: "Necesidad de un sistema de pensiones justo y sostenible como parte de la protección social.",
+        solucion: "Reafirmar el compromiso con un sistema de pensiones justo y sostenible como pilar de cohesión social y bienestar.",
+        ejecucion: "Requiere extracción directa de la sección de Pensiones del plan de gobierno para medidas específicas de ejecución."
+      }
+    ]
+  },
+  {
+    area: AreaName.Agricultura,
+    propuestas: [
+      {
+        problema: "Brecha de adopción tecnológica en sectores productivos (incluida agricultura) y necesidad de mejorar productividad y competitividad.",
+        solucion: "Fomentar uso de tecnologías digitales con créditos blandos, acompañamiento técnico y zonas piloto de 'agricultura inteligente'.",
+        ejecucion: "1) Definir territorios/zona piloto. 2) Ofrecer créditos blandos para adopción tecnológica. 3) Brindar acompañamiento técnico (uso de herramientas digitales). 4) Medir resultados (productividad, costos, acceso a mercado) y escalar."
+      }
+    ]
+  },
+  {
+    area: AreaName.Telecomunicaciones,
+    propuestas: [
+      {
+        problema: "Brechas de conectividad, especialmente para educación, territorios con desigualdad y poblaciones con menor acceso.",
+        solucion: "Garantizar conectividad robusta (por ejemplo para escuelas rurales/CTP/centros INA) y reconocer el acceso a internet como derecho humano con acciones afirmativas para cerrar brechas.",
+        ejecucion: "1) Mapear brechas de cobertura y calidad. 2) Priorizar inversión en zonas rezagadas y territorios indígenas. 3) Acompañar con formación digital. 4) Monitorear acceso/uso y ajustar."
+      },
+      {
+        problema: "Servicios públicos y trámites gubernamentales siguen siendo lentos y presenciales para muchas personas.",
+        solucion: "Acelerar digitalización de servicios gubernamentales asegurando conectividad, formación y acceso universal a plataformas digitales.",
+        ejecucion: "1) Priorizar trámites de alto impacto. 2) Diseñar plataformas accesibles. 3) Asegurar conectividad y capacitación para usuarios. 4) Medir tiempos/costos antes y después."
+      },
+      {
+        problema: "Marco regulatorio puede no cubrir nuevas plataformas y servicios digitales; riesgos de seguridad y derechos de comunicación.",
+        solucion: "Actualizar legislación de telecomunicaciones para garantizar derecho a la comunicación, libertad de expresión, y extender regulación a nuevas plataformas/servicios digitales.",
+        ejecucion: "1) Diagnóstico legal de vacíos. 2) Reforma normativa para incluir plataformas digitales. 3) Definir estándares de protección y derechos. 4) Supervisión y actualización periódica."
+      },
+      {
+        problema: "Necesidad de un actor público fuerte y coordinación con sector privado para acelerar desarrollo digital con calidad y precios accesibles.",
+        solucion: "Fortalecer el ICE como actor estratégico, complementándolo con participación regulada del sector privado para maximizar beneficio al consumidor (cobertura, calidad y precios).",
+        ejecucion: "1) Definir rol del ICE en agenda digital. 2) Establecer reglas de participación privada. 3) Monitorear cobertura/calidad/precios. 4) Impulsar soluciones tecnológicas locales y formación de talento."
+      }
+    ]
+  },
+  {
+    area: AreaName.Turismo,
+    propuestas: [
+      {
+        problema: "El turismo puede concentrarse sin distribuir beneficios ni fortalecer identidad local.",
+        solucion: "Fortalecer turismo cultural comunitario conectando sector turístico (hoteles, operadores, agencias) con artistas y emprendedores locales mediante rutas patrimoniales, artísticas y gastronómicas coordinadas con el ICT.",
+        ejecucion: "1) Identificar territorios con oferta cultural y turística. 2) Diseñar rutas y experiencias con comunidades. 3) Conectar operadores turísticos con emprendedores locales. 4) Promocionar y medir impacto económico local."
+      }
+    ]
+  },
+  {
+    area: AreaName.Economia,
+    propuestas: [
+      {
+        problema: "Riesgos psicosociales y salud mental afectan productividad y bienestar; falta un marco integral en el trabajo.",
+        solucion: "Impulsar una Ley Integral de Salud Mental en el Trabajo con responsabilidades compartidas (empleador/trabajadores) para prevención y atención oportuna.",
+        ejecucion: "1) Definir obligaciones mínimas de prevención. 2) Establecer rutas de detección/atención. 3) Promover balance vida-trabajo. 4) Medir cumplimiento e impacto en salud/productividad."
+      },
+      {
+        problema: "Alta informalidad laboral, especialmente en independientes de bajos ingresos.",
+        solucion: "Incentivar formalización con esquemas de aseguramiento diferenciados para independientes de ingresos bajos y reducción de algunas contribuciones obligatorias.",
+        ejecucion: "1) Definir criterios de elegibilidad (ingresos/actividad). 2) Crear esquema de aseguramiento diferenciado. 3) Implementar reducción temporal o escalonada de contribuciones. 4) Medir migración a formalidad."
+      },
+      {
+        problema: "La economía digital (plataformas de transporte/delivery) genera vacíos laborales y conflictos con sectores existentes.",
+        solucion: "Regular relaciones laborales en plataformas digitales, garantizando condiciones justas; y crear esquema de compensaciones para sectores afectados (ej. taxistas).",
+        ejecucion: "1) Definir derechos/obligaciones para plataformas y trabajadores. 2) Establecer mecanismos de cumplimiento. 3) Diseñar compensaciones/indemnizaciones para sectores impactados. 4) Evaluar efectos y ajustar."
+      },
+      {
+        problema: "Productividad y competitividad requieren coordinación público-privada con enfoque en innovación y sostenibilidad.",
+        solucion: "Implementar una Política Nacional de Productividad que articule acciones para eficiencia, innovación y competitividad, enmarcada en el Plan Estratégico Nacional 2050.",
+        ejecucion: "1) Definir hoja de ruta nacional (sectores, metas). 2) Coordinar acciones público/privado. 3) Alinear educación, regulación y productividad. 4) Seguimiento con indicadores públicos."
+      }
+    ]
+  },
+  {
+    area: AreaName.Seguridad,
+    propuestas: [
+      {
+        problema: "El crimen organizado mantiene incentivos económicos (lavado/legitimación de capitales).",
+        solucion: "Impulsar un nuevo proyecto sobre capitales emergentes para fortalecer lucha contra legitimación de capitales y debilitar el ánimo de lucro del crimen organizado.",
+        ejecucion: "1) Redactar y tramitar proyecto de ley. 2) Fortalecer capacidades de investigación financiera. 3) Coordinar instituciones. 4) Medir decomisos y reducción de estructuras."
+      },
+      {
+        problema: "Gobernanza y capacidades institucionales insuficientes para enfrentar drogas y crimen organizado.",
+        solucion: "Modernizar gobernanza del Instituto de Control de Drogas (ICD) para responder a retos globales y regionales.",
+        ejecucion: "1) Reformar gobernanza/competencias del ICD. 2) Ajustar procesos y coordinación interinstitucional. 3) Fortalecer inteligencia y análisis. 4) Evaluar resultados operativos."
+      },
+      {
+        problema: "Debilidad de controles democráticos y claridad de rol en inteligencia estratégica nacional.",
+        solucion: "Reformar la Ley General de Policía para remover a la DIS como institución policial y convertirla en inteligencia estratégica nacional con controles democráticos y rendición de cuentas.",
+        ejecucion: "1) Definir rol de inteligencia estratégica. 2) Establecer controles democráticos. 3) Implementar rendición de cuentas periódica. 4) Supervisión externa e interna."
+      },
+      {
+        problema: "Desde centros penitenciarios se coordinan estructuras criminales; marco normativo de ejecución penal requiere modernización.",
+        solucion: "Aprobar una nueva Ley de Ejecución de la Pena para balancear derechos fundamentales y fortalecer control del Estado para impedir operación del crimen organizado desde cárceles.",
+        ejecucion: "1) Tramitar ley integral de ejecución penal. 2) Definir estándares de control y derechos. 3) Implementar herramientas (incluido monitoreo electrónico). 4) Bloquear comunicaciones ilegales internas."
+      },
+      {
+        problema: "Falta coordinación y gobernanza clara en seguridad ciudadana.",
+        solucion: "Crear un Sistema Nacional de Seguridad Ciudadana que oficialice gobernanza, articule actores y mejore transparencia y rendición de cuentas.",
+        ejecucion: "1) Definir gobernanza y roles (comunidades/instituciones/autoridades). 2) Asignar recursos con eficiencia. 3) Implementar mecanismos de transparencia. 4) Medir resultados (delitos, percepción, respuesta)."
+      }
+    ]
+  },
+  {
+    area: AreaName.Ambiente,
+    propuestas: [
+      {
+        problema: "Impactos del cambio climático y vulnerabilidad territorial requieren planificación basada en ciencia y participación.",
+        solucion: "Adaptarse con planificación basada en ciencia, ordenar territorio con sostenibilidad e impulsar economía circular y regenerativa, acompañando a productores hacia prácticas resilientes.",
+        ejecucion: "1) Priorizar territorios más expuestos. 2) Usar evidencia científica + saberes locales. 3) Acompañar transición productiva resiliente. 4) Medir reducción de riesgos y mejoras ambientales."
+      },
+      {
+        problema: "Falta transparencia y control social efectivo sobre permisos y cumplimiento ambiental.",
+        solucion: "Crear un Observatorio Nacional de Cumplimiento Ambiental en plataforma digital de datos abiertos (EIA, permisos, monitoreo), con auditorías ciudadanas y protocolos anticorrupción.",
+        ejecucion: "1) Integrar bases (EIA, agua, pozos, permisos, monitoreo). 2) Publicar en datos abiertos accesibles. 3) Habilitar veedurías/auditorías ciudadanas. 4) Aplicar mecanismos de control social vinculantes."
+      }
+    ]
+  },
+  {
+    area: AreaName.Infraestructura,
+    propuestas: [
+      {
+        problema: "Proyectos de obra pública se atrasan y cuesta dar seguimiento transparente en tiempo real.",
+        solucion: "Establecer seguimiento continuo y sistemas informáticos para mostrar estado en tiempo real de proyectos de obra pública; fortalecer fiscalización (incl. LANAMME-UCR) y actualizar normativa técnica vial.",
+        ejecucion: "1) Implementar sistema de seguimiento con datos en tiempo real. 2) Definir planes de trabajo por proyecto. 3) Reforzar auditorías y fiscalización técnica. 4) Actualizar estándares de diseño/construcción para seguridad vial."
+      },
+      {
+        problema: "Ejecución lenta y poca rendición de cuentas en inversiones públicas.",
+        solucion: "Acelerar ejecución con probidad y uso eficiente de recursos, fortaleciendo auditorías internas, revisando refrendo de contratos y potenciando control posterior.",
+        ejecucion: "1) Ajustar procesos de control (sin paralizar). 2) Fortalecer auditorías internas. 3) Revisar refrendo/contratación. 4) Control posterior y publicación de resultados."
+      },
+      {
+        problema: "Gestión del transporte público está dispersa y la planificación es fragmentada.",
+        solucion: "Crear una Autoridad de Transporte Público Sostenible que integre rectoría, diseño y planificación hoy dispersas (CTP, INCOFER, MOPT y gobiernos locales).",
+        ejecucion: "1) Definir marco legal e institucional. 2) Integrar funciones y datos. 3) Diseñar experiencia intermodal para usuarios. 4) Implementar pilotos y escalar."
+      },
+      {
+        problema: "Falta información confiable para planificar movilidad (flujos, destinos, tiempos).",
+        solucion: "Hacer encuestas e investigaciones periódicas de movilidad y un piloto con la UCR para un sistema georreferenciado de transporte público inteligente usando TIC e IA con datos públicos.",
+        ejecucion: "1) Levantar encuestas periódicas (GAM, ciudades intermedias, rural). 2) Integrar datos públicos + alianzas con plataformas de movilidad. 3) Implementar piloto georreferenciado con UCR. 4) Escalar a nivel cantonal/regional/nacional."
+      },
+      {
+        problema: "Transición a movilidad eléctrica requiere infraestructura de recarga y reglas claras.",
+        solucion: "Desarrollar red nacional de recarga eléctrica con participación público-privada y marco regulatorio con incentivos y protección al usuario (tarifas con sustento técnico).",
+        ejecucion: "1) Definir plan nacional de cobertura (metas). 2) Establecer reglas/tarifas con ARESEP. 3) Coordinar con distribuidoras eléctricas. 4) Ejecutar despliegue y monitoreo."
+      }
+    ]
+  },
+  {
+    area: AreaName.Vivienda,
+    propuestas: [
+      {
+        problema: "Déficit de vivienda digna para población vulnerable y clase media; asentamientos informales y falta de suelo disponible.",
+        solucion: "Implementar una estrategia integral de acceso a vivienda usando fondos públicos existentes (bono familiar, alquiler para adultos mayores, RAMT, ahorro/crédito INVU) y un banco nacional de suelo público.",
+        ejecucion: "1) Priorizar grupos vulnerables con bono familiar. 2) Crear programa de alquiler (adultos mayores) vía INVU u otras entidades. 3) Ampliar/simplificar RAMT para mejorar viviendas. 4) Fortalecer ahorro/crédito INVU. 5) Crear banco de suelo público para vivienda social y clase media."
+      },
+      {
+        problema: "Asentamientos informales combinan vivienda precaria, servicios básicos insuficientes y falta de oportunidades.",
+        solucion: "Implementar un programa integral para asentamientos informales con enfoque de DDHH: vivienda + servicios básicos + ordenamiento territorial + oportunidades productivas.",
+        ejecucion: "1) Diagnóstico por asentamiento. 2) Plan conjunto de vivienda y servicios. 3) Regularización/ordenamiento territorial según caso. 4) Programas productivos y seguimiento comunitario."
+      },
+      {
+        problema: "Marco legal limita modalidades alternativas que podrían ampliar oferta y accesibilidad.",
+        solucion: "Incluir modalidades como vivienda cooperativa, cohousing y coliving.",
+        ejecucion: "1) Ajustar ordenamiento jurídico para permitir nuevas modalidades. 2) Definir requisitos y salvaguardas. 3) Pilotos con gobiernos locales y entidades de vivienda. 4) Escalar si mejora acceso."
+      }
+    ]
+  },
+  {
+    area: AreaName.Salud,
+    propuestas: [
+      {
+        problema: "Acceso insuficiente y tardío a salud mental, con brechas territoriales y necesidad de primer contacto rápido.",
+        solucion: "Aumentar profesionales en psicología/psiquiatría en CCSS y crear una Plataforma Digital Nacional de Primer Contacto Psicológico (segura y confidencial) para orientación breve y derivación a citas.",
+        ejecucion: "1) Contratar/redistribuir profesionales por región. 2) Diseñar plataforma digital bajo rectoría CCSS. 3) Ofrecer primer contacto, orientación y derivación. 4) Capacitar personal de primera respuesta para detectar ideación suicida y depresión."
+      },
+      {
+        problema: "Atención en crisis de salud mental no siempre tiene rutas rápidas y coordinación adecuada.",
+        solucion: "Fortalecer Despachos de Apoyo Psicológico articulados con el 9-1-1 para atención en crisis y derivación oportuna según necesidad.",
+        ejecucion: "1) Integrar protocolos con 9-1-1. 2) Definir triage y derivación diferenciada. 3) Asegurar disponibilidad de equipos. 4) Medir tiempos de respuesta y resultados."
+      },
+      {
+        problema: "Prevención del suicidio requiere redes comunitarias sostenidas en zonas de riesgo.",
+        solucion: "Ampliar modelos comunitarios intersectoriales (arte, deporte, recreación, etc.) replicando experiencias como Centros Cívicos sin Paredes y fortaleciendo instancias locales de abordaje.",
+        ejecucion: "1) Identificar zonas de riesgo. 2) Activar redes intersectoriales (arte/deporte/recreación). 3) Replicar modelos piloto probados. 4) Fortalecer capacidades locales y seguimiento."
+      }
+    ]
+  }
+]

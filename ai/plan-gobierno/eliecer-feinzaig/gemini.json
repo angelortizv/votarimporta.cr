@@ -1,0 +1,142 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Liberal Progresista",
+    "siglas": "PLP",
+    "ideologia": "Liberalismo progresista",
+    "posicion_politica": "Centro-derecha / Liberal",
+    "bandera": "Naranja y Blanco (según colores institucionales)",
+    "colores": [
+      "Naranja",
+      "Blanco"
+    ]
+  },
+  "candidato": {
+    "nombre": "Eliacer Feinzaig Mintz (Mencionado implícitamente por liderazgo actual, aunque el plan se enfoca en la propuesta institucional)",
+    "edad": "",
+    "ocupacion": "Economista / Diputado",
+    "biografia": ""
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Desigualdades de género en áreas STEM y desconexión entre formación y mercado laboral.",
+        "solucion": "Impulsar la formación profesional en carreras no tradicionales y bilingüismo.",
+       "ejecucion": "Alianzas público-privadas con el sector productivo y el MEP para campañas de orientación vocacional anuales y rediseño curricular enfocado en formación técnica y bilingüismo[cite: 7, 51]."
+      },
+      {
+        "problema": "Inseguridad en centros educativos y baja calidad del sistema.",
+        "solucion": "Implementar un Pacto Nacional por la Educación y un sistema de evaluación independiente.",
+       "ejecucion": "Reforma institucional del MEP, fortalecimiento de la inversión educativa y creación de un sistema de evaluación basado en evidencia para mejorar la calidad[cite: 33]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Burocracia excesiva y falta de interoperabilidad en datos ciudadanos.",
+        "solucion": "Estrategia de transformación digital del sector público 'Solo Una Vez'.",
+       "ejecucion": "Implementación de una ventanilla única con trazabilidad, donde el ciudadano entrega sus datos una sola vez y se garantiza la interoperabilidad entre instituciones[cite: 33, 45]."
+      },
+      {
+        "problema": "Amenazas a la seguridad de datos y rezago tecnológico en fronteras.",
+        "solucion": "Muro tecnológico y modernización de protección de datos.",
+       "ejecucion": "Instalación de drones, radares e IA en fronteras; y reforma a la ley de protección de datos alineada con estándares europeos (GDPR)[cite: 43, 8]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Espacios culturales subutilizados y falta de vinculación entre artistas y economía.",
+        "solucion": "Desarrollo de clústeres creativos y mapeo nacional de espacios.",
+       "ejecucion": "Creación de brigadas de 'cartógrafos culturales' para identificar patrimonio y transformarlos en hubs culturales mediante alianzas público-privadas y fideicomisos[cite: 4]."
+      },
+      {
+        "problema": "Falta de planificación y financiamiento deportivo efectivo.",
+        "solucion": "Modernización de infraestructura deportiva y Juegos Nacionales.",
+       "ejecucion": "Establecer alianzas estratégicas para la gestión de infraestructura y potenciar el deporte como herramienta de prevención social[cite: 2, 64]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Sostenibilidad financiera y bajos rendimientos del Régimen Obligatorio de Pensiones (ROP).",
+        "solucion": "Reforma al IVM hacia cuentas nocionales y optimización del ROP.",
+       "ejecucion": "Flexibilizar límites de inversión del ROP para mejorar rentabilidad y crear instrumentos financieros nacionales como bonos de infraestructura[cite: 4, 17]."
+      },
+      {
+        "problema": "Existencia de pensiones con montos desproporcionados.",
+        "solucion": "Poner tope a las pensiones de lujo.",
+       "ejecucion": "Reformas legales para limitar las pensiones del Poder Judicial, Magisterio y aquellas con cargo al presupuesto nacional[cite: 4]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Baja competitividad, falta de seguros agrícolas y barreras comerciales.",
+        "solucion": "Innovación, agricultura de precisión y reforma al MAG.",
+       "ejecucion": "Implementar un programa de encadenamientos productivos, financiamiento para infraestructura poscosecha y fomento de la agricultura de precisión[cite: 3, 9]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Falta de competencia y rezago en conectividad de alta velocidad.",
+        "solucion": "Transformación digital con 5G como motor de desarrollo.",
+       "ejecucion": "Acelerar el despliegue de redes 5G y eliminar barreras que limitan la competencia en el sector[cite: 33]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Pérdida de competitividad y concentración del turismo en pocas zonas.",
+        "solucion": "Plan de emergencia para recuperar competitividad y turismo de naturaleza local.",
+       "ejecucion": "Impulsar concesiones de servicios en áreas protegidas para PYMES locales y relanzar la imagen país para generar empleo fuera del GAM[cite: 3, 13, 43]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Costo de vida elevado, exceso de impuestos y trabas para emprender.",
+        "solucion": "Reducción de impuestos a solo 15 y simplificación de trámites.",
+       "ejecucion": "Eliminar impuestos menores, reducir cargas sociales para PYMES en la CCSS y permitir la creación de empresas en un día[cite: 46, 51]."
+      },
+      {
+        "problema": "Monopolios estatales y distorsiones de mercado.",
+        "solucion": "Apertura de mercados y venta de activos estatales no esenciales.",
+       "ejecucion": "Venta del BCR y BICSA; apertura del mercado eléctrico para bajar tarifas y eliminar monopolios estatales[cite: 3, 15]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Explosión del crimen organizado, homicidios y pérdida de control territorial.",
+        "solucion": "Declaratoria de Emergencia Nacional en Seguridad y enfoque multidimensional.",
+       "ejecucion": "Aumento de presencia policial, operativos inteligentes, bloqueo de finanzas criminales y coordinación estrecha con policías municipales[cite: 42, 64, 79]."
+      },
+      {
+        "problema": "Corrupción infiltrada en los cuerpos policiales.",
+        "solucion": "Lucha frontal contra la corrupción y control patrimonial.",
+       "ejecucion": "Obligar a todo el personal de OIJ y Fuerza Pública a rendir declaración patrimonial ante la Contraloría[cite: 3]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Vulnerabilidad ante el cambio climático y gestión deficiente de residuos.",
+        "solucion": "Adaptación climática integral y fomento de la economía circular.",
+       "ejecucion": "Implementar infraestructura verde en ciudades, programas de educación ambiental y fortalecer el Sistema Nacional de Gestión del Riesgo[cite: 11, 12, 14]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Desarticulación del MOPT y rezago en la red vial y transporte público.",
+        "solucion": "Modernización del MOPT y centralización de competencias.",
+       "ejecucion": "Absorber órganos desconcentrados (CONAVI, CTP, COSEVI) en el MOPT para mejorar la rectoría y planificar proyectos ferroviarios y aeroportuarios[cite: 10, 33]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Dificultad de acceso a vivienda para la clase media y sectores vulnerables.",
+        "solucion": "Medidas fiscales para facilitar el acceso y alianzas público-privadas.",
+       "ejecucion": "Reducir el IVA al alquiler (de 13% a 4%), exonerar el impuesto de traspaso en primera vivienda y promover vivienda vertical en zonas urbanas[cite: 4, 51]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera, ineficiencia en la CCSS y altos costos de medicamentos.",
+        "solucion": "Reforma a la gobernanza de la CCSS y apertura del mercado de fármacos.",
+       "ejecucion": "Eliminar regulación de precios de medicinas para fomentar competencia, implementar EBAIS móviles y digitalizar expedientes[cite: 4, 16, 51]."
+      }
+    ]
+  }
+}

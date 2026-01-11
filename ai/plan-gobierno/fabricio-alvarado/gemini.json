@@ -1,0 +1,122 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Nueva República",
+    "siglas": "PNR",
+    "ideologia": "Conservadurismo, fundamentado en la promoción de la iniciativa privada y valores cristianos",
+    "posicion_politica": "Derecha conservadora",
+    "bandera": "Azul con una estrella blanca y el nombre del partido",
+    "colores": [
+      "Azul",
+      "Blanco"
+    ]
+  },
+  "candidato": {
+    "nombre": "Fabricio Alvarado Muñoz",
+    "edad": "",
+    "ocupacion": "Periodista y político",
+    "biografia": "Candidato presidencial con trayectoria política previa, enfocado en el rescate de valores tradicionales y la soberanía nacional."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Desconexión entre la formación educativa y las necesidades reales del mercado laboral actual[cite: 12, 16].",
+        "solucion": "Fortalecer la educación técnica y vocacional como motor de movilidad social[cite: 16].",
+        "ejecucion": "Articular programas del INA, colegios técnicos y universidades con el sector privado e implementar la Ley de Educación Financiera en centros educativos[cite: 16]."
+      },
+      {
+        "problema": "Infraestructura educativa deteriorada y falta de espacios seguros para la juventud[cite: 1, 21].",
+        "solucion": "Crear una Red Nacional de Casas de Juventud Regionales[cite: 21].",
+        "ejecucion": "Coordinar con municipalidades y el Consejo de la Persona Joven para habilitar espacios formativos en recreación, cultura y tecnología[cite: 21]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Vulnerabilidad ante ciberataques y falta de protección en infraestructura crítica del país[cite: 15].",
+        "solucion": "Establecer una Estrategia Nacional de Ciberseguridad y Resiliencia Digital[cite: 15].",
+        "ejecucion": "Crear el Centro Nacional de Ciberseguridad adscrito al MICITT para implementar protocolos de prevención nacionales[cite: 15]."
+      },
+      {
+        "problema": "Exceso de burocracia y trámites físicos que ralentizan la gestión estatal[cite: 6, 10].",
+        "solucion": "Implementar una plataforma única digital para todos los trámites administrativos del gobierno[cite: 6, 10].",
+        "ejecucion": "Automatizar trámites de ministerios, integrar firma digital y usar inteligencia artificial para la trazabilidad fiscal[cite: 6, 10]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de incentivos y condiciones de empleo precarias para los sectores artísticos y deportivos[cite: 16, 20].",
+        "solucion": "Crear programas de promoción para emprendimientos artísticos y deportivos[cite: 16, 20].",
+        "ejecucion": "Coordinar con el MEIC y universidades el apoyo financiero mediante el Sistema de Banca para el Desarrollo y evaluar la creación de zonas francas culturales[cite: 20]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Limitaciones en las opciones de inversión de las operadoras de pensiones para dinamizar la economía local[cite: 6, 10].",
+        "solucion": "Permitir a las operadoras de pensiones comprar títulos de empresas tecnológicas domiciliadas en Costa Rica[cite: 6, 10].",
+        "ejecucion": "Reformar la normativa para que inviertan en sectores de innovación, ciencias de la vida e infraestructura turística bajo análisis de riesgo[cite: 10]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Políticas ambientales internacionales que criminalizan la producción nacional y limitan el uso de recursos hídricos[cite: 9, 13].",
+        "solucion": "Priorizar la seguridad alimentaria y el desarrollo agroindustrial nacional sobre agendas internacionales no consultadas[cite: 9, 13, 20].",
+        "ejecucion": "Revisar tratados internacionales y crear centros regionales de acopio y refrigeración pesquera mediante alianzas público-comunitarias[cite: 14, 20]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Baja conectividad en zonas costeras y rurales que limita el desarrollo tecnológico[cite: 17, 21].",
+        "solucion": "Desarrollar el programa 'Centros Juventud Conectada'[cite: 21].",
+        "ejecucion": "Instalar infraestructura de conectividad en zonas rurales para facilitar el acceso a educación y servicios digitales[cite: 21]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Falta de inversión estratégica en infraestructura que potencie el sector turístico en diversas regiones[cite: 6, 10].",
+        "solucion": "Fomentar la inversión de operadoras de pensiones en infraestructura turística nacional[cite: 10].",
+        "ejecucion": "Integrar el desarrollo turístico como prioridad en el portafolio de inversiones de sectores tecnológicos y de innovación[cite: 10]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Altos costos de intermediación bancaria y exclusión financiera de nuevos modelos de negocio[cite: 6, 10].",
+        "solucion": "Dar acceso a empresas Fintech al sistema de pagos electrónicos del Banco Central (SINPE)[cite: 10].",
+        "ejecucion": "Promulgar normativa ágil para que el 100% de las Fintech se integren al sistema en un plazo de tres años[cite: 10]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Hacinamiento crítico en el sistema penitenciario y aumento de la delincuencia organizada[cite: 13, 17, 18].",
+        "solucion": "Construir una 'mega cárcel' para fortalecer la contención de delincuentes y reducir el hacinamiento[cite: 17].",
+        "ejecucion": "Implementar inteligencia policial con tecnologías emergentes (Blockchain e IA) y aplicar estados de excepción para capturar objetivos específicos[cite: 18]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Enfoque ambiental eco-centrista que ignora el impacto socioeconómico en comunidades rurales[cite: 9, 13].",
+        "solucion": "Implementar una transición energética y descarbonización 'realista'[cite: 1, 3].",
+        "ejecucion": "Garantizar que las políticas de conservación no vulneren el derecho de los productores al uso de su tierra y recursos[cite: 13]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Déficit habitacional de más de 150,000 unidades y estancamiento en la entrega de bonos[cite: 8, 12].",
+        "solucion": "Crear el Programa de Arrendamiento con Opción de Compra Vertical[cite: 12].",
+        "ejecucion": "Construir edificios de alquiler donde las familias de clase media puedan comprar sin prima inicial, simplificando trámites municipales[cite: 12]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Atraso vial extremo que coloca al país en posiciones bajas de competitividad mundial[cite: 7, 11].",
+        "solucion": "Desarrollar corredores logísticos modernos y sistemas de transporte masivo eficientes[cite: 7, 11].",
+        "ejecucion": "Priorizar la inversión en investigación y desarrollo de transporte de última generación para atraer inversión extranjera[cite: 15, 19]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera extensas y gestión administrativa ineficiente en la CCSS[cite: 11, 15].",
+        "solucion": "Reestructuración institucional y modernización de la gestión clínica de la CCSS[cite: 15].",
+        "ejecucion": "Establecer un modelo de trabajo en red regionalizado y fortalecer la rectoría del Ministerio de Salud para eliminar trabas operativas[cite: 15]."
+      }
+    ]
+  }
+}

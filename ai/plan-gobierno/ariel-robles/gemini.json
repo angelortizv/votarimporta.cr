@@ -1,0 +1,132 @@
+{
+  "partido_politico": {
+    "nombre": "Frente Amplio",
+    "siglas": "FA",
+    "ideologia": "Socialismo democrático, Progresismo, Ecologismo, Feminismo",
+    "posicion_politica": "Izquierda",
+    "bandera": "Amarilla con una estrella negra en el centro",
+    "colores": [
+      "Amarillo",
+      "Negro"
+    ]
+  },
+  "candidato": {
+    "nombre": "Andrés Ariel Robles Barrantes",
+    "edad": "34 años (a febrero de 2026)",
+    "ocupacion": "Docente universitario y Diputado de la República",
+    "biografía": "Nacido en 1991 en Pérez Zeledón. Es bachiller y magíster en Enseñanza del Inglés y Gestión Educativa por la Universidad Nacional. Ha destacado como activista ambiental en la defensa de ríos y como diputado (2022-2026), donde ganó visibilidad por sus denuncias contra la corrupción y la defensa de territorios costeros."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Recortes presupuestarios que afectan la calidad educativa y el mantenimiento de escuelas.",
+        "solucion": "Blindar el presupuesto educativo para cumplir con el 8% del PIB y atender órdenes sanitarias en escuelas.",
+        "ejecucion": "Invertir en la reparación de 100 centros educativos por año y otorgar 60,000 nuevas becas a estudiantes en pobreza."
+      },
+      {
+        "problema": "Deserción escolar por hambre y falta de recursos básicos.",
+        "solucion": "Universalizar el sistema de comedores escolares para que ningún niño pase hambre en clases.",
+        "ejecucion": "Asignar recursos directos del presupuesto nacional para garantizar alimentación gratuita en todos los centros públicos."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Brecha digital que excluye a zonas rurales del acceso a internet de alta velocidad.",
+        "solucion": "Llevar fibra óptica a todo el país utilizando la infraestructura del ICE y el MEP.",
+        "ejecucion": "Coordinar con FONATEL para conectar todos los centros educativos y comunidades remotas con banda ancha."
+      },
+      {
+        "problema": "Falta de apoyo tecnológico para pequeños emprendedores.",
+        "solucion": "Potenciar el uso de plataformas Fintech en el Sistema de Banca para el Desarrollo.",
+        "ejecucion": "Implementar herramientas digitales para agilizar créditos y transferencias tecnológicas a MIPYMES."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Concentración de actividades culturales solo en la capital y falta de apoyo a artistas locales.",
+        "solucion": "Descentralizar la cultura y fortalecer ferias del libro y festivales en regiones rurales.",
+        "ejecucion": "Utilizar los Centros Cívicos por la Paz y espacios municipales para promover el talento artístico regional."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Falta de inversión productiva de los fondos de pensiones y dificultad de formalización para independientes.",
+        "solucion": "Permitir que fondos como el IVM y JUPEMA inviertan en obra pública segura y reformar la cotización de independientes.",
+        "ejecucion": "Crear mecanismos legales para que las pensiones financien infraestructura nacional, generando rendimientos y empleo."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Dependencia de importaciones de granos básicos y abandono del pequeño productor.",
+        "solucion": "Fomentar la soberanía alimentaria y dar créditos baratos exclusivos para el sector agro.",
+        "ejecucion": "Impulsar plantas de empaque regionales para dar valor agregado a los productos y eliminar licencias de pesca gratuitas para barcos extranjeros."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Intentos de privatización encubierta que debilitan a las instituciones públicas de servicios.",
+        "solucion": "Fortalecer al ICE como pilar de la conectividad y la energía nacional, rechazando la 'armonización eléctrica'.",
+        "ejecucion": "Mantener el control estatal sobre el mercado energético y telecomunicaciones para asegurar tarifas sociales y solidarias."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Desplazamiento de comunidades locales por el alto costo de la vida y alquileres turísticos descontrolados (gentrificación).",
+        "solucion": "Regular plataformas como Airbnb y aprobar la Ley de Territorios Costeros Comunitarios.",
+        "ejecucion": "Establecer impuestos a la desocupación prolongada de viviendas y aumentar cánones en zonas de lujo como Papagayo para beneficio comunal."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Desigualdad salarial y jornadas laborales que no permiten el tiempo personal o de cuido.",
+        "solucion": "Reducir la jornada laboral a 40 horas semanales sin reducir el salario e implementar el IVA personalizado.",
+        "ejecucion": "Reformar el Código de Trabajo para la jornada de 40 horas y devolver el IVA a las familias de menores ingresos."
+      },
+      {
+        "problema": "Cierre de Pymes por exceso de impuestos al inicio de sus operaciones.",
+        "solucion": "Exonerar del impuesto sobre la renta por un plazo mayor a nuevas pequeñas empresas.",
+        "ejecucion": "Aplicar una amnistía y beneficios fiscales temporales para emprendimientos que generen empleo local."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Infiltración del narco en jóvenes por falta de oportunidades y fallos en inteligencia policial.",
+        "solucion": "Enfoque preventivo para 'quitarle la gente al narco' y reforma profunda a la Dirección de Inteligencia y Seguridad (DIS).",
+        "ejecucion": "Convertir la DIS en una unidad de inteligencia civil y recuperar territorios vulnerables con inversión social, no solo con armas."
+      },
+      {
+        "problema": "Corrupción en la función pública que desvía recursos ciudadanos.",
+        "solucion": "Aprobar una ley marco contra la corrupción y fortalecer la protección para denunciantes.",
+        "ejecucion": "Implementar auditorías ciudadanas y reactivar el Observatorio de Compras Públicas (SICOP)."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Amenazas de explotación petrolera y contaminación de fuentes de agua.",
+        "solucion": "Prohibir por ley la exploración de petróleo y gas, y reformar la Ley de Aguas para proteger el consumo humano.",
+        "ejecucion": "Impulsar la descarbonización de la economía y fortalecer a SENASA para el bienestar animal."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Congestionamiento vial (presas) y transporte público ineficiente los fines de semana.",
+        "solucion": "Impulsar el Tren Eléctrico de pasajeros con subsidio y reactivar el tren de carga.",
+        "ejecucion": "Asegurar que el transporte ferroviario funcione todos los días y sectorizar las rutas de buses para mejorar la fluidez."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Crecimiento de precarios y falta de coordinación en las instituciones de vivienda.",
+        "solucion": "Fusionar el INVU con el Ministerio de Vivienda (MIVAH) y crear una Secretaría de Mejoramiento Barrial.",
+        "ejecucion": "Eliminar duplicidad de funciones para agilizar bonos de vivienda y proyectos de urbanismo social."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Crisis financiera de la Caja (CCSS) por la deuda del Estado y falta de especialistas.",
+        "solucion": "Pagar la deuda histórica del Estado con la CCSS y crear un régimen salarial competitivo para especialistas.",
+        "ejecucion": "Financiar el seguro de salud con impuestos a productos ultraprocesados (comida chatarra) y tabaco para fomentar la prevención."
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Pueblo Soberano",
+    "siglas": "PPSO",
+    "ideologia": "Continuismo del modelo de gestión de la Administración Chaves Robles, enfocado en eficiencia estatal, transparencia y libre mercado.",
+    "posicion_politica": "Centro-derecha / Reformista",
+    "bandera": "Información no detallada explícitamente en el texto del plan.",
+    "colores": [
+      "Azul",
+      "Dorado"
+    ]
+  },
+  "candidato": {
+    "nombre": "Laura Fernández Delgado",
+    "edad": "",
+    "ocupacion": "Politóloga y Especialista en Políticas Públicas.",
+    "biografia": "Magíster en Políticas Públicas y Gobernabilidad Democrática. Fue Ministra de Planificación Nacional y Política Económica (MIDEPLAN) y Ministra de la Presidencia durante la administración 2022-2026. Cuenta con 16 años de trayectoria en el sector público, destacando por su labor en reforma administrativa y empleo público[cite: 1, 4, 5]."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Infraestructura educativa deteriorada y con órdenes sanitarias[cite: 332].",
+        "solucion": "Implementar un Plan Nacional Multianual de Infraestructura Educativa con criterios de equidad territorial y resiliencia climática[cite: 332].",
+        "ejecucion": "Priorizar centros con órdenes sanitarias, hacinamiento o ubicados en zonas de alta vulnerabilidad social[cite: 332]."
+      },
+      {
+        "problema": "Carga administrativa excesiva para el personal docente, lo que afecta la calidad de la enseñanza[cite: 331].",
+        "solucion": "Estrategia nacional de simplificación de trámites y digitalización de procesos para el docente[cite: 332].",
+        "ejecucion": "Revisar horarios, suspender rebajos por matrícula y racionalizar recargos mediante la negociación de la nueva Convención Colectiva[cite: 332]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Vulnerabilidad ante ataques cibernéticos en instituciones estatales[cite: 118].",
+        "solucion": "Fortalecer el marco institucional de ciberseguridad y robustecer el Centro Nacional de Respuesta a Incidentes Cibernéticos (CSIRT-CR)[cite: 118].",
+        "ejecucion": "Crear un Centro Nacional de Comando de Ciberseguridad con monitoreo permanente (sala de situación)[cite: 119]."
+      },
+      {
+        "problema": "Burocracia y lentitud en los trámites ciudadanos[cite: 128].",
+        "solucion": "Digitalización total de trámites y eliminación de duplicidades normativas bajo principios de gobierno digital[cite: 128].",
+        "ejecucion": "Impulsar una reforma a la Ley General de Administración Pública para simplificar procedimientos administrativos[cite: 128]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de espacios recreativos seguros en zonas vulnerables afectadas por la violencia[cite: 105].",
+        "solucion": "Inversión prioritaria en infraestructura social que incluya canchas deportivas[cite: 105].",
+        "ejecucion": "Ejecutar obras en comunidades con altos índices de criminalidad como medida de prevención del delito[cite: 105]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Riesgo en la sostenibilidad financiera a largo plazo de los regímenes de seguridad social[cite: 224].",
+        "solucion": "Asegurar la sostenibilidad de las inversiones actuales y futuras mediante un análisis financiero riguroso de la CCSS[cite: 224].",
+        "ejecucion": "Presentar un plan de reestructuración de obligaciones y pagos estratégicos que no comprometa la estabilidad del sistema[cite: 217]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Baja competitividad y amenazas por comercio ilícito en el sector agro[cite: 176, 177].",
+        "solucion": "Modernizar el fomento ganadero y establecer cero tolerancia al contrabando de productos agrícolas y lácteos[cite: 176, 177].",
+        "ejecucion": "Actualizar las funciones de CORFOGA y mejorar el etiquetado de productos para proteger la industria nacional[cite: 176, 177]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Brecha digital y conectividad deficiente en zonas rurales y centros educativos[cite: 184, 185].",
+        "solucion": "Impulso de la red 5G y dotación de infraestructura de banda ancha en territorios vulnerables[cite: 184, 185].",
+        "ejecucion": "Reformar la ley para un uso más eficiente de los recursos de FONATEL y promover el uso compartido de infraestructura[cite: 186, 187]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Necesidad de mantener el crecimiento tras cifras récord y diversificar destinos[cite: 467].",
+        "solucion": "Continuar con la promoción internacional y la apertura de nuevas rutas aéreas[cite: 467, 468].",
+        "ejecucion": "Fomentar el turismo sostenible y el turismo nacional para beneficiar a emprendimientos locales en todo el país[cite: 468]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Desempleo en poblaciones vulnerables y falta de conexión entre oferta y demanda laboral[cite: 471, 155].",
+        "solucion": "Fortalecimiento de la 'Estrategia BRETE' para capacitación técnica e idiomas[cite: 471, 155].",
+        "ejecucion": "Realizar campañas de comunicación territorial focalizadas y articular con empleadores locales para cerrar brechas informativas[cite: 155]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Aumento de la criminalidad organizada y falta de datos precisos para la prevención[cite: 108].",
+        "solucion": "Creación de un Observatorio Nacional de Seguridad para el análisis criminológico[cite: 108].",
+        "ejecucion": "Integrar a universidades, colegios profesionales e instituciones estatales en una red de intercambio de conocimiento[cite: 108]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Impacto del cambio climático en la infraestructura y biodiversidad[cite: 332].",
+        "solucion": "Integrar la resiliencia climática como eje transversal en todos los proyectos de infraestructura pública[cite: 332].",
+        "ejecucion": "Aplicar criterios de sostenibilidad ambiental en el diseño y mantenimiento de carreteras, puentes y escuelas[cite: 332]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Lentitud extrema y falta de transparencia en la contratación de proyectos de vivienda social[cite: 307].",
+        "solucion": "Reformar la Ley de Contratación Pública para incluir procedimientos específicos para vivienda de interés social[cite: 308].",
+        "ejecucion": "Simplificar los procesos de licitación para reducir los tiempos de espera de las familias beneficiarias[cite: 307, 308]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Deficiencias en rutas estratégicas que limitan la movilidad y el comercio[cite: 178].",
+        "solucion": "Ampliación y mantenimiento permanente de rutas nacionales clave (como la Ruta 32)[cite: 178].",
+        "ejecucion": "Ejecutar inversiones prioritarias en puentes y puertos bajo un modelo de mantenimiento constante[cite: 92]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera críticas en servicios especializados de la CCSS[cite: 31].",
+        "solucion": "Implementar un plan de retención y atracción de personal médico especializado[cite: 35].",
+        "ejecucion": "Establecer remuneraciones competitivas, equiparar tarifas con el INS y mejorar la formación de especialistas[cite: 35]."
+      },
+      {
+        "problema": "Aumento de problemas de salud mental en la población[cite: 225].",
+        "solucion": "Implementación total de la Política Nacional de Salud Mental 2024-2034[cite: 226].",
+        "ejecucion": "Promover entornos protectores y atención preventiva desde la educación pública obligatoria[cite: 225, 226]."
+      }
+    ]
+  }
+}

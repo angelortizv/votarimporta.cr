@@ -1,0 +1,147 @@
+{
+  "partido_politico": {
+    "nombre": "Unidos Podemos",
+    "siglas": "UP",
+    "ideologia": "Liberalismo, eficiencia estatal",
+    "posicion_politica": "Derecha / Centro-derecha",
+    "bandera": "No especificado en el documento",
+    "colores": [
+      "Morado",
+      "Amarillo"
+    ]
+  },
+  "candidato": {
+    "nombre": "Natalia Díaz Quintana",
+    "edad": "",
+    "ocupacion": "Política y Exministra de la Presidencia",
+    "biografia": "Líder del partido Unidos Podemos, con experiencia previa como diputada y Ministra de la Presidencia. Su campaña se centra en pasar de las denuncias a las soluciones con firmeza y orden[cite: 5, 591, 617, 618]."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Peor crisis educativa en 40 años, incluyendo el 'apagón educativo' y un sistema desconectado del empleo[cite: 161].",
+        "solucion": "Reformar la educación para que sea 'para la vida', enfocada en formación técnica, inglés y habilidades digitales[cite: 641, 642].",
+        "ejecucion": "Implementar ciclos lectivos (trimestres/cuatrimestres) en el INA para maximizar recursos y coordinar con el MEP la recuperación de aprendizajes[cite: 165, 224]."
+      },
+      {
+        "problema": "Centros educativos que cierran temprano y jóvenes expuestos al ocio improductivo o delincuencia[cite: 458, 460].",
+        "solucion": "Convertir las escuelas y colegios en centros de vida comunitaria después de clases[cite: 461].",
+        "ejecucion": "Ofrecer talleres de música, arte y deporte en alianza con el Ministerio de Cultura, ICODER y municipalidades[cite: 462]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Estado fragmentado con trámites lentos, excesivo papeleo y falta de comunicación entre instituciones[cite: 327, 330].",
+        "solucion": "Implementar un 'Gobierno Digital Unificado' para que el ciudadano realice trámites con un solo clic[cite: 328, 330].",
+        "ejecucion": "Crear una plataforma interoperable que conecte todas las bases de datos de los ministerios y laboratorios de innovación institucional[cite: 328, 331]."
+      },
+      {
+        "problema": "Brecha digital y falta de preparación de los niños para el mundo moderno[cite: 442].",
+        "solucion": "Alfabetización digital obligatoria que incluya Inteligencia Artificial y programación desde la niñez[cite: 443].",
+        "ejecucion": "Garantizar conectividad en todos los centros educativos rurales y capacitar a docentes en el uso efectivo de estas herramientas[cite: 444, 445]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de acompañamiento estatal al talento deportivo, convirtiendo el alto rendimiento en una carrera de resistencia personal[cite: 418, 419].",
+        "solucion": "Crear un sistema de detección y apoyo técnico constante para deportistas[cite: 420, 421].",
+        "ejecucion": "Realizar Jornadas Nacionales de Talento Deportivo trimestrales en todas las provincias para medir habilidades y dar seguimiento[cite: 422, 423]."
+      },
+      {
+        "problema": "Debilidades en la planificación técnica y financiera de los Juegos Deportivos Nacionales[cite: 433].",
+        "solucion": "Revisión y fortalecimiento del programa de Juegos Nacionales para asegurar su sostenibilidad[cite: 432].",
+        "ejecucion": "Coordinación entre ICODER, federaciones y comités municipales para mejorar la gestión técnica[cite: 434]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Pensiones de lujo que son un peso injusto para el presupuesto nacional y una ofensa para los trabajadores[cite: 143].",
+        "solucion": "Disminuir los privilegios de las pensiones de lujo mediante cualquier espacio jurídico disponible[cite: 144].",
+        "ejecucion": "Redirigir los recursos ahorrados hacia seguridad, infraestructura y educación[cite: 144]."
+      },
+      {
+        "problema": "Incertidumbre sobre la sostenibilidad del Régimen de Invalidez, Vejez y Muerte (IVM)[cite: 146].",
+        "solucion": "Garantizar la sostenibilidad del IVM para que los jóvenes tengan la certeza de que recibirán su pensión[cite: 147, 148].",
+        "ejecucion": "Revisar a fondo las condiciones del régimen desde la presidencia ejecutiva de la CCSS[cite: 147]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "El sector agropecuario ha sido administrado para la pobreza y no para generar riqueza[cite: 694].",
+        "solucion": "Convertir al agro en un motor de prosperidad y competitividad nacional[cite: 694, 696].",
+        "ejecucion": "Transformar el Estado de un obstáculo a un socio estratégico para el productor rural[cite: 697]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Necesidad de modernizar la infraestructura de conectividad para el desarrollo económico[cite: 444].",
+        "solucion": "Asegurar que la tecnología sea la columna vertebral de la gestión pública[cite: 349].",
+        "ejecucion": "Fortalecer la coordinación entre el MICITT y el MEP para garantizar internet de alta calidad en todo el territorio[cite: 444]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Necesidad de recuperar el liderazgo turístico y diversificar la oferta en el territorio[cite: 574, 576].",
+        "solucion": "Promover un turismo sostenible con alta reputación país[cite: 575, 576].",
+        "ejecucion": "Apertura de rutas de capacitación técnica rápida en el sector turismo a través del INA[cite: 106]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Alta informalidad causada por el miedo a cobros arbitrarios e intereses impagables de la Caja (CCSS)[cite: 149, 150].",
+        "solucion": "Implementar un modelo justo de aseguramiento para trabajadores independientes basado en ingresos reales[cite: 153].",
+        "ejecucion": "Establecer cuotas proporcionales y facilidades de regularización para que la Caja sea un aliado del emprendedor[cite: 154]."
+      },
+      {
+        "problema": "Exceso de centralismo y burocracia que asfixia a las PYMEs y emprendedores[cite: 633, 638, 639].",
+        "solucion": "Crear una ruta de formalización que acompañe el crecimiento en lugar de castigarlo[cite: 639].",
+        "ejecucion": "Centralizar compras públicas y evaluar centros de servicios compartidos para ahorrar recursos estatales[cite: 308, 309]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Pérdida de control del territorio frente al crimen organizado y sensación de inseguridad ciudadana[cite: 615, 625].",
+        "solucion": "Recuperar el control del país con firmeza y 'Seguridad que se siente'[cite: 541, 657].",
+        "ejecucion": "Modernizar el equipamiento policial (chalecos, patrullas), capacitación permanente y obligar a los privados de libertad a trabajar para reparar el daño[cite: 80, 83, 630, 631]."
+      },
+      {
+        "problema": "Migración desordenada que afecta la estabilidad y seguridad nacional[cite: 627, 524].",
+        "solucion": "Política migratoria firme que combine humanidad con orden y seguridad[cite: 525].",
+        "ejecucion": "Uso de tecnologías sofisticadas para el control fronterizo y aplicación rigurosa de la ley de refugio[cite: 527, 146]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Fragmentación institucional en la gestión del agua con más de 20 entidades con funciones duplicadas[cite: 389, 390].",
+        "solucion": "Un modelo de gobernanza hídrica moderno basado en cuencas hidrográficas[cite: 392].",
+        "ejecucion": "Coordinar entre MINAE, AyA y gobiernos locales para desarrollar mapas de riesgo hídrico y anticipar crisis[cite: 392, 402]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Presas que cuestan el 4% del PIB y obras que se construyen pero no reciben mantenimiento[cite: 117, 363].",
+        "solucion": "Infraestructura planificada con visión de largo plazo y mantenimiento preventivo riguroso[cite: 360, 361].",
+        "ejecucion": "Ejecutar proyectos con respaldo técnico/financiero actual y priorizar el transporte público digno y trenes modernos[cite: 359, 375]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Dificultad de las familias trabajadoras y jóvenes para acceder a vivienda propia[cite: 691, 692].",
+        "solucion": "Facilitar el acceso a techo, crédito y confianza para construir un hogar[cite: 693].",
+        "ejecucion": "Coordinar el MIVAH con otras instituciones para llevar soluciones de vivienda reales al territorio[cite: 236]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Sistema de salud convertido en un 'viacrucis' para el paciente debido a la burocracia y trabas en registros[cite: 661, 663].",
+        "solucion": "Digitalización total de trámites y homologación automática de medicamentos aprobados por agencias internacionales (FDA, EMEA)[cite: 135, 137].",
+        "ejecucion": "Eliminar la discrecionalidad mediante ventanillas únicas digitales y reducir tiempos de respuesta para el ciudadano[cite: 135, 136]."
+      },
+      {
+        "problema": "Falta de atención integral para niños y adolescentes en salud física y emocional[cite: 469].",
+        "solucion": "Lanzar el 'Programa Nacional de Salud Escolar'[cite: 473].",
+        "ejecucion": "Articular a la CCSS, MEP y Ministerio de Salud para brindar atención preventiva constante y humana en las escuelas[cite: 471]."
+      }
+    ]
+  }
+}

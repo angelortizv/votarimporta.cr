@@ -5,6 +5,7 @@ import type React from "react"
 import { useRef, useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { GraduationCap, Shield, TrendingUp, Leaf, Cpu, Palette, PiggyBank, Signal, Plane } from "lucide-react"
+import { Area } from "@/lib/data"
 
 const iconMap: Record<string, React.ElementType> = {
   "graduation-cap": GraduationCap,
@@ -16,12 +17,6 @@ const iconMap: Record<string, React.ElementType> = {
   "piggy-bank": PiggyBank,
   signal: Signal,
   plane: Plane,
-}
-
-interface Area {
-  id: string
-  nombre: string
-  icon: string
 }
 
 interface AreaFilterProps {
@@ -86,12 +81,12 @@ export function AreaFilter({ areas, selectedArea, onSelectArea }: AreaFilterProp
 
         {areas.map((area) => {
           const Icon = iconMap[area.icon] || GraduationCap
-          const isSelected = selectedArea === area.id
+          const isSelected = selectedArea === area.area
 
           return (
             <button
-              key={area.id}
-              onClick={() => onSelectArea(area.id)}
+              key={area.area}
+              onClick={() => onSelectArea(area.area)}
               className={cn(
                 "flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-all",
                 isSelected
@@ -100,7 +95,7 @@ export function AreaFilter({ areas, selectedArea, onSelectArea }: AreaFilterProp
               )}
             >
               <Icon className="h-4 w-4" />
-              {area.nombre}
+              {area.area}
             </button>
           )
         })}

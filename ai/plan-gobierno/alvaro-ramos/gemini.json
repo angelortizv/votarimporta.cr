@@ -1,0 +1,112 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Liberación Nacional",
+    "siglas": "PLN",
+    "ideologia": "Socialdemocracia",
+    "posicion_politica": "Centro-izquierda",
+    "bandera": "Verde, blanca y verde con escudo central",
+    "colores": [
+      "Verde",
+      "Blanco"
+    ]
+  },
+  "candidato": {
+    "nombre": "Álvaro Ramos Chaves",
+    "edad": "42 años",
+    "ocupacion": "Informático, economista y profesor",
+    "biografia": "Doctor en Economía por UC Berkeley. Ha sido Presidente Ejecutivo de la CCSS, Superintendente de Pensiones y Viceministro de Hacienda. Experto en seguridad social y sostenibilidad fiscal con trayectoria en organismos internacionales como la OIT."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Crisis estructural por reducción de inversión, rezago en aprendizajes y brecha digital en zonas rurales.",
+        "solucion": "Restablecer la inversión educativa al 8% del PIB y modernizar el currículo.",
+        "ejecucion": "Implementar programas STEAM, bilingüismo obligatorio, contratar psicólogos para atender salud mental escolar y crear becas de permanencia."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Vulnerabilidad ante ciberataques y falta de formación en nuevas tecnologías para PYMEs.",
+        "solucion": "Transformación digital con énfasis en seguridad y talento 4.0.",
+        "ejecucion": "Crear un Centro de Comando C5 para seguridad, lanzar la carrera técnica de Ciberseguridad Empresarial y el Programa Nacional de Bienestar Digital."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de espacios seguros para recreación y pérdida de patrimonio histórico.",
+        "solucion": "Uso del arte y el deporte como herramientas de prevención del delito.",
+        "ejecucion": "Ejecutar el proyecto 'Bailando para vivir', rescatar parques públicos y reconstruir el edificio Black Star Line en Limón."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Sostenibilidad financiera del sistema de pensiones amenazada por cambios demográficos.",
+        "solucion": "Reformas técnicas sobrias con diálogo social para asegurar la vejez digna.",
+        "ejecucion": "Utilizar la experiencia técnica del candidato para liderar mesas de consenso nacional y ajustar el modelo de protección social."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Baja competitividad, vulnerabilidad climática y falta de relevo generacional en el campo.",
+        "solucion": "Convertir al país en líder de producción agroalimentaria regenerativa y tecnológica.",
+        "ejecucion": "Implementar sistemas de seguros agrícolas contra cambio climático, usar IA para agricultura de precisión y reestructurar el MAG."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Limitado margen fiscal para expandir infraestructura tecnológica crítica.",
+        "solucion": "Uso de Alianzas Público-Privadas (APP) para modernizar redes.",
+        "ejecucion": "Aprobar la nueva Ley Marco de APP para facilitar inversión privada en telecomunicaciones y electricidad."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Necesidad de mayor encadenamiento local y sostenibilidad en las periferias.",
+        "solucion": "Impulsar el 'Motor Turístico Regenerativo 5.0' vinculado a la economía azul.",
+        "ejecucion": "Desarrollar clústeres en ciudades emergentes (Liberia, Guápiles) y fortalecer el turismo en territorios indígenas."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Baja producción nacional y necesidad de generar empleos de alta calidad fuera del GAM.",
+        "solucion": "Política de clústeres productivos y mandato dual del Banco Central (inflación y empleo).",
+        "ejecucion": "Incentivar la inversión extranjera en dispositivos médicos y software, y facilitar acceso a crédito para PYMEs tecnológicas."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Aumento de homicidios, narcotráfico y violencia contra las mujeres.",
+        "solucion": "Estrategia de tres frentes: prevención, contención y represión firme.",
+        "ejecucion": "Contratar 6,000 policías, instalar escáneres avanzados en puertos, crear el Centro C5 y desplegar 'Patrullas Fucsia' para violencia intrafamiliar."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Impacto de la emergencia climática y deficiencias en gestión de residuos y agua.",
+        "solucion": "Liderazgo en ecología integral y economía circular.",
+        "ejecucion": "Modernizar acueductos, implementar saneamiento de aguas residuales y promover la renovación urbana verde y azul."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Rezago histórico en carreteras, puertos y aeropuertos que eleva costos de producción.",
+        "solucion": "Modernización logística mediante concesiones y gestión técnica rigurosa.",
+        "ejecucion": "Finalizar la ampliación de la Ruta 32, modernizar el puerto de Caldera y el aeropuerto de Limón."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Desorden en planificación urbana y falta de soluciones habitacionales sostenibles.",
+        "solucion": "Nueva Ley de Ordenamiento Territorial y regeneración de barrios.",
+        "ejecucion": "Fortalecer el 'Bono Colectivo' para mejoramiento barrial y promover la densificación urbana cerca del transporte público."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera prolongadas y crisis de salud mental post-pandemia.",
+        "solucion": "Fortalecimiento de la CCSS con enfoque preventivo y digitalización total.",
+        "ejecucion": "Crear Centros Comunitarios de Salud Mental (CECOSAM), reducir listas de espera mediante red regionalizada y mejorar el sistema EDUS."
+      }
+    ]
+  }
+}

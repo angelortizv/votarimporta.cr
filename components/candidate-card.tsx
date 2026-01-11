@@ -15,9 +15,6 @@ interface CandidateCardProps {
 export function CandidateCard({ candidato }: CandidateCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
-  // Get unique areas from candidate proposals for the tags
-  const areaTags = candidato.areas.slice(0, 3).map((a) => a.area)
-
   const getGradientStyle = () => {
     const colors = candidato.colores || [candidato.color]
 
@@ -79,7 +76,7 @@ export function CandidateCard({ candidato }: CandidateCardProps) {
                 >
                   {candidato.partidoSiglas}
                 </Badge>
-                {areaTags.map((area) => (
+                {/* {areaTags.map((area) => (
                   <Badge
                     key={area}
                     variant="outline"
@@ -87,7 +84,7 @@ export function CandidateCard({ candidato }: CandidateCardProps) {
                   >
                     {area}
                   </Badge>
-                ))}
+                ))} */}
               </div>
             </div>
 

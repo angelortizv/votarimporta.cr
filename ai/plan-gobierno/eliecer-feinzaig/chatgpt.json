@@ -1,0 +1,204 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Liberal Progresista",
+    "siglas": "PLP",
+    "ideologia": "",
+    "posicion_politica": "",
+    "bandera": "",
+    "colores": ["", ""]
+  },
+  "candidato": {
+    "nombre": "",
+    "edad": "",
+    "ocupacion": "",
+    "biografia": ""
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Muchas personas no pueden aprovechar educación y oportunidades porque no tienen habilidades digitales básicas ni acceso cercano a espacios de aprendizaje tecnológico.",
+        "solucion": "Convertir bibliotecas públicas en “hubs” culturales y de innovación con talleres de formación digital, alfabetización tecnológica y espacios comunitarios, usando alianzas público-privadas y apoyo internacional.",
+        "ejecucion": "1) Definir alianzas público-privadas para modernizar bibliotecas; 2) Renovar infraestructura, gestión tecnológica y servicios; 3) Implementar talleres de formación digital y alfabetización tecnológica; 4) Gestionar cooperación técnica/financiera (p.ej., UNESCO/BID/OEI) para digitalización y laboratorios; 5) Operar bibliotecas como centros comunitarios permanentes."
+      },
+      {
+        "problema": "La educación física y la detección de talentos no están bien articuladas entre escuelas/colegios, comités cantonales y federaciones, limitando hábitos saludables y el desarrollo deportivo estudiantil.",
+        "solucion": "Reforzar educación física desde preescolar y crear un Programa Nacional de Alfabetización Física articulado entre MEP, ICODER, comités cantonales y federaciones, integrando juegos estudiantiles y nacionales en un sistema escalonado.",
+        "ejecucion": "1) Actualizar programas de educación física y capacitar docentes (MEP+ICODER); 2) Diseñar e implementar el Programa Nacional de Alfabetización Física; 3) Articular comités cantonales y federaciones para rutas de participación; 4) Unificar juegos estudiantiles/nacionales en un sistema por niveles; 5) Medir participación regional y resultados en hábitos saludables."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "El Estado tiene trámites repetidos y burocráticos; las personas deben entregar la misma información varias veces y eso aumenta tiempos y costos.",
+        "solucion": "Implementar una transformación digital del sector público basada en el principio “Solo Una Vez”: digitalizar trámites, crear interoperabilidad entre instituciones y una Identidad Digital para acceso seguro.",
+        "ejecucion": "1) Adoptar “digital por defecto” para trámites; 2) Digitalizar los 30 trámites más usados en los primeros 100 días y escalar al 80% al final del período; 3) Crear catálogo único 24/7 y asistentes virtuales con IA; 4) Emitir Decreto Ejecutivo para el compromiso “solo una vez”; 5) Implementar interoperabilidad e Identidad Digital; 6) Financiar con presupuesto y cooperación internacional."
+      },
+      {
+        "problema": "El país enfrenta riesgos crecientes de ciberataques a infraestructuras críticas (finanzas, energía, telecomunicaciones) y falta coordinación central robusta.",
+        "solucion": "Crear un Centro Nacional de Ciberseguridad y una estrategia de protección de infraestructuras críticas; impulsar una Ley de Ciberseguridad, capacitación masiva y herramientas modernas (incluida IA) para detección y prevención.",
+        "ejecucion": "1) Establecer el Centro Nacional de Ciberseguridad (Seguridad Pública con MICITT y Hacienda); 2) Diseñar hoja de ruta para infraestructuras críticas; 3) Integrar IA para detección/previsión con participación de operadores y SUTEL; 4) Capacitar y certificar funcionarios (INA con apoyo MICITT/MEP/universidades); 5) Implementar sandbox regulatorio para IoT; 6) Elaborar y aprobar Ley de Ciberseguridad con comisión mixta (Estado + sector especializado)."
+      },
+      {
+        "problema": "El despliegue de 5G puede atrasarse por falta de coordinación técnica permanente entre actores.",
+        "solucion": "Ajustar el Plan Nacional de Desarrollo de las Telecomunicaciones para garantizar el despliegue eficiente de 5G mediante una mesa técnica permanente.",
+        "ejecucion": "1) Publicar en los primeros 100 días el ajuste al Plan Nacional; 2) Instalar mesa técnica permanente (operadores, reguladores, sector privado, asociaciones comunitarias, academia); 3) Definir metas y cronograma; 4) Dar seguimiento a avances y destrabar obstáculos con acuerdos operativos."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "El Festival Internacional de las Artes (FIA) es esporádico y concentrado, lo que limita el acceso cultural fuera del GAM y reduce su impacto territorial.",
+        "solucion": "Transformar el FIA en un programa descentralizado, itinerante y regional, con énfasis en artistas nacionales y colectivos comunitarios para ampliar acceso y dinamizar economías locales.",
+        "ejecucion": "1) Rediseñar el FIA como plataforma permanente e itinerante; 2) Planificar programación por regiones/provincias; 3) Priorizar participación de artistas nacionales y colectivos comunitarios; 4) Articular logística con sectores como turismo, gastronomía y transporte; 5) Medir cobertura territorial y encadenamientos locales generados."
+      },
+      {
+        "problema": "Bibliotecas públicas requieren modernización para ampliar acceso cultural y convertirse en espacios útiles para aprendizaje, investigación e innovación comunitaria.",
+        "solucion": "Modernizar el SINABI mediante alianzas público-privadas y convertir bibliotecas en hubs culturales con servicios tradicionales + formación digital, coworking y actividades comunitarias.",
+        "ejecucion": "1) Definir APP para modernización; 2) Reconversión integral (infraestructura, servicios, gestión tecnológica, participación comunitaria); 3) Implementar talleres digitales, coworking y actividades culturales; 4) Gestionar cooperación internacional para digitalización y laboratorios; 5) Integrar bibliotecas regionales a redes internacionales de innovación."
+      },
+      {
+        "problema": "La infraestructura deportiva se deteriora y falta planificación nacional; además, la asignación de recursos puede ser inequitativa y poco transparente.",
+        "solucion": "Planificar infraestructura deportiva con liderazgo ICODER+MIDEPLAN, realizar diagnóstico nacional, impulsar APP/concesiones y establecer reglas claras e indicadores auditados para distribución de recursos.",
+        "ejecucion": "1) Crear sistema de asignación con indicadores (equidad, resultados, impacto territorial) auditado; 2) Realizar diagnóstico nacional de infraestructura; 3) Elaborar plan decenal de inversión priorizado; 4) Diseñar portafolio para APP y cooperación internacional; 5) Desarrollar Centro Nacional de Alto Rendimiento vía concesión; 6) Reformar mandatos de comités cantonales para fortalecer planificación."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "El régimen de pensiones (IVM) enfrenta presiones de sostenibilidad y requiere un diseño que refleje aportes y derechos de manera más transparente.",
+        "solucion": "Transformar el IVM hacia un modelo de cuentas nocionales para mejorar sostenibilidad y trazabilidad del derecho pensionario.",
+        "ejecucion": "1) Diseñar reforma paramétrica y operativa del IVM hacia cuentas nocionales; 2) Definir reglas de cálculo y transición; 3) Ajustar sistemas de información y administración del régimen; 4) Implementar transición gradual para cohortes y derechos adquiridos; 5) Comunicar reglas de forma simple y verificable."
+      },
+      {
+        "problema": "El ROP requiere mejoras para asegurar mejores resultados y claridad para las personas cotizantes.",
+        "solucion": "Optimizar el Régimen Obligatorio de Pensiones Complementarias (ROP) con ajustes de funcionamiento y gestión.",
+        "ejecucion": "1) Diagnosticar desempeño del ROP; 2) Proponer ajustes regulatorios y de gobernanza; 3) Implementar cambios de gestión/operación para mejorar resultados; 4) Fortalecer información al afiliado; 5) Monitorear indicadores de rendimiento y comisiones."
+      },
+      {
+        "problema": "Existen preocupaciones públicas por beneficios pensionarios muy altos (pensiones de lujo) en algunos regímenes.",
+        "solucion": "Impulsar medidas para limitar pensiones de lujo y ordenar regímenes especiales.",
+        "ejecucion": "1) Identificar regímenes y reglas que permiten montos extraordinarios; 2) Proponer reformas legales para topes y reglas de cálculo; 3) Establecer mecanismos de control y fiscalización; 4) Publicar información agregada para transparencia; 5) Aplicar transición respetando marcos legales."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Pequeños y medianos productores enfrentan baja adopción tecnológica y limitaciones de financiamiento para modernizarse sin aumentar riesgos.",
+        "solucion": "Abrir líneas de crédito diferenciadas, fondos no reembolsables y garantías (MAG/INTA/SBD) para adoptar monitoreo digital, bioinsumos y agricultura de precisión.",
+        "ejecucion": "1) Diseñar instrumentos financieros (crédito diferenciado, fondos, garantías) con MAG/INTA/SBD; 2) Priorizar cooperativas y pequeños productores; 3) Financiar herramientas de monitoreo digital y prácticas de precisión; 4) Acompañar con asistencia técnica y transferencia tecnológica; 5) Evaluar adopción y productividad por región/cadena."
+      },
+      {
+        "problema": "La institucionalidad agropecuaria está dispersa; los trámites son lentos y el SNIA está fragmentado, dificultando innovación y resiliencia climática.",
+        "solucion": "Reformar el MAG (racionalizar desconcentraciones), crear un Sistema Nacional de Extensión Agropecuaria y digitalizar trámites con una Ventanilla Agro Digital interoperable.",
+        "ejecucion": "1) Hacer revisión técnica y reforma legal para integrar órganos sin justificación como direcciones del MAG; 2) Emitir Decreto Ejecutivo para consolidar Sistema Nacional de Extensión (MAG+INTA+INA+universidades); 3) Implementar Agencias regionales como “ventanillas” de innovación; 4) Crear Ventanilla Agro Digital con expediente único del productor; 5) Interoperar con SEPSA/Hacienda/Aduanas/SENASA/SFE; 6) Medir reducción de tiempos de trámite (meta ≥50%)."
+      },
+      {
+        "problema": "El marco legal de seguros agrícolas es obsoleto y no responde a riesgos climáticos/geológicos/fitosanitarios actuales; las pérdidas afectan ingresos de productores.",
+        "solucion": "Crear legislación para Seguros Agrícolas Indexados con activación automática por indicadores climáticos objetivos.",
+        "ejecucion": "1) Elaborar proyecto de ley de seguros indexados; 2) Definir indicadores (precipitación, sequía, exceso de humedad, vientos extremos); 3) Establecer reglas de activación automática y transparente; 4) Implementar productos piloto por zonas/cultivos; 5) Escalar cobertura y evaluar tiempos de pago y reducción de riesgo."
+      },
+      {
+        "problema": "Cultivos sensibles (p. ej., frijol, papa, cebolla) enfrentan estacionalidad, pérdidas poscosecha y baja competitividad por falta de infraestructura y encadenamientos.",
+        "solucion": "Estrategia integral con innovación tecnológica, infraestructura de acopio/almacenamiento, encadenamientos con agroindustrias y herramientas financieras (seguros, créditos).",
+        "ejecucion": "1) Impulsar semillas mejoradas y transferencia tecnológica; 2) Promover agricultura de precisión (riego inteligente, mecanización adecuada); 3) Construir/modernizar centros de acopio y almacenamiento en frío; 4) Crear encadenamientos con agroindustrias y supermercados (compras estables); 5) Diseñar instrumentos financieros (seguros indexados, créditos blandos, esquemas cooperativos)."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Sin coordinación técnica, el despliegue de 5G puede ser lento y generar brechas en productividad y acceso.",
+        "solucion": "Actualizar el Plan Nacional de Desarrollo de Telecomunicaciones y sostener una mesa técnica permanente para asegurar despliegue eficiente de 5G.",
+        "ejecucion": "1) Publicar ajuste del Plan en 100 días; 2) Conformar mesa técnica permanente (operadores, reguladores, empresas, asociaciones comunitarias, academia); 3) Definir metas y seguimiento; 4) Resolver cuellos de botella de forma continua."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Los parques nacionales requieren modernizar servicios y sistemas para mejorar experiencia, sostenibilidad y gestión (incluida capacidad de carga).",
+        "solucion": "Concesionar/aliarse para servicios no esenciales (centros de visitantes, reservaciones en línea, etc.) y modernizar plataforma de venta de entradas con controles de capacidad de carga y facilidad de uso.",
+        "ejecucion": "1) Identificar servicios no esenciales aptos para concesión/APP; 2) Establecer estándares de sostenibilidad y reinversión en conservación; 3) Priorizar integración de comunidades locales (empleo y encadenamientos); 4) Concesionar plataforma de entradas/reservaciones; 5) Actualizar tarifas/reglamentos vía decretos y aplicar concesiones conforme normativa."
+      },
+      {
+        "problema": "La oferta cultural y eventos pueden concentrarse territorialmente, limitando turismo cultural y encadenamientos en regiones fuera del GAM.",
+        "solucion": "Descentralizar e itinerar el FIA para ampliar acceso cultural y dinamizar economías locales (turismo, gastronomía, transporte).",
+        "ejecucion": "1) Programar FIA regional por provincias; 2) Coordinar logística con gobiernos locales y sector turístico; 3) Priorizar artistas nacionales y colectivos comunitarios; 4) Medir impacto en empleo temporal y encadenamientos."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "El país necesita más emprendimientos dinámicos y acceso a financiamiento para innovar, especialmente en sectores creativos y de valor agregado.",
+        "solucion": "Vincular artistas y emprendedores culturales con aceleradoras de negocios y habilitar capital semilla vía Sistema de Banca para el Desarrollo (SBD) para proyectos culturales innovadores (economía naranja).",
+        "ejecucion": "1) Diseñar programa nacional de innovación cultural (convocatorias abiertas periódicas); 2) Conectar artistas/emprendedores con aceleradoras bajo coordinación MICITT+SBD; 3) Crear línea de capital semilla específica para proyectos culturales; 4) Proveer mentoría + recursos iniciales; 5) Evaluar escalabilidad e impacto social de proyectos financiados."
+      },
+      {
+        "problema": "La industria audiovisual puede no escalar por costos/impuestos y fricciones logísticas, perdiéndose empleo y encadenamientos.",
+        "solucion": "Impulsar una Política Nacional Audiovisual con incentivos (exenciones, devolución rápida de impuestos) y facilidades logísticas/migratorias para atraer producciones y contratar talento nacional.",
+        "ejecucion": "1) Definir exenciones fiscales y arancelarias aplicables; 2) Establecer mecanismo de devolución rápida de impuestos sobre gasto local; 3) Simplificar facilidades logísticas y migratorias para producciones; 4) Promover contratación de servicios y talento nacional; 5) Medir inversiones atraídas y empleo generado."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "La Fuerza Pública tiene rezagos de equipamiento y capacidades tecnológicas/inteligencia para enfrentar inseguridad y crimen organizado.",
+        "solucion": "Dotar a la policía de equipo moderno y tecnología (drones, radares, cámaras, biometría, integración de bases de datos) y fortalecer mando e infraestructura policial; financiar con reasignaciones y reglas de asignación de empréstitos.",
+        "ejecucion": "1) Plan de dotación de radiopatrullas/motos/aeronaves e instalaciones; 2) Implementar tecnología (drones, radares, cámaras, biometría fronteriza, integración de bases de datos, centros de monitoreo); 3) Crear unidad especializada de drones y curso RPA en Academia de Policía; 4) Reasignar recursos (p.ej., renuncia a compra de membresía CAF) y destinar 10% de nuevos empréstitos a seguridad; 5) Monitorear reducción de delitos en puntos críticos."
+      },
+      {
+        "problema": "Cárceles funcionan como centros de operación del crimen organizado (fraude digital, lavado, control territorial) y hay hacinamiento y mala clasificación de internos.",
+        "solucion": "Reforma total del sistema penitenciario y construcción de nuevos centros mediante concesión de obra con servicio público, con mejor clasificación/segregación y condiciones para reinserción.",
+        "ejecucion": "1) Diseñar reforma integral (infraestructura, clasificación, criterios de beneficios); 2) Licitar concesión de obra con servicio público para nuevos centros (diseño, construcción, equipamiento); 3) Ubicar centros para aislarlos de señal celular y centros urbanos; 4) Implementar segregación adecuada por perfiles; 5) Mantener potestades esenciales en el Estado y actualizar reglamento penitenciario."
+      },
+      {
+        "problema": "El lavado de dinero y el financiamiento al terrorismo se adaptan a nuevas prácticas (uso de efectivo, monedas virtuales) y requieren mayor trazabilidad y supervisión.",
+        "solucion": "Agenda legislativa antilavado: desincentivar efectivo, trazabilidad de monedas virtuales, ampliar sujetos obligados; despolitizar y trasladar la UIF al Banco Central.",
+        "ejecucion": "1) Presentar reformas legales para limitar uso de efectivo y ampliar controles; 2) Crear mecanismos para trazabilidad de monedas virtuales; 3) Incorporar nuevos sujetos obligados (p.ej., subastas ganaderas) a controles; 4) Trasladar UIF del ICD al Banco Central con competencias completas; 5) Medir reportes/alertas y casos procesados."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Baja cobertura y rezagos en alcantarillado y tratamiento de aguas residuales contaminan cuencas y zonas costeras, afectando salud y ambiente.",
+        "solucion": "Ampliar red de alcantarillado y desplegar un programa nacional de plantas de tratamiento descentralizadas (modulares) con tecnologías adecuadas; reformar norma técnica del AyA y aplicar economía circular en plantas.",
+        "ejecucion": "1) Definir meta de ampliar alcantarillado y tratamiento hacia 2030; 2) Implementar plantas descentralizadas (humedales artificiales, biodigestores, sistemas anaerobios) por región; 3) Reformar norma técnica del AyA para habilitar soluciones (incluyendo vertederos de excedencia donde aplique); 4) Implementar economía circular para usar lodos tratados con fines agrícolas/energéticos vía APP; 5) Medir cobertura y reducción de contaminación."
+      },
+      {
+        "problema": "AyA enfrenta infraestructura envejecida, mantenimiento insuficiente, proyectos rezagados y trámites lentos; falta actualización de planes maestros.",
+        "solucion": "Impulsar un Plan de Modernización del AyA con actualización y ejecución acelerada de planes maestros, portafolio priorizado, metas anuales y seguimiento público.",
+        "ejecucion": "1) Revisar y actualizar planes maestros de abastecimiento y saneamiento (demanda, riesgos climáticos, sostenibilidad); 2) Definir portafolio de inversiones priorizado con cronogramas y metas anuales; 3) Implementar seguimiento y evaluación trimestral con publicación de avances; 4) Alinear con Plan Nacional de Desarrollo e Inversión Pública; 5) Fortalecer rendición de cuentas a ciudadanía."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "El sistema de transporte público puede generar tiempos altos y baja calidad si no se integra la operación, pagos y planificación metropolitana.",
+        "solucion": "Impulsar integración tarifaria, completar pago electrónico en todo el sistema, y crear una autoridad de movilidad metropolitana para coordinar MOPT, gobiernos locales, CTP y operadores.",
+        "ejecucion": "1) Definir política de integración tarifaria para transbordos sin múltiples pagos; 2) Implementar pago electrónico en 100% del sistema; 3) Usar datos de pago para planificación dinámica y transparencia; 4) Crear autoridad de movilidad metropolitana y esquema de gobernanza; 5) Financiar infraestructura con fondos multilaterales y APP."
+      },
+      {
+        "problema": "La movilidad urbana ha invisibilizado peatones y ciclistas; la infraestructura ciclopeatonal es limitada y fragmentada.",
+        "solucion": "Crear un Programa Nacional de Infraestructura Ciclopeatonal 2026–2030 para construir corredores seguros y conectivos, ejecutado con gobiernos locales bajo principios técnicos del MOPT.",
+        "ejecucion": "1) Identificar zonas urbanas/periurbanas de alta demanda; 2) Diseñar corredores con criterios de coherencia, conectividad, seguridad, comodidad y atractivo; 3) Coordinar ejecución con gobiernos locales; 4) Financiar y programar obras por etapas; 5) Medir aumento de viajes a pie/bici y reducción de siniestralidad."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Personas jóvenes y clase media tienen barreras para comprar primera vivienda por falta de prima y condiciones de crédito.",
+        "solucion": "Crear un Fondo de Garantía Juvenil para cubrir parte de la prima y habilitar incentivos: cuenta de ahorro vivienda con deducción fiscal, hipotecas a largo plazo con límites de tasa y esquemas mixtos para independientes.",
+        "ejecucion": "1) Diseñar Fondo de Garantía Juvenil (hasta 20% de prima) administrado por BANHVI con banca pública; 2) Financiarlo con presupuesto, aportes solidarios y cooperación; 3) Crear cuenta de ahorro vivienda con incentivo fiscal; 4) Promover hipotecas hasta 35 años con tope de tasa (inflación +3%); 5) Implementar alianzas con cooperativas/mutuales y SBD para población fuera del sistema financiero tradicional."
+      },
+      {
+        "problema": "Altos costos del suelo y terrenos escasos en zonas urbanas centrales elevan precios y empujan expansión desordenada, aumentando déficit habitacional.",
+        "solucion": "Desarrollar vivienda accesible usando suelo público subutilizado mediante un marco legal para ceder en uso terrenos públicos con procesos competitivos y condición de que al menos 60% sea vivienda social o clase media.",
+        "ejecucion": "1) Identificar terrenos e inmuebles ociosos del Estado; 2) Crear marco legal para cesión en uso (derecho de superficie u otros); 3) Ejecutar procesos competitivos y transparentes; 4) Exigir composición mínima (≥60% vivienda social/clase media); 5) Supervisar cumplimiento y priorizar localización con acceso a servicios."
+      },
+      {
+        "problema": "El sistema de subsidios habitacionales (bono) es rígido y excluye a jóvenes, clase media emergente, informales y personas sin historial crediticio.",
+        "solucion": "Rediseñar subsidios con criterios de elegibilidad ampliados y mecanismos flexibles (bono diferido, crédito-bono, cofinanciamiento público-privado) y promover vivienda vertical accesible con reformas urbanas e incentivos.",
+        "ejecucion": "1) Redefinir elegibilidad para incluir ingresos mixtos y población fuera del sistema formal; 2) Implementar bono diferido ligado a metas de ahorro/pago; 3) Implementar crédito-bono como combinación subsidio+crédito; 4) Diseñar esquemas de cofinanciamiento con gobiernos locales/cooperativas/ONG; 5) Reformar planes reguladores y normativa urbana (densidades, parqueos, uso de suelo) e incentivar proyectos verticales para clase media y beneficiarios del bono."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "El primer nivel (EBAIS) tiene capacidad resolutiva limitada y las listas de espera se agravan por escasez de especialistas y gestión insuficiente.",
+        "solucion": "Fortalecer primer nivel con dotación de equipos diagnósticos, protocolos y conectividad; impulsar tercerización del primer nivel y concesión progresiva del segundo nivel; ejecutar estrategia integral para reducir listas de espera.",
+        "ejecucion": "1) Tercerizar servicios del primer nivel con estándares de calidad y eficiencia; 2) Dotar EBAIS de equipos diagnósticos básicos, protocolos actualizados y personal capacitado; 3) Mejorar conectividad y referencia; 4) Concesionar progresivamente servicios del segundo nivel (consulta especializada, internamiento, cirugías en especialidades básicas); 5) Reducir listas de espera con: ampliar cupos de especialización, contratar especialistas extranjeros por inopia, clínicas móviles y telemedicina, gestión digital de citas y priorización clínica, jornadas extraordinarias y alianzas con proveedores acreditados."
+      },
+      {
+        "problema": "La infraestructura sanitaria no avanza con suficiente velocidad por rigidez fiscal y baja capacidad de gestión de proyectos.",
+        "solucion": "Crear un Plan Nacional de Infraestructura Sanitaria que combine tercerización, concesiones, APP y fideicomisos, con control estatal y sostenibilidad financiera.",
+        "ejecucion": "1) Diseñar plan nacional y cartera priorizada; 2) Tercerizar construcción/equipamiento/operación de nuevos EBAIS y centros de atención primaria en territorios rezagados bajo supervisión CCSS/Ministerio de Salud; 3) Aplicar concesión para hospitales periféricos/regionales para servicios clínicos básicos; 4) Asegurar protocolos estandarizados y conectividad con niveles superiores; 5) Monitorear calidad, tiempos de atención y uso de capacidad instalada."
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 import { MobileNav } from "@/components/mobile-nav"
 import { CandidateCard } from "@/components/candidate-card"
-import { candidatos } from "@/lib/data"
+import { candidatos } from "@/data/candidatos"
 
 export default function CandidatosPage() {
   return (

@@ -1,0 +1,29 @@
+import { Candidato } from "@/lib/data";
+import { juanCarlosHidalgoPropuestas } from "../propuestas/juan-carlos-hidalgo";
+
+export const juanCarlosHidalgo: Candidato = {
+  id: "juan-carlos-hidalgo", 
+  nombre: "Juan Carlos Hidalgo",
+  partido: "Partido Unidad Social Cristiana",
+  partidoSiglas: "PUSC",
+  foto: "https://cdn.apolitico.cr/storage/v1/object/public/candidate-photos/1767909689442_jch-2.jpg",
+  color: "#dd1f25",
+  colores: ["#dd1f25", "#1e417f"],
+  ocupacion: "Economista, Ex-Ministra de Hacienda",
+  ideologia: "Social cristianismo, liberalismo reformista, humanismo",
+  posicionPolitica: "Centro-Izquierda",
+  redesSociales: {
+    twitter: "https://twitter.com/laurafernandez",
+    instagram: "https://instagram.com/laurafernandez",
+    facebook: "https://facebook.com/laurafernandezcr",
+    tiktok: "https://tiktok.com/@laurafernandez",
+    youtube: "https://youtube.com/@laurafernandez",
+    web: "https://laurafernandez.cr",
+  },
+  logros: [
+    "Analista del Cato Institute enfocado en América Latina (2007–2019).",
+    "Presidente del Partido Unidad Social Cristiana (2022–2025) y candidato presidencial para 2026.",
+  ],
+  bio: "Licenciado en Relaciones Internacionales por la Universidad Nacional de Costa Rica y Máster en Comercio y Política Pública Internacional por George Mason University.",
+  propuestas: juanCarlosHidalgoPropuestas,
+}

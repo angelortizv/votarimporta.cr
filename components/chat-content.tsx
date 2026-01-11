@@ -3,16 +3,18 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
+import { useChat } from '@ai-sdk/react'
 import { useSearchParams } from "next/navigation"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { candidatos, type Candidato } from "@/lib/data"
+import { candidatos } from "@/data/candidatos"
 import { Send, Bot, User, ChevronDown, Sparkles } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
+import { Candidato } from "@/lib/data"
 
 interface Message {
   id: string
@@ -34,8 +36,9 @@ export function ChatContent() {
   const [selectedCandidato, setSelectedCandidato] = useState<Candidato | null>(
     initialCandidatoId ? candidatos.find((c) => c.id === initialCandidatoId) || null : null,
   )
-  const [messages, setMessages] = useState<Message[]>([])
+
   const [input, setInput] = useState("")
+  const { messages, sendMessage } = useChat();
   const [isLoading, setIsLoading] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
@@ -47,72 +50,56 @@ export function ChatContent() {
     scrollToBottom()
   }, [messages])
 
-  const generateResponse = async (question: string, candidato: Candidato): Promise<string> => {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+  // const generateResponse = async (question: string, candidato: Candidato): Promise<string> => {
+  //   await new Promise((resolve) => setTimeout(resolve, 1000))
 
-    const questionLower = question.toLowerCase()
+  //   const questionLower = question.toLowerCase()
 
-    let relevantArea = candidato.areas[0]
-    if (
-      questionLower.includes("educación") ||
-      questionLower.includes("escuela") ||
-      questionLower.includes("universidad")
-    ) {
-      relevantArea = candidato.areas.find((a) => a.area === "Educación") || relevantArea
-    } else if (
-      questionLower.includes("seguridad") ||
-      questionLower.includes("crimen") ||
-      questionLower.includes("policía")
-    ) {
-      relevantArea = candidato.areas.find((a) => a.area === "Seguridad") || relevantArea
-    } else if (
-      questionLower.includes("economía") ||
-      questionLower.includes("empleo") ||
-      questionLower.includes("trabajo") ||
-      questionLower.includes("impuesto")
-    ) {
-      relevantArea = candidato.areas.find((a) => a.area === "Economía") || relevantArea
-    } else if (
-      questionLower.includes("ambiente") ||
-      questionLower.includes("clima") ||
-      questionLower.includes("verde") ||
-      questionLower.includes("energía")
-    ) {
-      relevantArea = candidato.areas.find((a) => a.area === "Ambiente") || relevantArea
-    }
+  //   let relevantArea = candidato.areas[0]
+  //   if (
+  //     questionLower.includes("educación") ||
+  //     questionLower.includes("escuela") ||
+  //     questionLower.includes("universidad")
+  //   ) {
+  //     relevantArea = candidato.areas.find((a) => a.area === "Educación") || relevantArea
+  //   } else if (
+  //     questionLower.includes("seguridad") ||
+  //     questionLower.includes("crimen") ||
+  //     questionLower.includes("policía")
+  //   ) {
+  //     relevantArea = candidato.areas.find((a) => a.area === "Seguridad") || relevantArea
+  //   } else if (
+  //     questionLower.includes("economía") ||
+  //     questionLower.includes("empleo") ||
+  //     questionLower.includes("trabajo") ||
+  //     questionLower.includes("impuesto")
+  //   ) {
+  //     relevantArea = candidato.areas.find((a) => a.area === "Economía") || relevantArea
+  //   } else if (
+  //     questionLower.includes("ambiente") ||
+  //     questionLower.includes("clima") ||
+  //     questionLower.includes("verde") ||
+  //     questionLower.includes("energía")
+  //   ) {
+  //     relevantArea = candidato.areas.find((a) => a.area === "Ambiente") || relevantArea
+  //   }
 
-    if (relevantArea && relevantArea.propuestas.length > 0) {
-      const propuesta = relevantArea.propuestas[0]
-      return `Sobre ${relevantArea.area}, identificamos que ${propuesta.problema}. Mi propuesta es: ${propuesta.solucion}. Para lograrlo, vamos a ${propuesta.como.toLowerCase()}.`
-    }
+  //   if (relevantArea && relevantArea.propuestas.length > 0) {
+  //     const propuesta = relevantArea.propuestas[0]
+  //     return `Sobre ${relevantArea.area}, identificamos que ${propuesta.problema}. Mi propuesta es: ${propuesta.solucion}. Para lograrlo, vamos a ${propuesta.como.toLowerCase()}.`
+  //   }
 
-    return `Gracias por tu pregunta. Como ${candidato.ocupacion}, mi enfoque es ${candidato.ideologia.toLowerCase()}. Te invito a revisar mi plan de gobierno completo para más detalles sobre este tema.`
-  }
+  //   return `Gracias por tu pregunta. Como ${candidato.ocupacion}, mi enfoque es ${candidato.ideologia.toLowerCase()}. Te invito a revisar mi plan de gobierno completo para más detalles sobre este tema.`
+  // }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!input.trim() || !selectedCandidato || isLoading) return
 
-    const userMessage: Message = {
-      id: Date.now().toString(),
-      role: "user",
-      content: input.trim(),
-    }
-
-    setMessages((prev) => [...prev, userMessage])
+    sendMessage({
+      text: input.trim(),
+    })
     setInput("")
-    setIsLoading(true)
-
-    const response = await generateResponse(input, selectedCandidato)
-
-    const assistantMessage: Message = {
-      id: (Date.now() + 1).toString(),
-      role: "assistant",
-      content: response,
-    }
-
-    setMessages((prev) => [...prev, assistantMessage])
-    setIsLoading(false)
   }
 
   const handleSuggestedQuestion = (question: string) => {
@@ -167,7 +154,6 @@ export function ChatContent() {
                   key={c.id}
                   onClick={() => {
                     setSelectedCandidato(c)
-                    setMessages([])
                   }}
                   className="flex items-center gap-3 p-3"
                 >
@@ -227,7 +213,14 @@ export function ChatContent() {
                 )}
               >
                 <CardContent className="p-3">
-                  <p className="text-sm">{message.content}</p>
+                  {message.parts.map((part, i) => {
+                    switch (part.type) {
+                      case "text":
+                        return <p key={`${message.id}-${i}`}>{part.text}</p>
+                      default:
+                        return null
+                    }
+                  })}
                 </CardContent>
               </Card>
               {message.role === "user" && (

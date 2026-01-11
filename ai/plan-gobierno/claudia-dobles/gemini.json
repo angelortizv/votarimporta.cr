@@ -1,0 +1,122 @@
+{
+  "partido_politico": {
+    "nombre": "Coalición Agenda Ciudadana",
+    "siglas": "CAC",
+    "ideologia": "Progresista, democrática, social y ambiental",
+    "posicion_politica": "Centro-izquierda / Progresismo",
+    "bandera": "No especificada en el documento",
+    "colores": [
+      "Amarillo",
+      "Rojinegro (por integración del PAC)"
+    ]
+  },
+  "candidato": {
+    "nombre": "Claudia Dobles Camargo",
+    "edad": "No especificada en el documento",
+    "ocupacion": "Arquitecta y política",
+    "biografia": "Candidata presidencial por la Coalición Agenda Ciudadana. Su propuesta se basa en principios de justicia social, modernización del Estado y desarrollo sostenible[cite: 23, 24]."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Brecha en competencias tecnológicas y falta de acceso equitativo a medios digitales[cite: 98].",
+        "solucion": "Alfabetización digital y acceso equitativo para estudiantes y docentes, especialmente en zonas rurales[cite: 98, 99].",
+        "ejecucion": "Articulación entre MEP, MICITT, CONARE e INA para programas gratuitos y fortalecimiento de la plataforma digital SABER[cite: 101, 102]."
+      },
+      {
+        "problema": "Desconexión entre la formación técnica y las necesidades reales de empleo[cite: 112].",
+        "solucion": "Expansión de la Educación y Formación Técnica Profesional (EFTP)[cite: 113].",
+        "ejecucion": "Construcción de nuevos Colegios Técnicos Profesionales (CTP) y Centros de Formación del INA[cite: 113]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Fragmentación y lentitud en la digitalización de los servicios del Estado[cite: 291, 292].",
+        "solucion": "Creación de una rectoría de alto nivel para la transformación digital y una Ley Marco de Innovación[cite: 292, 294].",
+        "ejecucion": "Establecer una entidad única ejecutora, implementar identidad digital obligatoria e interoperabilidad de datos entre instituciones[cite: 292, 294]."
+      },
+      {
+        "problema": "Fuga de talento y falta de especialistas en áreas críticas como ciberseguridad y datos en el sector público[cite: 295].",
+        "solucion": "Programa de Talento Digital Público para atraer y retener especialistas[cite: 295, 341].",
+        "ejecucion": "Ajuste de escalas salariales, creación de carreras diferenciadas y convenios con universidades e INA[cite: 295, 296, 342]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Poblaciones en riesgo con poco acceso a formación artística y cultural[cite: 121].",
+        "solucion": "Fortalecimiento de la Fundación La Libertad y proyectos artísticos en escuelas[cite: 120, 122].",
+        "ejecucion": "Ampliar la oferta técnica y artística en zonas vulnerables y llevar programas como 'Teatro en el Aula' a todo el país[cite: 121, 123]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Riesgo de insostenibilidad del régimen de pensiones a largo plazo[cite: 141].",
+        "solucion": "Creación de una Pensión Básica Universal de largo plazo[cite: 142].",
+        "ejecucion": "Implementar ahorros individuales desde el nacimiento de cada niño/a para garantizar una pensión digna sin aumentar la edad de jubilación[cite: 141, 142]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Necesidad de modernizar la productividad del sector agropecuario[cite: 495].",
+        "solucion": "Impulso a la bioeconomía y tecnologías digitales en la producción[cite: 375, 400].",
+        "ejecucion": "Aplicar la Política Nacional de Productividad para fomentar la investigación aplicada y transferencia tecnológica en el agro[cite: 398, 400]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Rezago en conectividad de alta velocidad y brecha digital en zonas rurales[cite: 232, 234].",
+        "solucion": "Despliegue nacional de redes 5G y fortalecimiento de la infraestructura digital[cite: 231, 232].",
+        "ejecucion": "Instalación de más estaciones base y fibra óptica, priorizando escuelas y centros de salud rurales usando fondos de FONATEL[cite: 232, 234, 235]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Falta de diversificación y sostenibilidad en los destinos turísticos rurales[cite: 214, 215].",
+        "solucion": "Desarrollo de centros turísticos en áreas rurales con enfoque de adaptación climática[cite: 215].",
+        "ejecucion": "Habilitar usos de suelo productivos y hubs de innovación en zonas turísticas rurales integradas con la biodiversidad[cite: 215]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Evasión fiscal y procesos de recaudación ineficientes[cite: 384].",
+        "solucion": "Consolidación de 'Hacienda Digital' y lucha frontal contra la evasión sin crear nuevos impuestos[cite: 384, 387].",
+        "ejecucion": "Uso de algoritmos de fiscalización electrónica e interoperabilidad en tiempo real entre IVA, Renta y Aduanas[cite: 384, 385]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Amenaza de redes criminales y penetración del crimen organizado en instituciones[cite: 344, 347].",
+        "solucion": "Seguridad con justicia: enfoque integral preventivo e inteligencia estratégica[cite: 343, 345].",
+        "ejecucion": "Transformar la DIS en una agencia de inteligencia estratégica con control democrático y crear una nueva Ley de Ejecución de la Pena[cite: 363, 364]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Crisis climática y dependencia de combustibles fósiles[cite: 63, 223].",
+        "solucion": "Transición energética justa y creación de un mercado de derechos de emisión[cite: 223, 504].",
+        "ejecucion": "Financiar un fondo verde mediante la venta de créditos de carbono para subvencionar a empresas que cambien a energías renovables[cite: 223]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Dificultad de acceso a vivienda y necesidad de ordenamiento territorial inclusivo[cite: 265].",
+        "solucion": "Ley de Ordenamiento Territorial e incorporación del 'Derecho a la Ciudad' en la Constitución[cite: 264, 265].",
+        "ejecucion": "Fortalecer el bono de vivienda (RAMT) y mejorar procesos de planificación urbana participativa[cite: 265, 268]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Brecha de infraestructura y retrasos en obras viales críticas[cite: 174, 176].",
+        "solucion": "Plan de Infraestructura de Movilidad Pública (PIMovi) a 20 años[cite: 176].",
+        "ejecucion": "Intervención prioritaria de Rutas 1, 2, 27 y 35, incluyendo carriles exclusivos para buses y nodos intermodales[cite: 178, 179, 180, 185]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera y falta de integración de datos epidemiológicos[cite: 17, 132].",
+        "solucion": "Sistema Integrado de Información epidemiológica interoperable con IA[cite: 132].",
+        "ejecucion": "Fortalecer la rectoría del Ministerio de Salud y usar tecnologías digitales para la vigilancia y diagnóstico nacional[cite: 132, 136]."
+      }
+    ]
+  }
+}

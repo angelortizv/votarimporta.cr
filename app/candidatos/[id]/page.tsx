@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { AreaFilter } from "@/components/area-filter"
-import { candidatos, areas } from "@/lib/data"
+import { candidatos } from "@/data/candidatos"
+import { areas } from "@/lib/areas"
 import {
   ArrowLeft,
   GraduationCap,
@@ -31,6 +32,7 @@ import {
   Signal,
   Plane,
 } from "lucide-react"
+import { Area, AreaName } from "@/lib/data"
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -104,11 +106,7 @@ export default function CandidatoDetailPage() {
   const gradientColors = colores.length === 1 ? `white, ${colores[0]}` : colores.join(", ")
   const firstColorIsLight = isLightColor(colores[0])
 
-  const filteredAreas = selectedArea
-    ? candidato.areas.filter((a) => a.area.toLowerCase() === selectedArea)
-    : candidato.areas
-
-  const allAreas = areas
+  const filteredAreas = selectedArea ? candidato.propuestas.filter((propuesta) => propuesta.area === selectedArea) : candidato.propuestas
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -219,25 +217,25 @@ export default function CandidatoDetailPage() {
             <h2 className="mb-4 text-2xl font-bold">Propuestas por Área</h2>
 
             <div className="mb-6">
-              <AreaFilter areas={allAreas} selectedArea={selectedArea} onSelectArea={setSelectedArea} />
+              <AreaFilter areas={areas} selectedArea={selectedArea} onSelectArea={setSelectedArea} />
             </div>
 
             {selectedArea === null ? (
               <div className="space-y-4">
-                {allAreas.map((area) => {
+                {areas.map((area) => {
                   const Icon = iconMap[area.icon] || GraduationCap
-                  const areaData = candidato.areas.find((a) => a.area.toLowerCase() === area.id)
-                  const isExpanded = expandedAreas.has(area.id)
-                  const hasProposals = areaData && areaData.propuestas.length > 0
+                  const areaData = candidato.propuestas.find((propuesta) => propuesta.area === area.area)
+                  const isExpanded = expandedAreas.has(area.area)
+                  const hasProposals = areaData && areaData.propuestas.length > 0 
 
                   return (
-                    <div key={area.id}>
+                    <div key={area.area}>
                       {!isExpanded ? (
                         <Card
                           className={`cursor-pointer transition-all hover:shadow-md ${
                             hasProposals ? "hover:border-foreground/20" : "opacity-50"
                           }`}
-                          onClick={() => hasProposals && toggleArea(area.id)}
+                          onClick={() => hasProposals && toggleArea(area.area)}
                         >
                           <CardContent className="flex items-center gap-3 p-4">
                             <div
@@ -246,10 +244,10 @@ export default function CandidatoDetailPage() {
                             >
                               <Icon className="h-5 w-5" style={{ color: candidato.color }} />
                             </div>
-                            <h3 className="flex-1 text-lg font-bold">{area.nombre}</h3>
+                            <h3 className="flex-1 text-lg font-bold">{area.area}</h3>
                             {hasProposals && (
                               <Badge variant="secondary" className="text-xs">
-                                {areaData.propuestas.length} propuesta{areaData.propuestas.length > 1 ? "s" : ""}
+                                {areaData?.propuestas.length} propuesta{areaData?.propuestas.length > 1 ? "s" : ""}
                               </Badge>
                             )}
                           </CardContent>
@@ -258,7 +256,7 @@ export default function CandidatoDetailPage() {
                         <Card
                           className="cursor-pointer overflow-hidden"
                           style={{ backgroundColor: `${candidato.color}10` }}
-                          onClick={() => toggleArea(area.id)}
+                          onClick={() => toggleArea(area.area)}
                         >
                           <CardContent className="p-4">
                             <div className="mb-4 flex items-center gap-3">
@@ -268,11 +266,11 @@ export default function CandidatoDetailPage() {
                               >
                                 <Icon className="h-5 w-5" style={{ color: candidato.color }} />
                               </div>
-                              <h3 className="text-lg font-bold">{area.nombre}</h3>
+                              <h3 className="text-lg font-bold">{area.area}</h3>
                             </div>
                             <div className="space-y-3" onClick={(e) => e.stopPropagation()}>
-                              {areaData?.propuestas.map((propuesta) => (
-                                <Card key={propuesta.id} className="bg-background">
+                              {areaData?.propuestas.map((propuesta, index) => (
+                                <Card key={index} className="bg-background">
                                   <CardContent className="p-4">
                                     <div className="space-y-3">
                                       <div>
@@ -289,9 +287,9 @@ export default function CandidatoDetailPage() {
                                       </div>
                                       <div>
                                         <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                                          Cómo lo harán
+                                          Cómo lo hará
                                         </span>
-                                        <p className="mt-1 text-sm text-muted-foreground">{propuesta.como}</p>
+                                        <p className="mt-1 text-sm text-muted-foreground">{propuesta.ejecucion}</p>
                                       </div>
                                     </div>
                                   </CardContent>
@@ -308,7 +306,7 @@ export default function CandidatoDetailPage() {
             ) : (
               <div className="space-y-6">
                 {filteredAreas.map((area) => {
-                  const Icon = iconMap[area.icon] || GraduationCap
+                  const Icon = iconMap[area.area] || GraduationCap
                   return (
                     <div key={area.area}>
                       <div className="mb-3 flex items-center gap-2">
@@ -316,8 +314,8 @@ export default function CandidatoDetailPage() {
                         <h3 className="text-lg font-semibold">{area.area}</h3>
                       </div>
                       <div className="space-y-4">
-                        {area.propuestas.map((propuesta) => (
-                          <Card key={propuesta.id}>
+                        {area.propuestas.map((propuesta, index) => (
+                          <Card key={index}>
                             <CardContent className="p-4 md:p-6">
                               <div className="space-y-4">
                                 <div>
@@ -336,7 +334,7 @@ export default function CandidatoDetailPage() {
                                   <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                                     Cómo lo harán
                                   </span>
-                                  <p className="mt-1 text-sm text-muted-foreground">{propuesta.como}</p>
+                                  <p className="mt-1 text-sm text-muted-foreground">{propuesta.ejecucion}</p>
                                 </div>
                               </div>
                             </CardContent>

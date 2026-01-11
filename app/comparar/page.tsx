@@ -8,7 +8,9 @@ import { MobileNav } from "@/components/mobile-nav"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { candidatos, areas, type Candidato } from "@/lib/data"
+import { candidatos } from "@/data/candidatos"
+import { areas } from "@/lib/areas"
+import { Candidato, Area } from "@/lib/data"
 import { Swords, GraduationCap, Shield, TrendingUp, Leaf, ChevronDown, X } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
@@ -96,7 +98,8 @@ export default function CompararPage() {
   const showComparison = candidato1 && candidato2 && selectedArea
 
   const getAreaPropuestas = (candidato: Candidato, areaName: string) => {
-    return candidato.areas.find((a) => a.area.toLowerCase() === areaName.toLowerCase())?.propuestas || []
+    // return candidato.areas.find((a) => a.area.toLowerCase() === areaName.toLowerCase())?.propuestas || []
+    return []
   }
 
   return (
@@ -132,13 +135,13 @@ export default function CompararPage() {
                   const Icon = iconMap[area.icon] || GraduationCap
                   return (
                     <Button
-                      key={area.id}
-                      variant={selectedArea === area.id ? "default" : "outline"}
-                      onClick={() => setSelectedArea(area.id)}
-                      className={cn("flex items-center gap-2", selectedArea === area.id && "bg-primary")}
+                      key={area.area}
+                      variant={selectedArea === area.area ? "default" : "outline"}
+                      onClick={() => setSelectedArea(area.area)}
+                      className={cn("flex items-center gap-2", selectedArea === area.area && "bg-primary")}
                     >
                       <Icon className="h-4 w-4" />
-                      {area.nombre}
+                      {area.area}
                     </Button>
                   )
                 })}
@@ -150,9 +153,9 @@ export default function CompararPage() {
           {showComparison && (
             <div className="grid gap-4 md:grid-cols-2">
               {[candidato1, candidato2].map((candidato) => {
-                const propuestas = getAreaPropuestas(candidato, areas.find((a) => a.id === selectedArea)?.nombre || "")
+                const propuestas = getAreaPropuestas(candidato, selectedArea || "")
                 return (
-                  <div key={candidato.id}>
+                  <div key={candidato.id || ""}>
                     <div
                       className="mb-4 rounded-xl p-3 text-center text-white"
                       style={{ backgroundColor: candidato.color }}
@@ -161,16 +164,16 @@ export default function CompararPage() {
                       <p className="text-sm opacity-90">{candidato.partidoSiglas}</p>
                     </div>
                     <div className="space-y-3">
-                      {propuestas.length > 0 ? (
+                      {/* {propuestas.length > 0 ? (
                         propuestas.map((p) => (
-                          <Card key={p.id}>
+                          <Card key={propuesta.id}>
                             <CardContent className="p-4">
                               <div className="space-y-3">
                                 <div>
                                   <span className="text-xs font-medium uppercase tracking-wider text-accent">
                                     Problema
                                   </span>
-                                  <p className="mt-1 text-sm">{p.problema}</p>
+                                  <p className="mt-1 text-sm">{propuesta.problema}</p>
                                 </div>
                                 <div>
                                   <span className="text-xs font-medium uppercase tracking-wider text-primary">
@@ -194,7 +197,12 @@ export default function CompararPage() {
                             No hay propuestas en esta área
                           </CardContent>
                         </Card>
-                      )}
+                      )} */}
+                      <Card>
+                          <CardContent className="p-4 text-center text-muted-foreground">
+                            No tiene propuestas en esta área
+                          </CardContent>
+                        </Card>
                     </div>
                   </div>
                 )

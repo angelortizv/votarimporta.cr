@@ -1,0 +1,111 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Avanza",
+    "siglas": "AVANZA",
+    "ideologia": "Liberalismo clásico con sensibilidad social moderna",
+    "posicion_politica": "Centro-Derecha / Liberal",
+    "bandera": "Información no disponible en el documento",
+    "colores": [
+      "No especificados (referencia visual a blanco y azul en el logo del documento)"
+    ]
+  },
+  "candidato": {
+    "nombre": "No mencionado explícitamente en el documento",
+    "edad": "No mencionada",
+    "ocupacion": "No mencionada",
+    "biografia": "El documento enfatiza un liderazgo técnico y político, destacando que la estrategia de seguridad será liderada por la Segunda Vicepresidencia con experiencia probada en la materia."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Crisis profunda: niños que no aprenden a leer, deserción estudiantil y universidades que no preparan para el mercado actual.",
+        "solucion": "Transformación hacia una 'Educación con Propósito' centrada en la calidad y alineación con el empleo.",
+        "ejecucion": "Implementar evaluaciones nacionales, plataforma SABER con IA para personalizar el aprendizaje, bilingüismo bajo el Marco Común Europeo y fortalecimiento de la educación dual."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Estado lento, fragmentado y burocrático que facilita la corrupción y la ineficiencia.",
+        "solucion": "Utilizar la tecnología como palanca de transformación nacional para un Estado ágil y transparente.",
+        "ejecucion": "Creación de una Identidad Digital única, red de interoperabilidad basada en el modelo X-Road (Estonia) y una SuperApp ciudadana para trámites."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de espacios sanos para la juventud, lo que facilita la caída en drogas y pandillas.",
+        "solucion": "Utilizar el arte y el deporte como herramientas directas de prevención de la delincuencia y cohesión social.",
+        "ejecucion": "Programa 'Mi Barrio Activo' con actividades físicas gratuitas, creación de escuelas de música en barrios de alto riesgo y reactivación de Juegos Deportivos Nacionales."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "No se detallan propuestas específicas sobre reformas al sistema de pensiones en los apartados analizados.",
+        "solucion": "N/A",
+        "ejecucion": "N/A"
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Sector agrícola con baja competitividad y falta de relevo generacional.",
+        "solucion": "Impulsar un 'Agro 4.0' que integre tecnología y acceso a mercados internacionales.",
+        "ejecucion": "Crear un Hub Nacional de Innovación Agritech con datos agroclimáticos y capacitación para 10,000 productores en el uso de apps y tecnología."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Necesidad de modernización tecnológica para la competitividad del país.",
+        "solucion": "Convertir a Costa Rica en un hub de innovación regional mediante el despliegue de infraestructura tecnológica.",
+        "ejecucion": "Duplicar la inversión en ciencia y tecnología y facilitar el acceso a redes modernas de conectividad."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Concentración del turismo en ciertas zonas y necesidad de un enfoque más sostenible.",
+        "solucion": "Promover el turismo regenerativo en todo el territorio nacional.",
+        "ejecucion": "Capacitar a las embajadas para que funcionen como agencias promotoras de turismo y exportaciones."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Trámites excesivos, energía cara, impuestos altos y cargas sociales que asfixian al emprendedor.",
+        "solucion": "Activar la 'Turbina Económica' facilitando la operación de negocios y la Inversión Extranjera Directa (IED).",
+        "ejecucion": "Implementar ventanilla única digital, reducir costos de creación de empleo y buscar la adhesión a la Alianza del Pacífico."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Avance del narcotráfico, récord de homicidios e impunidad por sistemas policiales fragmentados.",
+        "solucion": "Estrategia de 'Seguridad con Autoridad e Inteligencia' liderada directamente desde Casa Presidencial.",
+        "ejecucion": "Creación del Centro de Comando C5 para integrar datos en tiempo real (cámaras, drones, IA) y control territorial masivo en los 20 distritos más violentos."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Necesidad de equilibrar el desarrollo económico con la preservación de la biodiversidad.",
+        "solucion": "Modelo de crecimiento que utilice la protección ambiental como motor de 'empleos verdes'.",
+        "ejecucion": "Diplomacia ambiental para canjes de deuda por naturaleza y protección de océanos, junto con fomento a energías limpias."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Déficit habitacional y falta de oportunidades reales de desarrollo social.",
+        "solucion": "Desarrollo social y vivienda integrados en la reducción de la pobreza sin caer en el asistencialismo.",
+        "ejecucion": "Fomentar soluciones sostenibles y fiscalmente responsables que permitan a las personas salir de la dependencia estatal."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Presas interminables, puentes en mal estado y transporte público ineficiente.",
+        "solucion": "Modernización de la conectividad nacional mediante alianzas público-privadas.",
+        "ejecucion": "Lanzamiento del Tren Eléctrico Metropolitano, modernización de puertos y aeropuertos, e integración de semáforos inteligentes al C5."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera interminables que provocan la muerte de un promedio de 8 personas al día por falta de atención oportuna.",
+        "solucion": "Modelo de 'Salud para Vivir Mejor' enfocado en acceso, prevención e innovación tecnológica.",
+        "ejecucion": "Uso de telemedicina para reducir esperas, gestión eficiente de la CCSS y mejora de la infraestructura hospitalaria regional."
+      }
+    ]
+  }
+}

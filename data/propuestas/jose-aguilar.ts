@@ -1,0 +1,379 @@
+import { AreaName, AreaPropuestas, Propuesta } from "@/lib/data";
+
+export const joseAguilarPropuestas: AreaPropuestas[] = [
+  {
+    area: AreaName.Educacion,
+    propuestas: [
+      {
+        problema: "El sistema educativo tiene resultados deteriorados y falta una ruta compartida para recuperarlo.",
+        solucion: "Declarar la educación como emergencia nacional y construir un acuerdo multisectorial con una hoja de ruta técnica (con acompañamiento internacional).",
+        ejecucion: "Convocar sectores (empresa, academia, familias, cooperación, etc.) y acordar una hoja de ruta basada en evidencia; comunicar avances periódicamente."
+      },
+      {
+        problema: "Se toman decisiones sin datos comparables y sin evaluación integral del aprendizaje.",
+        solucion: "Implementar un sistema nacional de evaluación del logro educativo y una evaluación nacional amplia para ajustar planes.",
+        ejecucion: "Definir indicadores comparables por territorio; aplicar mediciones nacionales periódicas; ajustar programas según resultados."
+      },
+      {
+        problema: "La gestión educativa es lenta y no tiene información en tiempo real para operar (academia, logística, infraestructura, etc.).",
+        solucion: "Usar una plataforma de gestión (SABER) apoyada en IA para monitorear y decidir en tiempo real, y estabilizar directores/docentes en sus comunidades.",
+        ejecucion: "Poner en marcha SABER; integrar variables académicas/logísticas/socioeconómicas; reducir traslados y despolitizar nombramientos clave."
+      },
+      {
+        problema: "Hay centros con problemas sanitarios/infraestructura y el sistema no reacciona rápido.",
+        solucion: "Resolver infraestructura educativa con alianzas público-privadas y articulación con gobiernos locales y empresas.",
+        ejecucion: "Formalizar APP puntuales por región; priorizar centros cerrados por razones sanitarias; ejecutar obras con seguimiento y plazos."
+      },
+      {
+        problema: "Brecha digital y equipamiento insuficiente o mal gestionado, afectando aprendizaje y oportunidades.",
+        solucion: "Asegurar conectividad universal en centros educativos coordinando con FONATEL y complementar con dotación tecnológica adecuada.",
+        ejecucion: "Coordinar metas por centro; dotar equipos; reforzar capacidad de gestión del MEP para sostener el programa."
+      },
+      {
+        problema: "Rezago fuerte en lectoescritura y baja efectividad en aprendizaje de idiomas (bilingüismo).",
+        solucion: "Lanzar una cruzada nacional de lectoescritura/fonética y promover bilingüismo con estándares internacionales usando herramientas tecnológicas.",
+        ejecucion: "Campaña con apoyo de universidades/ONGs/docentes; implementar estándares (Marco Común Europeo) con trazabilidad y resultados verificables."
+      },
+      {
+        problema: "Deserción y jóvenes en riesgo quedan fuera del sistema y son más vulnerables al crimen y al desempleo.",
+        solucion: "Crear escuelas seguras con jornada ampliada y un programa de 'Segunda Oportunidad' con becas, tutorías y apoyo en salud mental/adicciones.",
+        ejecucion: "Jornada ampliada en zonas vulnerables (deporte/arte/ciencia/tecnología); reinserción con becas y tutorías comunitarias; acceso a apoyo desde escuelas y EBAIS."
+      },
+      {
+        problema: "La formación no está alineada con empleos reales en cada región.",
+        solucion: "Impulsar formación dual y pertinencia regional en coordinación con INA y cámaras empresariales.",
+        ejecucion: "Aumentar cobertura de formación dual por región/sector; prácticas vinculadas a empleos; seguimiento de inserción laboral."
+      }
+    ]
+  },
+  {
+    area: AreaName.Tecnologia,
+    propuestas: [
+      {
+        problema: "El Estado es burocrático, poco digital y con baja transparencia y trazabilidad del gasto.",
+        solucion: "Impulsar un Estado Digital y Gobierno Abierto: identidad digital, interoperabilidad obligatoria y servicios públicos digitales.",
+        ejecucion: "Implementar identidad digital integrada a la cédula; red de interoperabilidad tipo X-Road; portal único de trámites y transparencia con métricas públicas."
+      },
+      {
+        problema: "Costa Rica enfrenta rezago en 5G y falta infraestructura digital sólida y segura.",
+        solucion: "Acelerar despliegue de 5G y fibra, preparar ruta 6G y fortalecer ciberseguridad con enfoque Zero Trust y CSIRT articulado.",
+        ejecucion: "Desplegar 5G con apoyo municipal; acelerar fibra/última milla; reorientar FONATEL con KPIs públicos; crear comité nacional 6G; implementar Zero Trust en instituciones."
+      },
+      {
+        problema: "La economía y el empleo requieren reconversión acelerada hacia habilidades digitales.",
+        solucion: "Reconversión masiva de talento (IA, datos, ciberseguridad) y currículo K-12 con pensamiento digital, datos, ética y pensamiento crítico.",
+        ejecucion: "Programas financiados por INA y alianzas público-privadas; actualización curricular desde primaria; formación continua docente con apoyo de IA."
+      },
+      {
+        problema: "PYMEs y sectores productivos tienen baja adopción tecnológica (automatización, datos, IA) y pierden competitividad.",
+        solucion: "Programa para democratizar transformación digital en PYMEs (automatización, IoT, ciberseguridad básica e IA aplicada).",
+        ejecucion: "Vouchers sectoriales; fondo de innovación; sandboxes regulatorios; compra pública de innovación y programa GovTech para soluciones al Estado."
+      }
+    ]
+  },
+  {
+    area: AreaName.DeporteYCultura,
+    propuestas: [
+      {
+        problema: "Acceso cultural desigual, baja inversión y concentración en pocas zonas.",
+        solucion: "Descentralizar el acceso cultural y aumentar inversión pública en cultura hasta 1% del presupuesto nacional (gradual).",
+        ejecucion: "Festival Internacional de las Artes renovado que llegue a cada cantón; centros culturales regionales tipo 'CENAC 2.0'; bibliotecas modernizadas con internet y horarios ampliados."
+      },
+      {
+        problema: "Artistas y proyectos creativos tienen poco financiamiento y escasa proyección internacional.",
+        solucion: "Crear un Fondo Nacional de Artes y Creatividad concursable y apoyar la internacionalización de industrias creativas.",
+        ejecucion: "Fondos por concurso descentralizados; apoyo con PROCOMER/MEIC; incentivos a producción audiovisual y atracción de rodajes; programa 'Maestros de la Cultura' para transmisión de saberes."
+      },
+      {
+        problema: "Infraestructura deportiva comunitaria insuficiente y oportunidades limitadas fuera de la GAM.",
+        solucion: "Impulsar deporte para todos y alto rendimiento con infraestructura comunitaria y un plan olímpico.",
+        ejecucion: "Recursos condicionados a Comités Cantonales; canchas techadas, skateparks, piscinas y gimnasios abiertos; programa 'Mi Barrio Activo'; Plan Olímpico 2028–2032 con becas y entrenadores."
+      },
+      {
+        problema: "Violencia y exclusión en barrios de alto riesgo, con pocas alternativas sanas para jóvenes.",
+        solucion: "Usar arte y deporte como prevención: escuelas de música y deporte y actividades comunales.",
+        ejecucion: "Escuelas en barrios de alto riesgo; reactivar Juegos Deportivos Nacionales; festivales comunales de canto/baile/arte urbano integrados con seguridad y desarrollo social."
+      },
+      {
+        problema: "Institucionalidad y financiamiento en cultura/deporte con poca coordinación y poca trazabilidad.",
+        solucion: "Fortalecer gobernanza y transparencia: reactivar consejos, fortalecer ICODER y crear un Fondo Nacional del Deporte con trazabilidad digital.",
+        ejecucion: "Reactivar Consejos Nacionales en primeros 100 días; reforma para fortalecer ICODER y optimizar instrumentos; plataforma digital de trazabilidad; convenios con ICT para turismo cultural/deportivo."
+      }
+    ]
+  },
+  {
+    area: AreaName.Pensiones,
+    propuestas: [
+      {
+        problema: "El régimen IVM enfrenta presión por envejecimiento y riesgos de sostenibilidad para nuevas generaciones.",
+        solucion: "Migrar gradualmente el IVM a un modelo de 3 pilares, aumentando el peso de capitalización individual y mejorando rendimientos con estrategias mixtas modernas.",
+        ejecucion: "Diseñar plan de largo plazo; transición sin afectar a jubilados o próximos a jubilarse; incorporar gestión moderna de inversiones con participación del sector privado."
+      },
+      {
+        problema: "La sostenibilidad de la seguridad social requiere más base contributiva y reglas más realistas para independientes/temporales.",
+        solucion: "Ampliar la base de cotizantes mediante formalización y esquemas proporcionales/flexibles, eliminando reglas obsoletas (p. ej., Base Mínima Contributiva).",
+        ejecucion: "Ajustar normativas; facilitar la formalización; combatir evasión con mejor gestión; simplificar aportes para independientes y temporales."
+      },
+      {
+        problema: "Población vulnerable requiere apoyo para subsistencia y dignidad (especialmente pobreza extrema).",
+        solucion: "Mantener/expandir apoyos como pensiones no contributivas dentro de una estrategia de pobreza extrema cero.",
+        ejecucion: "Usar censos y focalización; coordinar IMAS fortalecido; acompañamiento social y condicionalidades ligadas a educación e inserción laboral cuando aplique."
+      }
+    ]
+  },
+  {
+    area: AreaName.Agricultura,
+    propuestas: [
+      {
+        problema: "El agro necesita modernización, más productividad y adaptación climática para competir con valor agregado.",
+        solucion: "Transformación agrícola con innovación: agricultura de precisión (sensores/drones), I+D, capacitación técnica y certificaciones (orgánico, fair trade, etc.).",
+        ejecucion: "Programas con INTA/UCR/MAG; capacitación a productores; certificaciones y mejores prácticas de suelo/agua; diversificación de cultivos."
+      },
+      {
+        problema: "Productores enfrentan barreras de acceso a tierra y financiamiento, especialmente jóvenes y mujeres.",
+        solucion: "Facilitar acceso a tierra/financiamiento con créditos blandos, avales, microcréditos, seguros climáticos y asociatividad.",
+        ejecucion: "Identificar tierras ociosas para uso productivo; habilitar productos financieros; seguros paramétricos; programas de asociatividad."
+      },
+      {
+        problema: "Infraestructura rural insuficiente limita producción, acopio y procesamiento en regiones clave.",
+        solucion: "Invertir en infraestructura rural resiliente (riego, caminos, electrificación, centros de acopio/procesamiento).",
+        ejecucion: "Priorizar regiones (Guanacaste, Huetar Norte, Caribe, Pacífico Sur); ejecutar obras y equipamiento; coordinación institucional."
+      },
+      {
+        problema: "Falta articulación fuerte entre tecnología y agro para escalar productividad en todo el país.",
+        solucion: "Crear un Hub Nacional de Innovación Agritech con datos agroclimáticos, apps y capacitación masiva.",
+        ejecucion: "Plataformas de datos y apps móviles; capacitación para 10.000 productores; articulación con el sector tecnológico."
+      }
+    ]
+  },
+  {
+    area: AreaName.Telecomunicaciones,
+    propuestas: [
+      {
+        problema: "Rezago en conectividad (5G/fibra) y ejecución lenta/fragmentada de proyectos de universalización.",
+        solucion: "Acelerar 5G y fibra óptica; reorientar FONATEL con metas claras y KPIs públicos por cantón.",
+        ejecucion: "Despliegue 5G con municipalidades; acelerar última milla; MICITT define política y SUTEL ejecuta con KPIs; seguimiento público."
+      },
+      {
+        problema: "Costa Rica suele llegar tarde a nuevas generaciones tecnológicas (riesgo de repetir con 6G).",
+        solucion: "Preparar desde ya la hoja de ruta 6G con un comité nacional multisector.",
+        ejecucion: "Crear Comité Nacional 6G (MICITT, SUTEL, ICE, cámaras, academia); plan para pruebas hacia finales de 2028 y adopción regulatoria 2030–2032."
+      },
+      {
+        problema: "Infraestructura pública (vial, etc.) se construye sin incorporar telecomunicaciones desde el diseño.",
+        solucion: "Integrar telecomunicaciones en obras viales cumpliendo la ley vigente para incentivar infraestructura telecom.",
+        ejecucion: "Estándares y obligación de integrar telecom en proyectos de infraestructura; coordinación interinstitucional para que sea parte del diseño y la ejecución."
+      }
+    ]
+  },
+  {
+    area: AreaName.Turismo,
+    propuestas: [
+      {
+        problema: "Oferta turística concentrada (sol y playa) y baja diversificación en regiones con potencial.",
+        solucion: "Estrategia Nacional 2030 para diversificar oferta (Caribe sur, circuitos histórico-culturales, turismo de salud).",
+        ejecucion: "Definir polos y productos por región; inversión y coordinación con actores locales; promoción internacional segmentada."
+      },
+      {
+        problema: "Turismo rural comunitario tiene barreras de formalización y financiamiento, limitando ingresos locales.",
+        solucion: "Fortalecer turismo rural comunitario para campesinos e indígenas con crédito, asistencia técnica y formalización de PYMEs.",
+        ejecucion: "Programas de crédito y asistencia; acompañamiento de formalización; conexión con rutas y mercados."
+      },
+      {
+        problema: "Conectividad y servicios (aeropuertos, 5G, trámites) frenan competitividad turística.",
+        solucion: "Mejorar conectividad, aeropuertos y 5G en destinos y simplificar trámites con ventanilla única digital.",
+        ejecucion: "Priorizar infraestructura en destinos; coordinación para 5G; digitalizar trámites turísticos; elevar estándares de servicio."
+      },
+      {
+        problema: "Costa Rica necesita nuevos nichos para competir sin sacrificar ambiente.",
+        solucion: "Apostar por nichos (bienestar, aventura, gastronomía, surf/WSL, triatlón, trail) y certificaciones de sostenibilidad.",
+        ejecucion: "Promoción segmentada por nicho; certificaciones y verificación; encadenamientos locales para que el ingreso se quede en comunidades."
+      }
+    ]
+  },
+  {
+    area: AreaName.Economia,
+    propuestas: [
+      {
+        problema: "Déficit fiscal estructural y gasto público ineficiente reducen capacidad del Estado para priorizar seguridad, educación, salud e infraestructura.",
+        solucion: "Disciplina fiscal y eficiencia del gasto: auditoría, eliminación/fusión de entes redundantes y reasignación de personal a áreas prioritarias.",
+        ejecucion: "Auditar presupuesto; cerrar o fusionar duplicidades; reubicar personal; mantener regla fiscal y combatir evasión con mejor tecnología."
+      },
+      {
+        problema: "Trámites y regulación frenan inversión y creación de empleo formal.",
+        solucion: "Clima pro-inversión: ventanilla única digital con plazos máximos y silencio positivo; programa 'Cero Filas'.",
+        ejecucion: "Digitalizar registro/licencias/permisos; eliminar requisitos redundantes; interoperabilidad entre instituciones; trazabilidad de trámites."
+      },
+      {
+        problema: "Cargas sociales pueden desincentivar empleo formal y aumentar informalidad.",
+        solucion: "Rebalancear cargas para mantener aportes a CCSS pero ajustar cargas parafiscales paulatinamente hacia presupuesto nacional.",
+        ejecucion: "Propuesta normativa y transición gradual; mantener contribución a CCSS; simplificar costos de contratación formal."
+      },
+      {
+        problema: "Baja inversión en innovación y financiamiento a startups limita productividad y competitividad.",
+        solucion: "Impulsar sectores estratégicos e innovación: clústeres, incentivos a I+D y aumento de inversión en ciencia/tecnología hasta 1% del PIB (público+privado).",
+        ejecucion: "Parques tecnológicos, incubadoras y fondos público-privados; alianzas con universidades; orientar educación superior a investigación aplicada."
+      },
+      {
+        problema: "Ausencia de marco moderno para plataformas colaborativas genera incertidumbre para usuarios y conductores y competencia desigual.",
+        solucion: "Legislación moderna para reconocer y regular plataformas colaborativas de transporte y servicios con seguridad del usuario y formalidad.",
+        ejecucion: "Diseñar marco regulatorio; reglas de seguridad y formalidad; competencia leal frente a esquemas tradicionales."
+      }
+    ]
+  },
+  {
+    area: AreaName.Seguridad,
+    propuestas: [
+      {
+        problema: "Crisis de inseguridad y crimen organizado con instituciones fragmentadas y déficit operativo (equipamiento/presupuesto).",
+        solucion: "Liderazgo estratégico desde Casa Presidencial y prioridad presupuestaria para seguridad (sin crear nuevos impuestos).",
+        ejecucion: "Coordinar desde Presidencia/Vicepresidencia; solicitar presupuesto extraordinario; priorizar recursos y buscar financiamiento innovador (APP, cooperación, etc.)."
+      },
+      {
+        problema: "La inteligencia y respuesta a emergencias está dispersa (múltiples instituciones sin una plataforma integrada).",
+        solucion: "Consolidar un Centro de Comando C5 que integre datos (cámaras, 911, tráfico, drones, analítica con IA) para respuestas coordinadas.",
+        ejecucion: "Integrar plataformas de seguridad/movilidad; completar componentes faltantes (cómputo, comunicaciones, contacto ciudadano); financiar con presupuesto y cooperación internacional."
+      },
+      {
+        problema: "El Estado pierde control territorial en zonas violentas y las bandas ocupan el espacio.",
+        solucion: "Control territorial reforzado en primeros 100 días con operativos permanentes en distritos más violentos y control 24/7 en corredores.",
+        ejecucion: "Operativos masivos; puestos móviles; drones y reconocimiento de placas; verificación de identidad/armas; redadas focalizadas con inteligencia previa."
+      },
+      {
+        problema: "Bandas mantienen mando desde cárceles y conservan poder financiero.",
+        solucion: "Control carcelario y financiero: aislamiento de cabecillas, bloqueo de comunicaciones y congelamiento de bienes/cuentas vinculadas al narco.",
+        ejecucion: "Traslados a aislamiento; bloqueadores y contravigilancia; celdas de máxima seguridad; operativos financieros con fiscalía especializada."
+      },
+      {
+        problema: "Puertos y fronteras son rutas principales para tráfico de drogas/dinero y aumentan homicidios y corrupción.",
+        solucion: "Control de puertos y fronteras con escáneres, unidad élite portuaria y análisis de riesgo con analítica de datos.",
+        ejecucion: "Instalar escáneres en Limón/Moín/Caldera; crear unidad élite con supervisión externa; retenes móviles y análisis de riesgo en fronteras."
+      },
+      {
+        problema: "La seguridad no se resuelve solo con represión; falta prevención efectiva en comunidades vulnerables.",
+        solucion: "Prevención integral: rescate educativo, empleo juvenil e intervención comunitaria (espacios, cultura, deporte, mentorías).",
+        ejecucion: "Jornada ampliada y segunda oportunidad educativa; incentivos a empresas para contratar jóvenes vulnerables; urbanismo táctico (iluminación, parques, cámaras) y centros comunitarios con servicios."
+      }
+    ]
+  },
+  {
+    area: AreaName.Ambiente,
+    propuestas: [
+      {
+        problema: "El transporte depende de combustibles fósiles y frena metas de descarbonización.",
+        solucion: "Descarbonización y movilidad sostenible con electrificación masiva e incentivos para acelerar adopción.",
+        ejecucion: "Electrificar buses/taxis/carga/flotillas; incentivos fiscales; tarifas competitivas de carga; micromovilidad segura; impulsar proyectos ferroviarios."
+      },
+      {
+        problema: "Energía y costos requieren modernización para competitividad y transición energética completa.",
+        solucion: "Energía renovable 2.0: diversificar con solar, eólica marina, hidrógeno verde y bioenergía; eficiencia energética.",
+        ejecucion: "Marco regulatorio para nuevas tecnologías; programas de eficiencia (LED, construcción sostenible); avanzar integración ICE–RECOPE con política unificada."
+      },
+      {
+        problema: "Presión sobre biodiversidad (tala/caza/minería ilegal/tráfico de fauna) y necesidad de proteger más territorio y mar.",
+        solucion: "Conservación 30x30: fortalecer áreas protegidas y el SINAC con más personal y tecnología.",
+        ejecucion: "Crear/fortalecer reservas; más guardaparques y tecnología; unidades especializadas y sanciones más severas; programas alternativos en zonas críticas."
+      },
+      {
+        problema: "Agua contaminada, pérdidas en redes y poco saneamiento amenazan salud y desarrollo.",
+        solucion: "Agua y saneamiento: nuevos embalses/acueductos, reducción de pérdidas, más plantas de tratamiento y autoridad hídrica interinstitucional.",
+        ejecucion: "Proyectos como embalses/acueductos; prohibir urbanizar en zonas de recarga; ampliar alcantarillado; controles a vertidos; crear autoridad hídrica y mecanismos de pago hídrico."
+      },
+      {
+        problema: "Gestión de residuos es deficiente (modelo 'usar y desechar') y baja tasa de reciclaje.",
+        solucion: "Economía circular con separación obligatoria en origen, centros de acopio y responsabilidad extendida del productor.",
+        ejecucion: "Ley de responsabilidad extendida; financiar cadenas de reciclaje; créditos/incentivos a industrias recicladoras; compostaje de orgánicos; meta municipal de reciclaje 50% al 2030."
+      },
+      {
+        problema: "Falta cultura ambiental y acción comunitaria sostenida contra impactos climáticos.",
+        solucion: "Educación y acción climática comunitaria con currículo verde y brigadas ambientales cantonales.",
+        ejecucion: "Clubes estudiantiles; brigadas para reforestación/limpieza de ríos/monitoreo ciudadano; portales abiertos de calidad de aire/agua/emisiones; programas de adaptación local."
+      }
+    ]
+  },
+  {
+    area: AreaName.Infraestructura,
+    propuestas: [
+      {
+        problema: "Infraestructura vial y logística insuficiente eleva costos, reduce productividad y limita empleo de calidad.",
+        solucion: "Plan Nacional de Infraestructura 2026–2030 (rutas clave, trocha norte, fondo nacional y vía rápida de trámites para proyectos estratégicos).",
+        ejecucion: "Ampliar Ruta 27 y finalizar Ruta 32; construir/mantener rutas regionales; crear fondo con recursos públicos, préstamos y capital privado; agilizar permisos/expropiaciones/licitaciones."
+      },
+      {
+        problema: "Proyectos grandes se atrasan por falta de agilidad y seguridad jurídica en concesiones.",
+        solucion: "Alianzas público-privadas (APP) con reforma a ley de concesiones y transparencia reforzada.",
+        ejecucion: "Reforma legal; reactivar proyectos bajo esquemas mixtos; veeduría ciudadana; cláusulas estrictas de calidad; licitaciones públicas."
+      },
+      {
+        problema: "Transporte público es ineficiente, caro en tiempo y contribuye a presas y emisiones.",
+        solucion: "Movilidad urbana: sectorización de buses, tarifa única, pago electrónico, carriles exclusivos y flotas limpias.",
+        ejecucion: "Rediseñar rutas (troncales + alimentadoras); implementar pago electrónico; carriles exclusivos; incentivar flotillas eléctricas/a gas; ciclovías y aceras amplias."
+      },
+      {
+        problema: "Puertos y aeropuertos requieren modernización para turismo y comercio.",
+        solucion: "Modernizar Puerto Caldera y expandir aeropuertos (Juan Santamaría, Liberia) y aeródromos regionales.",
+        ejecucion: "Obras de modernización/expansión; fortalecer accesos; fases iniciales de nuevo aeropuerto internacional (estudios y planificación)."
+      },
+      {
+        problema: "Infraestructura digital/energética y resiliencia climática requieren integración en obras públicas.",
+        solucion: "Masificar fibra/5G, reforzar red eléctrica y agua/saneamiento; infraestructura verde y estándares resilientes; nueva institucionalidad.",
+        ejecucion: "Integrar telecom y energía en planes; fortalecer drenajes/diques y parques inundables; proteger manglares; crear Agencia Nacional de Infraestructura integrando entidades existentes."
+      }
+    ]
+  },
+  {
+    area: AreaName.Vivienda,
+    propuestas: [
+      {
+        problema: "Programas sociales están fragmentados y duplicados, reduciendo impacto; pobreza extrema persiste y la clase media enfrenta barreras para vivienda.",
+        solucion: "Nueva gobernanza social unificada con datos (SINIRUBE + SABER) y asignación eficiente; estrategia 'Pobreza Extrema Cero'.",
+        ejecucion: "Identificar hogares con índice multidimensional; tablero de gerencia social; condicionalidad centrada en educación e inserción laboral; IMAS fortalecido para coordinar."
+      },
+      {
+        problema: "Tugurios y déficit de soluciones habitacionales modernas limitan dignidad y movilidad social.",
+        solucion: "Priorizar política habitacional para tugurios y usar modalidades nuevas como leasing social.",
+        ejecucion: "Focalizar en territorios con tugurios; diseñar leasing social; articular con sistema nacional de desarrollo social y alianzas público-privadas con trazabilidad."
+      },
+      {
+        problema: "La clase media queda fuera de programas tradicionales y cada vez ve más difícil adquirir primera vivienda.",
+        solucion: "Programa 'Primer hogar' para clase media con condiciones especiales y reorientación parcial de banca pública hacia vivienda.",
+        ejecucion: "Diseñar productos financieros y condiciones preferenciales; usar fondos y entes existentes; alinear banca estatal a proyectos de vivienda clase media; medir impacto en empleo y encadenamientos."
+      }
+    ]
+  },
+  {
+    area: AreaName.Salud,
+    propuestas: [
+      {
+        problema: "Listas de espera largas en especialidades/cirugías y mortalidad asociada a atención tardía.",
+        solucion: "Plan nacional para reducir listas de espera a la mitad en 2 años y bajar espera promedio (meta 8–10 meses al 2030, con mejoras visibles desde 2027).",
+        ejecucion: "Contratar especialistas jubilados y horas extra; abrir quirófanos tardes/fines de semana; comprar servicios privados de forma transparente cuando CCSS no dé abasto; monitoreo público mensual."
+      },
+      {
+        problema: "CCSS lenta, con riesgos de corrupción/ineficiencia y baja digitalización clínica.",
+        solucion: "Modernizar CCSS con gestión por resultados, expediente clínico digital, receta electrónica, teleconsulta y compras de medicamentos más eficientes.",
+        ejecucion: "Digitalizar 100% expedientes y receta; sistema unificado de citas/cirugías; control tecnológico de inventarios; procesos transparentes; fondo unificado de medicamentos."
+      },
+      {
+        problema: "Falta de especialistas y mala distribución territorial, especialmente fuera de la GAM.",
+        solucion: "Ampliar formación de especialistas con becas-contrato e incentivos para zonas de difícil acceso; fortalecer EBAIS donde crece población.",
+        ejecucion: "Becas financiadas por CCSS con compromiso de servicio; plus por zona/vivienda/plan de carrera; más EBAIS y equipos de visita domiciliaria; convenios internacionales temporales."
+      },
+      {
+        problema: "Aumento de enfermedades crónicas y crisis de salud mental (bullying, adicciones, depresión) sin red comunitaria suficiente.",
+        solucion: "Enfocar prevención (nutrición/ejercicio) y crear una red comunitaria de salud mental integrada a EBAIS y centros educativos.",
+        ejecucion: "Campañas permanentes; tamizajes y chequeos; psicólogos y trabajadores sociales en red; becas para formar psiquiatras; detección temprana en coordinación educación-trabajo."
+      },
+      {
+        problema: "Sostenibilidad financiera de salud y pensiones requiere reformas y reducción de costos de medicamentos.",
+        solucion: "Reformas responsables: ajustar IVM a 3 pilares y ampliar base contributiva; compras de medicamentos más eficientes con mecanismos de reducción de precios.",
+        ejecucion: "Transición gradual IVM; formalización y esquemas proporcionales; eliminar Base Mínima Contributiva; fondo unificado de medicamentos para negociar y bajar precios."
+      },
+      {
+        problema: "Capacidad instalada privada no se usa ordenadamente para resolver rezagos y mejorar servicios.",
+        solucion: "Participación privada complementaria con reglas claras (listas de espera, gestión no clínica) y tarifas reguladas donde aplique.",
+        ejecucion: "APP para mantenimiento/limpieza/alimentación con supervisión; compra de servicios privados con trazabilidad; evaluación y transparencia periódica."
+      }
+    ]
+  }
+]

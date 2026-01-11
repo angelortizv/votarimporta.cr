@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/mobile-nav"
 import { CandidateCard } from "@/components/candidate-card"
-import { candidatos } from "@/lib/data"
+import { candidatos } from "@/data/candidatos"
 import { HelpCircle, ChevronDown } from "lucide-react"
 
 export default function HomePage() {

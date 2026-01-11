@@ -1,0 +1,117 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Unidad Social Cristiana",
+    "siglas": "PUSC",
+    "ideologia": "Socialcristianismo",
+    "posicion_politica": "Centro-derecha",
+    "bandera": "Azul y rojo",
+    "colores": [
+      "Azul",
+      "Rojo"
+    ]
+  },
+  "candidato": {
+    "nombre": "Juan Carlos Hidalgo",
+    "edad": "",
+    "ocupacion": "Internacionalista y Politólogo",
+    "biografia": "Presidente del PUSC. Su visión se centra en 'emparejar la cancha' mediante seguridad, oportunidades y prosperidad, bajo principios socialcristianos que colocan a la persona en el centro de la acción pública[cite: 435, 436, 462]."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "La educación costarricense atraviesa la crisis más seria de su historia con graves rezagos en aprendizajes básicos[cite: 195, 216].",
+        "solucion": "Ejecutar la 'Cruzada Nacional por la Lectoescritura y el Aprendizaje Básico'[cite: 592].",
+        "ejecucion": "Movilización nacional con familias, universidades y sector privado para que los estudiantes de primaria dominen la lectura y escritura[cite: 216]."
+      },
+      {
+        "problema": "Deterioro severo de la infraestructura educativa[cite: 595].",
+        "solucion": "Modernizar 500 centros educativos durante el gobierno[cite: 238].",
+        "ejecucion": "Titularización de infraestructura para movilizar recursos de fondos de pensiones y priorizar zonas rurales y costeras[cite: 238, 595]."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Amenazas crecientes de ciberseguridad sin respuesta coordinada y falta de talento digital[cite: 416, 417].",
+        "solucion": "Transformar el ecosistema tecnológico para posicionar a Costa Rica como hub regional[cite: 418].",
+        "ejecucion": "Integrar inteligencia artificial y realidad virtual en la educación, y crear un marco para tecnologías FinTech y criptoactivos[cite: 247, 417]."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de alternativas recreativas y espacios públicos tomados por la delincuencia[cite: 145].",
+        "solucion": "Activación de espacios deportivos comunitarios y Red Nacional de Cultura Viva[cite: 146, 300].",
+        "ejecucion": "Uso de instalaciones educativas fuera de horario lectivo y organización de juegos comunitarios con comités cantonales[cite: 298, 300]."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Desequilibrio actuarial en el régimen de Invalidez, Vejez y Muerte (IVM)[cite: 191].",
+        "solucion": "Sostener el IVM y fomentar planes voluntarios[cite: 191, 194].",
+        "ejecucion": "Crear juntas directivas técnicas autónomas e implementar planes voluntarios con afiliación automática (opt-out)[cite: 191, 194]."
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Dificultad de acceso a asistencia técnica y financiamiento adaptado al sector[cite: 341, 343].",
+        "solucion": "Crear 'EBAIS' agrícolas y esquemas de crédito preferencial[cite: 341, 598].",
+        "ejecucion": "Equipos técnicos regionales (universidades, INA, MAG) atendiendo directamente a agricultores y pólizas colectivas de seguros[cite: 342, 343, 345]."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Comunidades con nula o poca conectividad y red 5G inexistente en amplias zonas[cite: 426].",
+        "solucion": "Garantizar que la red 5G llegue a todo el país[cite: 426].",
+        "ejecucion": "Simplificar permisos para antenas y fibra, y hacer cumplir compromisos de cobertura de las empresas[cite: 426, 427]."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Falta de competitividad e infraestructura en zonas turísticas clave[cite: 556, 598].",
+        "solucion": "Implementar el Plan Nacional de Competitividad enfocado en turismo[cite: 596, 598].",
+        "ejecucion": "Intervenciones prioritarias en infraestructura turística y creación de recargo a la propiedad de no residentes en zonas costeras para generar recursos[cite: 579, 598]."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Exceso de trámites (trabas) y altos costos de formalización laboral[cite: 549, 585].",
+        "solucion": "Reducir impuestos a la contribución patronal y guillotina regulatoria[cite: 552, 588].",
+        "ejecucion": "Firmar moratoria de nuevas regulaciones y transformar PROCOMER en Agencia Nacional de Desarrollo Productivo[cite: 588, 599]."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Récord histórico de homicidios y control del territorio por el crimen organizado[cite: 511, 612].",
+        "solucion": "Operación 'Blindaje' y creación del Fondo de Seguridad Nacional[cite: 511, 571].",
+        "ejecucion": "Incrementar 6.500 policías, transformar el ICD en Agencia de Inteligencia y construir cárceles para crimen organizado[cite: 511, 573]."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "Crisis en el manejo de residuos; el 94% termina en rellenos sanitarios saturados[cite: 601].",
+        "solucion": "Instalación de plantas procesadoras que generen energía de los residuos[cite: 602].",
+        "ejecucion": "Coordinación con municipios para un sistema tarifario sostenible que valorice los desechos[cite: 602]."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Brechas de acceso a vivienda digna y necesidad de ordenamiento urbano[cite: 532, 538].",
+        "solucion": "Facilitar la actualización de Planes Reguladores municipales[cite: 532].",
+        "ejecucion": "Asignar recursos del IFAM para zonificación y apoyo estatal en proyectos de vivienda mediante el Triángulo de Solidaridad 2.0[cite: 534, 545]."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Obras viales estratégicas paralizadas y deficiente movilidad urbana[cite: 574, 575].",
+        "solucion": "Reactivar obras clave e intervenir carreteras con proyectos tipo 'TOPICS'[cite: 574, 575].",
+        "ejecucion": "Dividir el MOPT en Infraestructura y Movilidad, y transformar el CNC en Agencia Nacional de Infraestructura[cite: 377, 378]."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Listas de espera excesivas en la CCSS y deuda del Estado con la institución[cite: 589, 591].",
+        "solucion": "Plan agresivo de jornadas extraordinarias y compra de servicios privados[cite: 589, 590].",
+        "ejecucion": "Uso intensivo del EDUS, gestión por resultados y negociación inmediata de la deuda del gobierno con la Caja[cite: 589, 591]."
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "partido_politico": {
+    "nombre": "Partido Progreso Social Democrático",
+    "siglas": "PSD",
+    "ideologia": "Progreso Social Demócrata",
+    "posicion_politica": "Centro",
+    "bandera": "Información no disponible en el documento",
+    "colores": [
+      "No especificado explícitamente"
+    ]
+  },
+  "candidato": {
+    "nombre": "Luz Mary Alpízar Loaiza",
+    "edad": "No especificada",
+    "ocupacion": "Ingeniera Química y Diputada",
+    "biografia": "Fundadora del partido y actual presidenta de la agrupación. Su propuesta se centra en el desarrollo humano inclusivo, la justicia social y el fortalecimiento del Estado Social de Derecho."
+  },
+  "propuestas": {
+    "educacion": [
+      {
+        "problema": "Contenidos obsoletos, falta de habilidades STEM y socioemocionales, y una brecha creciente en la calidad educativa.",
+        "solucion": "Modernizar el currículo nacional priorizando el aprendizaje basado en proyectos y la formación técnica.",
+        "ejecucion": "Revisar el currículo para eliminar temas obsoletos, capacitar a docentes en metodologías activas e integrar la educación STEM y habilidades blandas."
+      },
+      {
+        "problema": "Alta deserción escolar y falta de seguimiento a estudiantes que salen del sistema.",
+        "solucion": "Sistema de alerta temprana y reinserción educativa.",
+        "ejecucion": "Coordinar con el MEP para identificar jóvenes que no matriculan séptimo año y establecer programas de seguimiento hasta su reinserción."
+      }
+    ],
+    "tecnologia": [
+      {
+        "problema": "Brecha digital profunda en centros educativos, especialmente en zonas rurales e indígenas.",
+        "solucion": "Transformación digital inclusiva y conectividad total.",
+        "ejecucion": "Crear laboratorios de computación con mantenimiento garantizado, dotar de hardware actualizado y capacitar al personal técnico y docente en soporte digital."
+      },
+      {
+        "problema": "Uso limitado de la tecnología como herramienta pedagógica en el aula.",
+        "solucion": "Integración de dispositivos móviles y plataformas educativas.",
+        "ejecucion": "Fomentar el uso de celulares y tabletas para fines de aprendizaje mediante la creación de plataformas compatibles y capacitación docente."
+      }
+    ],
+    "deporte_cultura": [
+      {
+        "problema": "Falta de apoyo económico para talentos deportivos y culturales.",
+        "solucion": "Programa Nacional de Becas Deportivas y Artísticas.",
+        "ejecucion": "Implementar un sistema de becas con incentivos claros para el alto rendimiento y la formación en artes en comunidades vulnerables."
+      },
+      {
+        "problema": "Normalización de la violencia y falta de espacios recreativos seguros.",
+        "solucion": "Promoción de una cultura de paz a través del deporte.",
+        "ejecucion": "Impulsar programas deportivos y artísticos en barrios de alto riesgo como herramientas preventivas contra el delito."
+      }
+    ],
+    "pensiones": [
+      {
+        "problema": "Información específica sobre reformas de pensiones no detallada explícitamente en los apartados analizados.",
+        "solucion": "No se especifica una propuesta puntual para pensiones en los documentos adjuntos.",
+        "ejecucion": ""
+      }
+    ],
+    "agricultura": [
+      {
+        "problema": "Uso excesivo de plaguicidas peligrosos (glifosato) que afectan la salud y el ambiente.",
+        "solucion": "Reforma Agrícola Sostenible y transición agroecológica.",
+        "ejecucion": "Reducir progresivamente agroquímicos peligrosos mediante incentivos para la agricultura de precisión y el fomento de mercados locales sostenibles."
+      }
+    ],
+    "telecomunicaciones": [
+      {
+        "problema": "Falta de infraestructura tecnológica en zonas remotas.",
+        "solucion": "Aceleración de la conectividad en territorios indígenas y periféricos.",
+        "ejecucion": "Utilizar fondos de telecomunicaciones para asegurar internet de alta velocidad en todos los centros educativos del país."
+      }
+    ],
+    "turismo": [
+      {
+        "problema": "Baja participación de comunidades locales y pueblos indígenas en los beneficios económicos del turismo.",
+        "solucion": "Fomento del turismo ecológico y cultural administrado por comunidades.",
+        "ejecucion": "Apoyar a las Asociaciones de Desarrollo indígena para gestionar sus propios proyectos turísticos y crear circuitos de comercio justo."
+      }
+    ],
+    "economia": [
+      {
+        "problema": "Alta deuda pública (cerca del 60% del PIB) e inflexibilidad del gasto público.",
+        "solucion": "Saneamiento de finanzas y reforma fiscal de tercera generación.",
+        "ejecucion": "Aplicar estrictamente la regla fiscal, realizar canjes de deuda para mejorar plazos y reducir el IVA para los sectores de menores ingresos."
+      },
+      {
+        "problema": "Falta de apoyo financiero a PYMES verdes.",
+        "solucion": "Fondo Nacional de Innovación Verde y Azul.",
+        "ejecucion": "Crear un fondo concursable para emprendimientos en economía circular y bioeconomía con acceso a crédito preferencial."
+      }
+    ],
+    "seguridad": [
+      {
+        "problema": "Aumento inédito en la tasa de homicidios (17.2 por cada 100,000 habitantes) vinculado al crimen organizado.",
+        "solucion": "Estrategia integral de seguridad ciudadana y 'policía de proximidad'.",
+        "ejecucion": "Uso de Big Data para identificar 'puntos calientes', monitoreo por cámaras y fortalecimiento de la inteligencia policial comunitaria."
+      },
+      {
+        "problema": "Sistema judicial lento y legislación de armas obsoleta.",
+        "solucion": "Reforma a la Ley de Armas y fortalecimiento de la justicia penal.",
+        "ejecucion": "Endurecer penas por posesión de armas ilícitas y revisar la prisión preventiva en casos complejos de crimen organizado."
+      }
+    ],
+    "ambiente": [
+      {
+        "problema": "El transporte representa el 61% del consumo de hidrocarburos en el país.",
+        "solucion": "Ley de Movilidad Urbana Sostenible y Multimodal.",
+        "ejecucion": "Priorizar el transporte público eléctrico y la movilidad ciclista, exigiendo planes municipales de reducción de emisiones."
+      }
+    ],
+    "infraestructura": [
+      {
+        "problema": "Congestión vial crónica que afecta la competitividad nacional.",
+        "solucion": "Modernización de la red vial y transporte ferroviario.",
+        "ejecucion": "Acelerar proyectos de infraestructura estratégica y electrificación del transporte de carga y pasajeros."
+      }
+    ],
+    "vivienda": [
+      {
+        "problema": "Hacinamiento tecnológico y falta de espacios dignos para el desarrollo familiar.",
+        "solucion": "Fortalecimiento del programa de vivienda digna.",
+        "ejecucion": "Priorizar bonos de vivienda para familias en pobreza extrema y mejorar la infraestructura básica en asentamientos informales."
+      }
+    ],
+    "salud": [
+      {
+        "problema": "Saturación de servicios y falta de atención integral en salud mental.",
+        "solucion": "Fortalecimiento de la salud preventiva y el modelo de bienestar.",
+        "ejecucion": "Fomentar la igualdad de condiciones en el acceso a la salud y mejorar la coordinación interinstitucional para reducir tiempos de espera."
+      }
+    ]
+  }
+}

@@ -1,0 +1,349 @@
+import { AreaName, AreaPropuestas, Propuesta } from "@/lib/data";
+
+export const lauraFernandezPropuestas: AreaPropuestas[] = [
+  {
+    area: AreaName.Educacion,
+    propuestas: [
+      {
+        problema: "La educación superior pública requiere financiamiento estable y mejor coordinación con el Poder Ejecutivo para ejecutar proyectos de interés social, económico y ambiental.",
+        solucion: "Retomar las negociaciones del FEES y crear una agenda formal de cooperación Ejecutivo–universidades públicas para orientar y ejecutar proyectos conjuntos.",
+        ejecucion: "1) Retomar negociación cuatrienal del FEES. 2) Definir una agenda de cooperación con universidades. 3) Identificar proyectos prioritarios (sociales/económicos/ambientales). 4) Ejecutarlos con seguimiento conjunto."
+      },
+      {
+        problema: "La formación técnica y para el empleo no siempre es ágil, accesible o alineada a necesidades locales.",
+        solucion: "Modernizar y adecuar el INA para que sea más ágil, territorialmente pertinente y accesible, ampliando oportunidades para personas que no pueden costear estudios superiores.",
+        ejecucion: "1) Actualizar oferta y procesos del INA. 2) Ajustar oferta a demandas locales y regionales. 3) Expandir acceso (incluyendo modalidades no presenciales cuando aplique)."
+      },
+      {
+        problema: "Brecha entre lo que enseña la educación media y lo que demanda el mercado laboral (incluyendo transiciones tecnológicas).",
+        solucion: "Transformar progresivamente colegios académicos a técnicos y modernizar la red de CTP para alinear la oferta con el mercado laboral y transiciones tecnológicas (p. ej., tecnologías digitales e IA).",
+        ejecucion: "1) Seleccionar cantones prioritarios (pobreza alta/baja cobertura técnica). 2) Reconversión progresiva de >50 centros. 3) Modernizar CTP y currículos. 4) Alinear con demandas del mercado y áreas clave (digital/IA, etc.)."
+      },
+      {
+        problema: "Acceso limitado a formación en inglés y certificaciones que mejoran empleabilidad.",
+        solucion: "Dar continuidad al acceso gratuito o sin fiador al aprendizaje de inglés vía CONAPE para financiar cursos intensivos, programas técnicos, carreras y certificaciones (en CR o en el extranjero; presencial/virtual/mixta).",
+        ejecucion: "1) Mantener/expandir el programa vía CONAPE. 2) Financiar rutas formativas (cursos, técnicos, U, certificaciones). 3) Permitir modalidades presencial/virtual/mixta según necesidad."
+      },
+      {
+        problema: "Necesidad de estándares y aseguramiento de calidad en la formación docente y universitaria.",
+        solucion: "Adopción obligatoria del Marco Nacional de Cualificaciones Docentes como instrumento articulador de estándares, perfiles y aseguramiento de calidad en universidades públicas y privadas que imparten carreras de educación.",
+        ejecucion: "1) Establecer obligatoriedad del Marco. 2) Definir perfiles/estándares. 3) Aplicar a universidades públicas y privadas con carreras de educación. 4) Monitorear cumplimiento."
+      },
+      {
+        problema: "Cobertura insuficiente de educación preescolar en zonas rurales, costeras, indígenas y urbanas vulnerables; y necesidad de fortalecer la calidad docente en primera infancia.",
+        solucion: "Ampliar cobertura preescolar mediante construcción/adecuación de espacios educativos y reforzar formación/selección docente con especialización en primera infancia.",
+        ejecucion: "1) Construir/adecuar espacios seguros y accesibles. 2) Dotar materiales pedagógicos pertinentes y mobiliario. 3) Elevar requisitos y formación docente (neurodesarrollo, inclusión, metodologías basadas en evidencia). 4) Especialización vía IDP y alianzas con universidades."
+      }
+    ]
+  },
+  {
+    area: AreaName.Tecnologia,
+    propuestas: [
+      {
+        problema: "Instituciones y gobiernos locales pueden estar vulnerables y poco preparados ante ataques cibernéticos.",
+        solucion: "Exigir protocolos de respuesta y simulacros periódicos de ciberseguridad en instituciones públicas y gobiernos locales.",
+        ejecucion: "1) Definir protocolos mínimos. 2) Obligar pruebas y simulacros periódicos. 3) Medir resultados y corregir brechas detectadas."
+      },
+      {
+        problema: "La seguridad digital requiere coordinación entre sector público, banca, proveedores de internet y empresas tecnológicas.",
+        solucion: "Crear una mesa de coordinación público–privada permanente para intercambio de alertas tempranas y protocolos comunes de seguridad digital.",
+        ejecucion: "1) Convocar banca, tecnológicas, ISPs y cámaras. 2) Acordar estándares y protocolos comunes. 3) Intercambiar alertas tempranas de manera continua."
+      },
+      {
+        problema: "Baja adopción de estándares de ciberseguridad y falta de soluciones nacionales propias.",
+        solucion: "Incentivar certificaciones bajo estándares internacionales y crear fondos concursables para startups y universidades que desarrollen soluciones propias de ciberseguridad.",
+        ejecucion: "1) Diseñar incentivos (reconocer/premiar certificaciones). 2) Lanzar fondos concursables. 3) Financiar y escalar soluciones nacionales."
+      },
+      {
+        problema: "Trámites públicos suelen ser lentos, poco estandarizados y con baja digitalización (incluyendo a nivel municipal).",
+        solucion: "Crear e implementar una Ventanilla Única Digital para digitalizar y estandarizar trámites a nivel nacional y municipal, haciéndolos más transparentes, rápidos y eficientes.",
+        ejecucion: "1) Diseñar la plataforma. 2) Acordar estándares con gobiernos locales. 3) Digitalizar trámites prioritarios. 4) Implementar y medir tiempos/uso."
+      }
+    ]
+  },
+  {
+    area: AreaName.DeporteYCultura,
+    propuestas: [
+      {
+        problema: "Gestión del deporte y recreación requiere mayor eficiencia, transparencia y enfoque estratégico.",
+        solucion: "Modernizar el ICODER mediante actualización de su gobernanza para una administración más eficiente, transparente y estratégica.",
+        ejecucion: "1) Actualizar gobernanza del ICODER. 2) Definir metas/indicadores. 3) Publicar resultados y rendición de cuentas periódica."
+      },
+      {
+        problema: "La oferta programática en deporte/recreación puede no responder a necesidades reales y existen barreras de acceso.",
+        solucion: "Revisar y ajustar la oferta nacional en deporte, recreación y actividad física con base en evidencia (p. ej., encuestas nacionales) y en poblaciones prioritarias.",
+        ejecucion: "1) Analizar hallazgos de encuesta. 2) Identificar intereses/barreras. 3) Ajustar programas y focalizarlos. 4) Evaluar adopción e impacto."
+      },
+      {
+        problema: "Marco institucional del deporte podría estar desactualizado y sin garantías sólidas de derechos y protección al deportista.",
+        solucion: "Reformar integralmente la Ley de Creación del ICODER para reconocer deporte/recreación como derecho constitucional y crear el Estatuto Nacional del Deportista.",
+        ejecucion: "1) Redactar reforma legal. 2) Tramitar aprobación. 3) Implementar Estatuto (derechos/condiciones). 4) Fiscalizar cumplimiento."
+      },
+      {
+        problema: "Acceso a cultura es desigual y se concentra en pocas zonas.",
+        solucion: "Democratizar el acceso a la cultura fortaleciendo el programa RIDE Cultural para descentralizar actividades y eventos culturales en todo el país.",
+        ejecucion: "1) Fortalecer presupuesto/alcance del programa. 2) Programar actividades por región. 3) Medir participación y continuidad."
+      },
+      {
+        problema: "Infraestructura cultural (teatros, casas de cultura, museos) es insuficiente o desigual por región.",
+        solucion: "Renovar y ampliar progresivamente la red de teatros regionales, casas de cultura, museos y auditorios mediante alianzas público–privadas; y habilitar espacios flexibles para ensayos, presentaciones y formación artística.",
+        ejecucion: "1) Priorizar regiones y recintos. 2) Estructurar APPs. 3) Construir/adaptar espacios multipropósito. 4) Garantizar operación sostenible."
+      },
+      {
+        problema: "Oportunidades culturales y turísticas locales pueden no estar conectadas en rutas que beneficien a comunidades.",
+        solucion: "Potenciar polos culturales con un programa de 'Rutas Culturales' que conecte arte, cultura, gastronomía, deporte y espacios públicos.",
+        ejecucion: "1) Identificar polos culturales. 2) Diseñar rutas y logística. 3) Involucrar gobiernos locales/sector privado. 4) Promover y medir impacto económico local."
+      }
+    ]
+  },
+  {
+    area: AreaName.Agricultura,
+    propuestas: [
+      {
+        problema: "Productores enfrentan barreras para cumplir normas internacionales (p. ej., UE) y riesgos asociados a trazabilidad y costos ambientales.",
+        solucion: "Acompañamiento técnico para cumplir normas internacionales (como el Pacto Verde), asegurando trazabilidad pecuaria y reduciendo impactos de impuestos ambientales (p. ej., impuesto al carbono/CBAM).",
+        ejecucion: "1) Programas de asistencia técnica sectorial. 2) Implementar trazabilidad. 3) Preparar cumplimiento para exportación (UE). 4) Mitigar impactos de costos ambientales mediante medidas de apoyo."
+      },
+      {
+        problema: "Baja transferencia de conocimiento y tecnología desde academia hacia producción agrícola; limitada agricultura de precisión.",
+        solucion: "Crear incentivos económicos para transferencia de conocimiento (academia → sector) y promover uso intensivo de tecnología para agricultura de precisión y valor agregado.",
+        ejecucion: "1) Diseñar incentivos. 2) Vincular universidades/centros con productores. 3) Financiar adopción tecnológica. 4) Medir mejoras en productividad/valor agregado."
+      },
+      {
+        problema: "Dependencia de pocos mercados de exportación y necesidad de mayor competitividad agroexportadora.",
+        solucion: "Diversificar mercados de exportación y potenciar competitividad con colaboración público–privada que promueva innovación y adopción de tecnologías agrícolas modernas (AgTech).",
+        ejecucion: "1) Identificar nuevos mercados y requisitos. 2) Apoyar certificaciones y adaptación productiva. 3) Impulsar alianzas público–privadas en innovación. 4) Acompañar escalamiento exportador."
+      },
+      {
+        problema: "Canales de comercialización local (ferias) y logística pueden ser poco modernos y con trabas regulatorias.",
+        solucion: "Facilitar comercialización modernizando gestión y funcionamiento de ferias del agricultor, e invirtiendo en mejor infraestructura logística/regulatoria adaptada a realidades locales.",
+        ejecucion: "1) Diagnosticar ferias por región. 2) Modernizar gestión y procesos. 3) Mejorar infraestructura logística. 4) Ajustar regulación a particularidades locales."
+      },
+      {
+        problema: "Falta de coordinación sostenida entre actores clave del agro y consumidores para mejora continua de servicios.",
+        solucion: "Crear una mesa técnica permanente que articule Junta de Ferias, autoridades y sociedad civil/consumidores como canal de diálogo y mejora continua.",
+        ejecucion: "1) Instalar mesa permanente. 2) Definir agenda y KPIs. 3) Implementar mejoras iterativas. 4) Publicar avances."
+      },
+      {
+        problema: "Actividades agrícolas requieren reconversión para adaptarse a demandas actuales/futuras y tendencias internacionales.",
+        solucion: "Acompañamiento para reconversión productiva agrícola, conectando producción nacional con tendencias internacionales.",
+        ejecucion: "1) Identificar cadenas/productos con potencial. 2) Capacitar y acompañar reconversión. 3) Apoyar acceso a mercados. 4) Medir resultados (ingreso/productividad)."
+      }
+    ]
+  },
+  {
+    area: AreaName.Telecomunicaciones,
+    propuestas: [
+      {
+        problema: "Brechas de conectividad y calidad de internet, especialmente en zonas rurales y territorios vulnerables.",
+        solucion: "Mejorar banda ancha móvil a nivel nacional impulsando red 5G, priorizando zonas rurales y vulnerables.",
+        ejecucion: "1) Plan de despliegue 5G con enfoque territorial. 2) Priorizar infraestructura en zonas con mayores brechas. 3) Medir mejoras en cobertura/velocidad."
+      },
+      {
+        problema: "Falta de infraestructura de telecom que limita competitividad y también afecta procesos educativos.",
+        solucion: "Dotar de infraestructura que aumente acceso a internet y cierre brechas usando fuentes como FONATEL, con reforma legal para uso eficiente de recursos y adecuación de su aplicación.",
+        ejecucion: "1) Identificar brechas y proyectos prioritarios. 2) Usar FONATEL como fuente (con reforma para eficiencia). 3) Ejecutar despliegues y auditar resultados."
+      },
+      {
+        problema: "Costos de internet y duplicación de infraestructura entre operadores.",
+        solucion: "Permitir y promover uso compartido de infraestructura para abaratar el servicio a mediano plazo.",
+        ejecucion: "1) Definir marco/estándares de compartición. 2) Incentivar acuerdos entre proveedores. 3) Monitorear reducción de costos y expansión de cobertura."
+      }
+    ]
+  },
+  {
+    area: AreaName.Turismo,
+    propuestas: [
+      {
+        problema: "Percepción de inseguridad afecta prestigio turístico y experiencia del visitante.",
+        solucion: "Aumentar prestigio turístico con mayor presencia de policía turística y más seguridad a disposición de las personas.",
+        ejecucion: "1) Reforzar presencia policial turística en zonas clave. 2) Coordinar con actores locales. 3) Medir incidencias y satisfacción del visitante."
+      },
+      {
+        problema: "Permisos para infraestructura turística pueden ser lentos y descoordinados entre instituciones.",
+        solucion: "Impulsar coordinación adecuada y eficaz entre instituciones que otorgan permisos para infraestructura turística, cumpliendo normativas.",
+        ejecucion: "1) Mapear instituciones y cuellos de botella. 2) Establecer coordinación operativa. 3) Estandarizar requisitos y plazos. 4) Monitorear tiempos de trámite."
+      },
+      {
+        problema: "Tiempos de ingreso al país se elevan en temporada alta (aeropuertos/puertos/fronteras).",
+        solucion: "Reducir tiempos de acceso al país aumentando presencia de funcionarios de migración/aduanas/servicios fitosanitarios en puestos de control, especialmente en alta visitación.",
+        ejecucion: "1) Planificar refuerzos por temporada. 2) Asignar personal adicional. 3) Medir tiempos de espera y ajustar."
+      },
+      {
+        problema: "Necesidad de diversificar oferta turística hacia modelos sostenibles y con derrame local.",
+        solucion: "Potenciar la Zona Azul de la Península de Nicoya como destino de turismo médico de bajo impacto ambiental, generando oportunidades económicas sostenibles (Nicoya, Hojancha, Nandayure).",
+        ejecucion: "1) Definir estrategia del destino. 2) Alinear oferta de servicios y promoción. 3) Involucrar comunidades locales. 4) Medir impacto económico/ambiental."
+      },
+      {
+        problema: "Oportunidades para atraer turismo académico/ambiental internacional están subaprovechadas en regiones.",
+        solucion: "Promover atracción de turismo ambiental académico internacional en Chorotega, Brunca y Huetar Caribe, especialmente de universidades que realizan giras estudiantiles.",
+        ejecucion: "1) Identificar sitios/alianzas académicas. 2) Diseñar paquetes/rutas educativas. 3) Promover con universidades internacionales. 4) Evaluar resultados."
+      },
+      {
+        problema: "Conectividad marítima y acceso a destinos turísticos requiere infraestructura portuaria/embarcaderos.",
+        solucion: "Potenciar muelle turístico de Puntarenas como nodo logístico y avanzar con construcción de embarcaderos/atracaderos turísticos (Pacífico, Caribe, Golfo de Nicoya), además de proyectos como terminales específicas y embarcadero turístico para mejorar acceso.",
+        ejecucion: "1) Priorizar nodos (Puntarenas y otros). 2) Construir/modernizar embarcaderos y atracaderos. 3) Definir operación y mantenimiento. 4) Interconectar con nodos turísticos y medir mejoras de acceso."
+      }
+    ]
+  },
+  {
+    area: AreaName.Economia,
+    propuestas: [
+      {
+        problema: "PYMES enfrentan barreras burocráticas para acceder a crédito y financiamiento.",
+        solucion: "Simplificar procesos administrativos para acceso al crédito, eliminando barreras burocráticas que dificultan el financiamiento de PYMES.",
+        ejecucion: "1) Identificar trámites y requisitos redundantes. 2) Simplificar procesos. 3) Medir tiempos de aprobación y acceso efectivo."
+      },
+      {
+        problema: "PYMES no tienen información clara y centralizada sobre opciones de financiamiento público y privado.",
+        solucion: "Crear una plataforma digital que conecte a las PYMES con opciones de financiamiento disponibles.",
+        ejecucion: "1) Diseñar la plataforma. 2) Integrar oferta pública y privada. 3) Mantener datos actualizados. 4) Medir uso, aprobaciones y satisfacción."
+      },
+      {
+        problema: "Desalineación entre habilidades demandadas por la economía y la oferta formativa (y respuesta tardía del sistema educativo/técnico).",
+        solucion: "Coordinar periódicamente entre actores públicos y privados la oferta de habilidades y perfiles demandados para que educación técnica y superior atiendan el mercado oportunamente.",
+        ejecucion: "1) Instalar mesas periódicas de coordinación. 2) Publicar perfiles demandados. 3) Ajustar currículos/oferta. 4) Medir empleabilidad y brechas."
+      },
+      {
+        problema: "Brechas de género y limitaciones de cuido reducen participación laboral.",
+        solucion: "Reducir brecha de género ampliando la Red de Cuido, extendiendo su cobertura con cupos adicionales.",
+        ejecucion: "1) Plan de ampliación de cupos. 2) Asignación presupuestaria y operación. 3) Medición de participación laboral y cobertura."
+      },
+      {
+        problema: "Personas jóvenes enfrentan barreras para financiar emprendimientos y adquirir vivienda.",
+        solucion: "Crear mecanismos de financiamiento específicos para jóvenes, mediante garantías estatales y condiciones favorables en banca pública y privada.",
+        ejecucion: "1) Definir instrumentos con garantías estatales. 2) Acordar condiciones con banca. 3) Implementar ventanillas de acceso. 4) Medir colocación y resultados."
+      }
+    ]
+  },
+  {
+    area: AreaName.Seguridad,
+    propuestas: [
+      {
+        problema: "Información de seguridad/justicia/migración está dispersa, lo que reduce capacidad de respuesta y calidad de decisiones.",
+        solucion: "Desarrollar una plataforma nacional de integración de datos (seguridad, justicia y migración) que centralice información operativa en tiempo real usando IA para filtrar y priorizar alertas.",
+        ejecucion: "1) Diseñar arquitectura de datos interinstitucional. 2) Integrar fuentes (policía/justicia/migración). 3) Implementar analítica/IA para alertas. 4) Operar en tiempo real y auditar calidad."
+      },
+      {
+        problema: "Falta de visibilidad unificada y actualizada del delito para asignación eficiente de recursos.",
+        solucion: "Implementar cartografía digital del delito: mapa interactivo en tiempo real con reportes policiales, denuncias ciudadanas y análisis criminológico.",
+        ejecucion: "1) Definir estándar de reportes y georreferenciación. 2) Integrar denuncias y reportes. 3) Publicar acceso para tomadores de decisión. 4) Actualizar continuamente."
+      },
+      {
+        problema: "Ingreso/salida de mercancías con baja inspección y trazabilidad facilita crimen organizado.",
+        solucion: "Operar escáneres de forma continua en puertos, aeropuertos y fronteras; garantizar inspección de todo ingreso/salida con trazabilidad digital.",
+        ejecucion: "1) Operación 24/7 de escáneres. 2) Protocolos de inspección total. 3) Trazabilidad digital end-to-end. 4) Auditoría y sanciones por incumplimiento."
+      },
+      {
+        problema: "Falta de control integrado del espacio aéreo/marítimo/terrestre para interdicción.",
+        solucion: "Interconectar radares aéreos, marítimos y terrestres en un sistema unificado bajo mando de un Centro Nacional de Mando y Control.",
+        ejecucion: "1) Integrar radares en plataforma única. 2) Definir mando y operación. 3) Entrenar personal. 4) Medir detección/interdicción."
+      },
+      {
+        problema: "Crimen organizado transnacional requiere mejor inteligencia, cooperación y profesionalización.",
+        solucion: "Fortalecer intercambio de inteligencia y ampliar cooperación internacional (DEA/Interpol/Europol), además de profesionalizar fuerzas policiales con entrenamiento avanzado.",
+        ejecucion: "1) Convenios y protocolos de intercambio de info. 2) Operaciones conjuntas y decomisos. 3) Entrenamiento avanzado (inteligencia, operaciones marítimas, drogas sintéticas). 4) Operativos constantes contra infraestructura criminal."
+      }
+    ]
+  },
+  {
+    area: AreaName.Ambiente,
+    propuestas: [
+      {
+        problema: "Adopción de tecnologías de energía renovable y eficiencia energética puede ser costosa para el sector productivo.",
+        solucion: "Incentivos temporales para adopción de renovables (p. ej., reducciones arancelarias) y promoción de eficiencia energética y tecnologías de bajo consumo.",
+        ejecucion: "1) Definir incentivos temporales (arancelarios u otros). 2) Implementar campañas de comunicación a nivel nacional. 3) Medir adopción y reducción de consumo."
+      },
+      {
+        problema: "MIPYMES con interés en sostenibilidad enfrentan barreras de financiamiento para energías limpias.",
+        solucion: "Facilitar condiciones de crédito para MIPYMES para generación y consumo de energías limpias en sus procesos productivos.",
+        ejecucion: "1) Diseñar líneas de crédito verdes. 2) Implementarlas con banca pública/privada. 3) Evaluar impacto (adopción, costos, emisiones)."
+      },
+      {
+        problema: "Gestión eléctrica requiere modernización para confiabilidad y despliegue de redes inteligentes.",
+        solucion: "Consolidar digitalización del sector eléctrico para implementar redes inteligentes y optimizar suministro; impulsar combustibles limpios para reducir GEI.",
+        ejecucion: "1) Digitalización de operación y medición. 2) Implementar smart grids. 3) Optimizar confiabilidad del suministro. 4) Incentivar combustibles limpios y medir emisiones."
+      },
+      {
+        problema: "Conectividad ecológica se ve afectada por infraestructura vial y falta de mantenimiento/monitoreo de pasos de fauna.",
+        solucion: "Identificar y habilitar puntos estratégicos de pasos de fauna silvestre con programas permanentes de monitoreo y mantenimiento para asegurar conectividad ecológica.",
+        ejecucion: "1) Identificar corredores/puntos críticos. 2) Construir/adaptar pasos de fauna. 3) Monitoreo y mantenimiento permanente. 4) Evaluar efectividad ecológica."
+      },
+      {
+        problema: "Necesidad de fortalecer conservación y beneficios ambientales/económicos desde comunidades (incluidas poblaciones indígenas).",
+        solucion: "Fortalecer protección de ecosistemas terrestres y marinos mediante ampliación del Pago por Servicios Ambientales (PSA) y ampliar planes ambientales/forestales/territoriales para acceso efectivo a recursos ambientales y beneficios económicos.",
+        ejecucion: "1) Ampliar recursos y beneficiarios del PSA (priorizando pequeños/medianos). 2) Implementar/expandir planes territoriales. 3) Asegurar acceso a instrumentos y recursos. 4) Medir conservación y beneficios económicos locales."
+      }
+    ]
+  },
+  {
+    area: AreaName.Infraestructura,
+    propuestas: [
+      {
+        problema: "Infraestructura vial y logística insuficiente o sin mantenimiento permanente limita desarrollo, turismo y productividad.",
+        solucion: "Contar con carreteras, puentes, puertos y aeropuertos modernos y con mantenimiento permanente; priorizar obras que faciliten tránsito de personas y mercancías.",
+        ejecucion: "1) Priorizar obras estratégicas. 2) Asegurar mantenimiento permanente. 3) Ejecutar con control de calidad y rendición de cuentas. 4) Medir mejoras en movilidad y logística."
+      },
+      {
+        problema: "Gestión de aeropuertos requiere mayor transparencia y eficiencia en uso de recursos públicos.",
+        solucion: "Revisar y auditar contratos de gestión de aeropuertos para asegurar calidad de servicios públicos aéreos, transparencia y eficiencia.",
+        ejecucion: "1) Auditoría de contratos. 2) Publicar hallazgos y planes de mejora. 3) Implementar ajustes contractuales/regulatorios. 4) Medir desempeño del servicio."
+      },
+      {
+        problema: "Aeródromos regionales y conectividad aérea regional limitan desarrollo territorial y turismo.",
+        solucion: "Implementar plan de mejora de 15 aeródromos regionales; preparar preinversión de nueva concesión del Aeropuerto de Liberia (24h y terminal de carga).",
+        ejecucion: "1) Diagnóstico y priorización de aeródromos. 2) Ejecutar mejoras. 3) Preparar preinversión concesión Liberia. 4) Expandir operación 24h y capacidad de carga."
+      }
+    ]
+  },
+  {
+    area: AreaName.Vivienda,
+    propuestas: [
+      {
+        problema: "Espacios públicos urbanos pueden ser inseguros y con pocas opciones de recreación.",
+        solucion: "Crear e implementar el programa 'Hagamos Ciudad' para replantear espacios públicos seguros y con opciones de recreación, en coordinación con gobiernos locales.",
+        ejecucion: "1) Seleccionar ciudades/zonas prioritarias. 2) Co-diseñar intervenciones con gobiernos locales. 3) Ejecutar mejoras de espacio público. 4) Medir seguridad y uso ciudadano."
+      },
+      {
+        problema: "Acceso a vivienda se dificulta y centros urbanos pierden habitabilidad.",
+        solucion: "Promover habitacionalidad de centros urbanos como herramienta de acceso a vivienda que también contribuya al dinamismo y seguridad de las ciudades.",
+        ejecucion: "1) Incentivar proyectos de vivienda en centros urbanos. 2) Ajustar normativa urbana según aplique. 3) Integrar servicios y movilidad. 4) Medir acceso y revitalización."
+      },
+      {
+        problema: "Comunidades rurales tienen necesidades de construcción que requieren modelos adecuados.",
+        solucion: "Crear y ejecutar la figura de 'Condominio de Vivienda Agraria y Rural' para atender necesidades de construcción de comunidades rurales.",
+        ejecucion: "1) Diseñar marco del modelo. 2) Seleccionar territorios piloto. 3) Ejecutar proyectos. 4) Evaluar escalamiento."
+      },
+      {
+        problema: "Asentamientos informales consolidados requieren regularización/formalización con enfoque social y participación comunitaria.",
+        solucion: "Desarrollar programas de renovación urbana con modelos que permitan regularizar y formalizar asentamientos informales mediante vivienda social con enfoque participativo.",
+        ejecucion: "1) Identificar asentamientos priorizados. 2) Diseñar modelo inmobiliario/social. 3) Regularizar y formalizar con participación comunitaria. 4) Asegurar servicios e integración urbana."
+      }
+    ]
+  },
+  {
+    area: AreaName.Salud,
+    propuestas: [
+      {
+        problema: "El sistema de salud enfrenta presión por enfermedades crónicas/oncológicas y requiere detección temprana y mejor manejo para reducir carga.",
+        solucion: "Consolidar medicina predictiva y digital basada en IA para identificación temprana de riesgos y optimización del manejo de enfermedades crónicas y oncológicas.",
+        ejecucion: "1) Implementar analítica/IA clínica para riesgos. 2) Protocolos de seguimiento. 3) Medir impacto en calidad de vida y presión del sistema."
+      },
+      {
+        problema: "Pacientes crónicos o de alto riesgo requieren seguimiento oportuno, especialmente donde el acceso es limitado.",
+        solucion: "Implementar modelo de Salud Móvil (mSalud) usando dispositivos móviles para monitoreo remoto y seguimiento personalizado.",
+        ejecucion: "1) Definir población objetivo. 2) Desplegar herramientas móviles. 3) Monitoreo remoto y alertas. 4) Evaluar resultados clínicos y satisfacción."
+      },
+      {
+        problema: "Zonas alejadas y escasez de especialistas aumentan tiempos de espera y desigualdad en acceso.",
+        solucion: "Fortalecer telesalud y telemedicina para extender cobertura y reducir tiempos de espera, garantizando equidad en acceso.",
+        ejecucion: "1) Expandir servicios de telemedicina. 2) Priorizar zonas remotas. 3) Integrar con redes de atención existentes. 4) Medir reducción de espera."
+      },
+      {
+        problema: "Servicios de salud mental requieren mejoras en cobertura y calidad.",
+        solucion: "Diseñar una hoja de ruta para mejorar cobertura y calidad de los servicios públicos de salud mental.",
+        ejecucion: "1) Diagnóstico de brechas. 2) Hoja de ruta con metas y presupuesto. 3) Implementación progresiva. 4) Evaluación periódica."
+      }
+    ]
+  }
+]
