@@ -49,7 +49,7 @@ A continuación te detallo cada área temática.
 
 Sería un formato JSON que tenga la siguiente estructura
 
-```json
+\`\`\`json
 "propuestas": {
     "educacion": [
       {
@@ -143,7 +143,7 @@ Sería un formato JSON que tenga la siguiente estructura
       }
     ],
   }
-```
+\`\`\`
 
 <aside>
 

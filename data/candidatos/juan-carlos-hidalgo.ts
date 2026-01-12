@@ -26,4 +26,6 @@ export const juanCarlosHidalgo: Candidato = {
   ],
   bio: "Licenciado en Relaciones Internacionales por la Universidad Nacional de Costa Rica y Máster en Comercio y Política Pública Internacional por George Mason University.",
   propuestas: juanCarlosHidalgoPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PUSC.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/juan-carlos-hidalgo-bogantes",
 }

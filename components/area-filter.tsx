@@ -1,23 +1,9 @@
 "use client"
 
-import type React from "react"
-
 import { useRef, useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
-import { GraduationCap, Shield, TrendingUp, Leaf, Cpu, Palette, PiggyBank, Signal, Plane } from "lucide-react"
+import { iconMap, defaultIcon } from "@/lib/icons"
 import { Area } from "@/lib/data"
-
-const iconMap: Record<string, React.ElementType> = {
-  "graduation-cap": GraduationCap,
-  shield: Shield,
-  "trending-up": TrendingUp,
-  leaf: Leaf,
-  cpu: Cpu,
-  palette: Palette,
-  "piggy-bank": PiggyBank,
-  signal: Signal,
-  plane: Plane,
-}
 
 interface AreaFilterProps {
   areas: Area[]
@@ -80,7 +66,7 @@ export function AreaFilter({ areas, selectedArea, onSelectArea }: AreaFilterProp
         </button>
 
         {areas.map((area) => {
-          const Icon = iconMap[area.icon] || GraduationCap
+          const Icon = iconMap[area.icon] || defaultIcon
           const isSelected = selectedArea === area.area
 
           return (

@@ -26,4 +26,6 @@ export const alvaroRamos: Candidato = {
   ],
   bio: "Graduado en Informática Administrativa por la UNED, estudios en Economía por la Universidad de Costa Rica y Doctorado en Economía por la Universidad de California en Berkeley.",
   propuestas: alvaroRamosPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PLN.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/alvaro-ramos-chaves",
 }

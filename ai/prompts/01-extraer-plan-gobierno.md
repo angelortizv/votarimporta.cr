@@ -58,7 +58,7 @@ Vas a analizar detalladamente el plan de gobierno y su CV (en caso de que se adj
 
 Sería un formato JSON que tenga la siguiente estructura
 
-```json
+\`\`\`json
 {
   "partido_politico": {
     "nombre": "",
@@ -168,7 +168,7 @@ Sería un formato JSON que tenga la siguiente estructura
     ]
   }
 }
-```
+\`\`\`
 
 <aside>
 

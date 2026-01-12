@@ -5,7 +5,7 @@ export const luzMaryAlpizar: Candidato = {
   id: "luz-mary-alpizar",
   nombre: "Luz María Alpizar",
   partido: "Partido Progreso Social Democrático",
-  partidoSiglas: "PPSD",
+  partidoSiglas: "PSD",
   foto: "https://cdn.apolitico.cr/storage/v1/object/public/candidate-photos/1762641148047_luz-mary-alpizar-loaiza-690fc4f34903a.webp",
   color: "#44d72d",
   colores: ["#44d72d", "#01119f"],
@@ -27,4 +27,6 @@ export const luzMaryAlpizar: Candidato = {
   ],  
   bio: "Licenciada en Ingeniería Química por la Universidad de Costa Rica (1997) y Máster en Administración y Dirección de Empresas con énfasis en Mercadeo (2002).",
   propuestas: luzMaryAlpizarPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PSD.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/luz-mary-alpizar-loaiza",
 }

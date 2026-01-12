@@ -18,9 +18,14 @@ export function CandidateCard({ candidato }: CandidateCardProps) {
   const getGradientStyle = () => {
     const colors = candidato.colores || [candidato.color]
 
-    // If single color or white + color, ensure gradient starts with white
-    if (colors.length === 1) {
-      return `linear-gradient(135deg, #ffffff 0%, ${colors[0]} 100%)`
+    const nonWhiteColors = colors.filter(
+      (c) => c.toLowerCase() !== "#ffffff" && c.toLowerCase() !== "#fff" && c.toLowerCase() !== "white",
+    )
+
+    // If only one non-white color (single color or color + white), use solid gradient with the main color
+    if (nonWhiteColors.length <= 1) {
+      const mainColor = nonWhiteColors[0] || colors[0]
+      return `linear-gradient(135deg, ${mainColor} 0%, ${mainColor}dd 50%, ${mainColor}99 100%)`
     }
 
     // Create gradient from all colors

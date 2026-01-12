@@ -4,35 +4,28 @@ import type React from "react"
 import { useParams } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { MobileNav } from "@/components/mobile-nav"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { AreaFilter } from "@/components/area-filter"
 import { candidatos } from "@/data/candidatos"
 import { areas } from "@/lib/areas"
 import {
   ArrowLeft,
-  GraduationCap,
-  Shield,
-  TrendingUp,
-  Leaf,
   Briefcase,
-  Award,
   MessageCircle,
   Twitter,
   Instagram,
   Facebook,
   Youtube,
   Globe,
-  Cpu,
-  Palette,
-  PiggyBank,
-  Signal,
-  Plane,
+  Trophy,
+  FileText,
+  Scale,
 } from "lucide-react"
-import { Area, AreaName } from "@/lib/data"
+import { iconMap, defaultIcon } from "@/lib/icons"
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -55,18 +48,6 @@ function isLightColor(color: string): boolean {
   return false
 }
 
-const iconMap: Record<string, React.ElementType> = {
-  "graduation-cap": GraduationCap,
-  shield: Shield,
-  "trending-up": TrendingUp,
-  leaf: Leaf,
-  cpu: Cpu,
-  palette: Palette,
-  "piggy-bank": PiggyBank,
-  signal: Signal,
-  plane: Plane,
-}
-
 const socialLinks = [
   { key: "twitter", icon: Twitter, label: "Twitter" },
   { key: "instagram", icon: Instagram, label: "Instagram" },
@@ -81,6 +62,27 @@ export default function CandidatoDetailPage() {
   const candidato = candidatos.find((c) => c.id === params.id)
   const [selectedArea, setSelectedArea] = useState<string | null>(null)
   const [expandedAreas, setExpandedAreas] = useState<Set<string>>(new Set())
+  const [showFloatingButton, setShowFloatingButton] = useState(false)
+  const propuestasRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [params.id])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowFloatingButton(entry.isIntersecting)
+      },
+      { threshold: 0.1 },
+    )
+
+    if (propuestasRef.current) {
+      observer.observe(propuestasRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
 
   const toggleArea = (areaId: string) => {
     setExpandedAreas((prev) => {
@@ -106,7 +108,11 @@ export default function CandidatoDetailPage() {
   const gradientColors = colores.length === 1 ? `white, ${colores[0]}` : colores.join(", ")
   const firstColorIsLight = isLightColor(colores[0])
 
-  const filteredAreas = selectedArea ? candidato.propuestas.filter((propuesta) => propuesta.area === selectedArea) : candidato.propuestas
+  const filteredAreas = selectedArea
+    ? candidato.propuestas.filter((propuesta) => propuesta.area === selectedArea)
+    : candidato.propuestas
+
+  const shouldCenterLogros = candidato.logros.length <= 2
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -114,7 +120,7 @@ export default function CandidatoDetailPage() {
 
       <div className="relative">
         <div
-          className="absolute inset-x-0 top-0 h-48 md:h-64"
+          className="absolute inset-x-0 top-0 h-32 md:h-40"
           style={{
             background: `linear-gradient(to right, ${gradientColors})`,
           }}
@@ -146,13 +152,13 @@ export default function CandidatoDetailPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 md:rounded-xl md:bg-background/90 md:p-4 md:backdrop-blur-sm">
                 <Badge className="mb-2 text-white" style={{ backgroundColor: candidato.color }}>
                   {candidato.partido}
                 </Badge>
                 <h1 className="mb-2 text-3xl font-bold md:text-4xl">{candidato.nombre}</h1>
                 <div className="mb-4 flex flex-wrap gap-2">
-                  <Badge variant="secondary">{candidato.posicionPolitica}</Badge>
+                  {/* <Badge variant="secondary">{candidato.posicionPolitica}</Badge> */}
                   <Badge variant="outline">{candidato.ideologia}</Badge>
                 </div>
                 <div className="mb-4 flex items-center gap-2 text-muted-foreground">
@@ -160,25 +166,6 @@ export default function CandidatoDetailPage() {
                   <span>{candidato.ocupacion}</span>
                 </div>
                 <p className="text-muted-foreground">{candidato.bio}</p>
-
-                <div className="mt-4 flex items-center gap-3">
-                  {socialLinks.map(({ key, icon: Icon, label }) => {
-                    const url = candidato.redesSociales[key as keyof typeof candidato.redesSociales]
-                    if (!url) return null
-                    return (
-                      <a
-                        key={key}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={label}
-                        className="text-muted-foreground transition-colors hover:text-foreground"
-                      >
-                        <Icon className="h-5 w-5" />
-                      </a>
-                    )
-                  })}
-                </div>
 
                 <Button asChild className="mt-4" style={{ backgroundColor: candidato.color }}>
                   <Link href={`/chat?candidato=${candidato.id}`}>
@@ -192,26 +179,22 @@ export default function CandidatoDetailPage() {
         </div>
       </div>
 
-      <div className="px-4">
+      <div className="px-4" ref={propuestasRef}>
         <div className="mx-auto max-w-4xl">
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Award className="h-5 w-5" />
-                Principales Logros
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                {candidato.logros.map((logro, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-foreground" />
-                    <span>{logro}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="mb-8">
+            <div
+              className={`grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 ${shouldCenterLogros ? "sm:flex sm:justify-start sm:gap-4" : ""}`}
+            >
+              {candidato.logros.map((logro, index) => (
+                <Card key={index} className={`transition-all hover:shadow-md ${shouldCenterLogros ? "sm:w-64" : ""}`}>
+                  <CardContent className="p-4 text-center">
+                    <Trophy className="mx-auto mb-2 h-6 w-6 text-foreground" />
+                    <p className="text-sm">{logro}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
 
           <div>
             <h2 className="mb-4 text-2xl font-bold">Propuestas por Área</h2>
@@ -223,10 +206,10 @@ export default function CandidatoDetailPage() {
             {selectedArea === null ? (
               <div className="space-y-4">
                 {areas.map((area) => {
-                  const Icon = iconMap[area.icon] || GraduationCap
+                  const Icon = iconMap[area.icon] || defaultIcon
                   const areaData = candidato.propuestas.find((propuesta) => propuesta.area === area.area)
                   const isExpanded = expandedAreas.has(area.area)
-                  const hasProposals = areaData && areaData.propuestas.length > 0 
+                  const hasProposals = areaData && areaData.propuestas.length > 0
 
                   return (
                     <div key={area.area}>
@@ -306,7 +289,7 @@ export default function CandidatoDetailPage() {
             ) : (
               <div className="space-y-6">
                 {filteredAreas.map((area) => {
-                  const Icon = iconMap[area.area] || GraduationCap
+                  const Icon = iconMap[area.area] || defaultIcon
                   return (
                     <div key={area.area}>
                       <div className="mb-3 flex items-center gap-2">
@@ -349,6 +332,47 @@ export default function CandidatoDetailPage() {
           </div>
         </div>
       </div>
+
+      {showFloatingButton && (
+        <Link
+          href={`/chat?candidato=${candidato.id}`}
+          className="fixed bottom-24 right-4 z-50 flex items-center gap-2 rounded-full px-4 py-3 text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl md:bottom-6"
+          style={{ backgroundColor: candidato.color }}
+        >
+          <MessageCircle className="h-5 w-5" />
+          <span className="text-sm font-medium">Preguntarle con IA</span>
+        </Link>
+      )}
+
+      <footer className="mt-12 border-t px-4 py-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="flex flex-col items-center gap-4 text-center text-sm text-muted-foreground">
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-6">
+              <a
+                href={candidato.planGobiernoUrl || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 transition-colors hover:text-foreground"
+              >
+                <FileText className="h-4 w-4" />
+                <span>Plan de gobierno oficial</span>
+              </a>
+              <a
+                href={candidato.apoliticoUrl || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 transition-colors hover:text-foreground"
+              >
+                <Scale className="h-4 w-4" />
+                <span>Apolítico</span>
+              </a>
+            </div>
+            <Link href="/transparencia" className="text-foreground underline underline-offset-4 hover:no-underline">
+              Conoce más sobre nuestra metodología
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

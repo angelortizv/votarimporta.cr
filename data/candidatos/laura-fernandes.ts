@@ -27,4 +27,6 @@ export const lauraFernandes: Candidato = {
   ],
   bio: "Licenciatura en Ciencias Políticas y Maestría en Políticas Públicas y Gobernabilidad.",
   propuestas: lauraFernandezPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PPSO.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/laura-fernandez-delgado",
 }

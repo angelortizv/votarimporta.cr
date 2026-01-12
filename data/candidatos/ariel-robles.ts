@@ -27,4 +27,6 @@ export const arielRobles: Candidato = {
   ],
   bio: "Bachiller en Enseñanza del Inglés (2014) y Maestrías en Gestión Educativa con énfasis en Liderazgo (2016) y Aprendizaje del Inglés (2022) por la Universidad Nacional.",
   propuestas: arielRoblesPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/FA.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/ariel-robles-barrantes",
 }

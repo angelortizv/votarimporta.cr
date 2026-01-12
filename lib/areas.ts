@@ -66,24 +66,4 @@ export const areas: Area[] = [
     icon: "heart-pulse",
     descripcion: "EBAIS, CCSS, salud mental, reducción de listas de espera, infraestructura hospitalaria y fármacos.",
   },
-  {
-    area: AreaName.Transparencia,
-    icon: "eye",
-    descripcion: "Control del gasto público, rendición de cuentas, reformas anticorrupción y transparencia institucional.",
-  },
-  {
-    area: AreaName.Instituciones,
-    icon: "landmark",
-    descripcion: "Evaluación de desempeño, eficiencia institucional y modernización del Estado.",
-  },
-  {
-    area: AreaName.Juventud,
-    icon: "users",
-    descripcion: "Participación juvenil, programas de empleo y educación para jóvenes.",
-  },
-  {
-    area: AreaName.Democracia,
-    icon: "vote",
-    descripcion: "Participación ciudadana, comunicación clara y fortalecimiento democrático.",
-  },
 ]

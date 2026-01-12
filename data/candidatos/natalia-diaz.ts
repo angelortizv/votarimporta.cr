@@ -27,4 +27,6 @@ export const nataliaDiaz: Candidato = {
   ],
   bio: "Licenciada en Publicidad por la Universidad Latina y Máster en Administración de Empresas con énfasis en Finanzas, Economía y Desarrollo Sostenible por INCAE.",
   propuestas: nataliaDiazPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/UP.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/natalia-diaz-quintana",
 }

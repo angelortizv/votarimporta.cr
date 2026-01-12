@@ -1,0 +1,43 @@
+import type React from "react"
+import {
+  GraduationCap,
+  Shield,
+  TrendingUp,
+  Leaf,
+  Cpu,
+  Palette,
+  PiggyBank,
+  Signal,
+  Plane,
+  Wheat,
+  Mouse as House,
+  TrainFront,
+  HeartPulse,
+  Eye,
+  Landmark,
+  Users,
+  Vote,
+} from "lucide-react"
+
+export const iconMap: Record<string, React.ElementType> = {
+  "graduation-cap": GraduationCap,
+  shield: Shield,
+  "trending-up": TrendingUp,
+  leaf: Leaf,
+  "tree-deciduous": Leaf,
+  cpu: Cpu,
+  palette: Palette,
+  "piggy-bank": PiggyBank,
+  wheat: Wheat,
+  signal: Signal,
+  plane: Plane,
+  house: House,
+  "train-front": TrainFront,
+  "heart-pulse": HeartPulse,
+  eye: Eye,
+  landmark: Landmark,
+  users: Users,
+  vote: Vote,
+}
+
+export const defaultIcon = GraduationCap

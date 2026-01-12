@@ -5,7 +5,7 @@ export const joseAguilar: Candidato = {
   id: "jose-aguilar",  
   nombre: "José Aguilar",
   partido: "Partido Avanza",
-  partidoSiglas: "AV",
+  partidoSiglas: "PA",
   foto: "https://cdn.apolitico.cr/storage/v1/object/public/candidate-photos/1762634507284_jose-aguilar-berrocal-690faaeabfa48.webp",
   color: "#0415b5",
   colores: ["#0415b5", "#fe0002", "#ffffff"],
@@ -27,4 +27,6 @@ export const joseAguilar: Candidato = {
   ],
   bio: "Psicólogo con Maestría en Development Management por la London School of Economics and Political Science, Maestría en Formulación y Gestión de Proyectos por el Instituto Centroamericano de Administración Pública y formación técnica en combate a la pobreza por la Universidad de Oxford.",
   propuestas: joseAguilarPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PA.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/jose-aguilar-berrocal",
 }

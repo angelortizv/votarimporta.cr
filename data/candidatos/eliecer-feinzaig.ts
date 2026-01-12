@@ -27,4 +27,6 @@ export const eliecerFeinzaig: Candidato = {
   ],
   bio: "Bachiller en Economía por la Universidad de Costa Rica (1988), MBA por la Universidad Interamericana de Puerto Rico (1991) y Master of Science in Policy Economics por la University of Illinois at Urbana-Champaign (1993).",
   propuestas: eliecerFeinzaigPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PLP.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/eliecer-feinzaig-mintz",
 }

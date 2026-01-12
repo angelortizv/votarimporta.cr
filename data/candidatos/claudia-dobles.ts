@@ -27,4 +27,6 @@ export const claudiaDobles: Candidato = {
   ],
   bio: "Maestría en Estudios Urbanos y Planificación por MIT (2025), Loeb Fellow en Estudios Ambientales Avanzados por la Universidad de Harvard (2023) y Licenciatura en Arquitectura por la Universidad de Costa Rica (2011).",
   propuestas: claudiaDoblesPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/CAC.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/claudia-dobles-camargo",
 }

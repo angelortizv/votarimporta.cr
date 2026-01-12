@@ -24,10 +24,10 @@ export function MobileNav() {
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:hidden">
         <div className="flex h-14 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground">
-              <span className="text-sm font-bold text-background">VC</span>
-            </div>
-            <span className="font-semibold">Voto Consciente</span>
+            <span className="text-2xl" role="img" aria-label="Costa Rica">
+              🇨🇷
+            </span>
+            <span className="font-semibold">Votar Importa</span>
           </Link>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -69,10 +69,10 @@ export function MobileNav() {
       <header className="sticky top-0 z-50 hidden w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:block">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-foreground">
-              <span className="text-lg font-bold text-background">VC</span>
-            </div>
-            <span className="text-lg font-semibold">Voto Consciente</span>
+            <span className="text-3xl" role="img" aria-label="Costa Rica">
+              🇨🇷
+            </span>
+            <span className="text-lg font-semibold">Votar Importa</span>
           </Link>
           <nav className="flex items-center gap-1">
             {navItems.map((item) => (

@@ -27,4 +27,6 @@ export const fabricioAlvarado: Candidato = {
   ],
   bio: "Bachiller en Ciencias de la Comunicación Colectiva por la Universidad de Costa Rica (2022).",
   propuestas: fabricioAlvaradoPropuestas,
+  planGobiernoUrl: "https://www.tse.go.cr/2026/docus/planesgobierno/PNR.pdf",
+  apoliticoUrl: "https://apolitico.cr/candidates/fabricio-alvarado-munoz",
 }

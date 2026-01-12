@@ -17,9 +17,9 @@ export const AreaName = {
   Juventud: "juventud",
   Democracia: "democracia",
   Todas: "todas",
-} as const;
+} as const
 
-export type AreaName = (typeof AreaName)[keyof typeof AreaName];
+export type AreaName = (typeof AreaName)[keyof typeof AreaName]
 
 export interface Propuesta {
   problema: string
@@ -60,6 +60,8 @@ export interface Candidato {
     web?: string
   }
   propuestas: AreaPropuestas[]
+  planGobiernoUrl?: string
+  apoliticoUrl?: string
 }
 
 export interface QuizPregunta {
@@ -68,7 +70,7 @@ export interface QuizPregunta {
   insight: string
 }
 
-export type QuizOpcion = 'si'| 'no' | 'neutral'
+export type QuizOpcion = "si" | "no" | "neutral"
 
 export interface QuizRespuesta {
   pregunta: QuizPregunta

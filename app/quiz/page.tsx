@@ -1,13 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MobileNav } from "@/components/mobile-nav"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { candidatos } from "@/data/candidatos"
-import { Candidato } from "@/lib/data"
-import { ArrowLeft, ArrowRight, RefreshCw, Check } from "lucide-react"
+import type { Candidato } from "@/lib/data"
+import { ArrowLeft, ArrowRight, RefreshCw, Check, Compass, ShieldCheck, Brain, Play, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -18,7 +18,7 @@ interface Question {
   options: {
     label: string
     value: string
-    weight: Record<string, number> // candidatoId -> weight
+    weight: Record<string, number>
   }[]
 }
 
@@ -209,9 +209,127 @@ function calculateResults(answers: Record<string, string>): CandidateResult[] {
 }
 
 export default function QuizPage() {
+  const [showOnboarding, setShowOnboarding] = useState(true)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [showResults, setShowResults] = useState(false)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  const principios = [
+    {
+      icon: Compass,
+      titulo: "Es una guía",
+      descripcion: "Este cuestionario es orientativo, no una imposición de por quién votar.",
+    },
+    {
+      icon: ShieldCheck,
+      titulo: "100% Anónimo",
+      descripcion: "Tus respuestas no se almacenan en ninguna base de datos. Son completamente privadas.",
+    },
+    {
+      icon: Brain,
+      titulo: "La lógica",
+      descripcion: "Comparamos tus respuestas con las propuestas de los planes de gobierno para calcular afinidad.",
+    },
+  ]
+
+  if (showOnboarding) {
+    return (
+      <div className="min-h-screen bg-background text-foreground pb-20 md:pb-0">
+        <MobileNav />
+
+        <div className="mx-auto max-w-2xl px-4 py-12 md:py-20">
+          {/* Header */}
+          <div className="mb-10 text-center">
+            <h1 className="mb-3 text-3xl font-bold md:text-4xl">¿No sabés por quién votar?</h1>
+            <p className="text-lg text-muted-foreground">
+              Te ayudamos a descubrir qué candidatos se alinean más con tus ideas
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="mb-10 grid gap-4 md:grid-cols-3">
+            {principios.map((principio) => (
+              <Card key={principio.titulo} className="border-border bg-muted/30">
+                <CardContent className="p-6 text-center">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-foreground">
+                    <principio.icon className="h-6 w-6 text-background" />
+                  </div>
+                  <h3 className="mb-2 text-lg font-bold text-foreground">{principio.titulo}</h3>
+                  <p className="text-sm text-muted-foreground">{principio.descripcion}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <Button
+              size="lg"
+              disabled
+              className="bg-foreground text-background hover:bg-foreground/90 px-8 py-6 text-lg opacity-50 cursor-not-allowed"
+            >
+              <Play className="mr-2 h-5 w-5" />
+              Iniciar cuestionario
+            </Button>
+            <p className="mt-3 text-sm font-medium text-muted-foreground">Disponible próximamente</p>
+          </div>
+
+          {/* Section with links to other quizzes */}
+          <div className="mt-10 rounded-xl border border-border bg-muted/20 p-6">
+            <h3 className="mb-4 text-center font-semibold">Mientras tanto, podés hacer estos quices:</h3>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://www.nacion.com/gnfactory/elecciones-2026/candidatos-presidente-costa-rica.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted/50"
+              >
+                <span className="font-medium">La Nación - Candidatos a la Presidencia 2026</span>
+                <ExternalLink className="h-4 w-4 text-muted-foreground" />
+              </a>
+              <a
+                href="https://votico.app/Ai/PlanChat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted/50"
+              >
+                <span className="font-medium">VoTico - Chateá con candidatos con IA</span>
+                <ExternalLink className="h-4 w-4 text-muted-foreground" />
+              </a>
+              <a
+                href="https://votometro.votemoscr.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted/50"
+              >
+                <span className="font-medium">Votómetro 2026 - VotemosCR</span>
+                <ExternalLink className="h-4 w-4 text-muted-foreground" />
+              </a>
+              <a
+                href="https://www.nacion.com/politica/elecciones-2026-este-quiz-gratuito-revela-que/GL75RZZWERHVHNH6MMGEUCVNPM/story/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-lg border border-border bg-background p-4 transition-colors hover:bg-muted/50"
+              >
+                <span className="font-medium">La Nación - Quiz de Candidatos Presidenciales</span>
+                <ExternalLink className="h-4 w-4 text-muted-foreground" />
+              </a>
+            </div>
+          </div>
+
+          {/* Disclaimer */}
+          <p className="mt-10 text-center text-sm text-muted-foreground">
+            Recuerda: la decisión final es tuya. Este cuestionario es solo una herramienta para ayudarte a explorar
+            opciones.
+          </p>
+        </div>
+      </div>
+    )
+  }
 
   const question = questions[currentQuestion]
   const progress = ((currentQuestion + 1) / questions.length) * 100
@@ -231,13 +349,18 @@ export default function QuizPage() {
   }
 
   const handleBack = () => {
-    setCurrentQuestion((prev) => Math.max(0, prev - 1))
+    if (currentQuestion === 0) {
+      setShowOnboarding(true)
+    } else {
+      setCurrentQuestion((prev) => prev - 1)
+    }
   }
 
   const handleRestart = () => {
     setCurrentQuestion(0)
     setAnswers({})
     setShowResults(false)
+    setShowOnboarding(true)
   }
 
   const results = showResults ? calculateResults(answers) : []
@@ -296,14 +419,9 @@ export default function QuizPage() {
 
             {/* Navigation */}
             <div className="mt-6 flex gap-3">
-              <Button
-                variant="outline"
-                onClick={handleBack}
-                disabled={currentQuestion === 0}
-                className="flex-1 bg-transparent"
-              >
+              <Button variant="outline" onClick={handleBack} className="flex-1 bg-transparent">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Anterior
+                {currentQuestion === 0 ? "Volver" : "Anterior"}
               </Button>
               <Button onClick={handleNext} disabled={!canGoNext} className="flex-1">
                 {isLastQuestion ? "Ver resultados" : "Siguiente"}
