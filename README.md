@@ -93,7 +93,7 @@ Este proyecto es **100% código abierto**. Creemos en la transparencia total.
 ### 📂 Estructura del proyecto
 
 ```
-votacr2026/
+votarimporta.cr/
 ├── app/                    # Páginas de Next.js (App Router)
 │   ├── candidatos/         # Páginas de candidatos
 │   ├── chat/               # Chat con IA
@@ -124,8 +124,8 @@ votacr2026/
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/jrodolforojas/votacr2026.git
-cd votacr2026
+git clone https://github.com/jrodolforojas/votarimporta.cr.git
+cd votarimporta.cr
 
 # Instalar dependencias
 pnpm install
@@ -198,7 +198,7 @@ Esto significa que puedes:
 
 - 🎤 Fabián: [@fabianfonsecar1](mailto:fabianfonsecar1@gmail.com)
 - 🤖 Rodolfo: [@jrodolforojas](https://www.instagram.com/jrodolforojas/)
-- 💬 Issues: [GitHub Issues](https://github.com/jrodolforojas/votacr2026/issues)
+- 💬 Issues: [GitHub Issues](https://github.com/jrodolforojas/votarimporta.cr/issues)
 
 ---
 

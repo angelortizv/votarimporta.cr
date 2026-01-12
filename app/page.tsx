@@ -85,7 +85,7 @@ export default function HomePage() {
           </p>
           <span className="hidden text-muted-foreground/50 sm:inline">•</span>
           <a
-            href="https://github.com/jrodolforojas/votacr2026"
+            href="https://github.com/jrodolforojas/votarimporta.cr"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
