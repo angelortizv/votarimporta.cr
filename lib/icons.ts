@@ -41,4 +41,3 @@ export const iconMap: Record<string, React.ElementType> = {
 }
 
 export const defaultIcon = GraduationCap
-
