@@ -19,6 +19,7 @@ import {
   Lightbulb,
   ChevronLeft,
   ChevronRight,
+  Plus,
 } from "lucide-react"
 import { iconMap, defaultIcon } from "@/lib/icons"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
@@ -38,6 +39,72 @@ function CandidateSelector({
   const selectedIds = new Set(selectedCandidatos.map((c) => c.id))
   const availableCandidatos = candidatos.filter((c) => !selectedIds.has(c.id))
 
+  const firstCandidate = selectedCandidatos[0] || null
+  const secondCandidate = selectedCandidatos[1] || null
+  const additionalCandidates = selectedCandidatos.slice(2)
+
+  const CandidateBox = ({ 
+    index, 
+    candidato, 
+    placeholder 
+  }: { 
+    index: number
+    candidato: Candidato | null
+    placeholder: string
+  }) => {
+    const availableForThisSlot = candidato ? [] : availableCandidatos
+
+    return (
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <button className="flex h-full min-h-[160px] w-full flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-muted-foreground/30 p-4 transition-colors hover:border-foreground hover:bg-muted/50">
+            {candidato ? (
+              <>
+                <div className="relative mb-1 h-16 w-16 overflow-hidden rounded-full">
+                  <Image
+                    src={candidato.foto || "/placeholder.svg"}
+                    alt={candidato.nombre}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <Badge 
+                  style={{ backgroundColor: candidato.color }} 
+                  className="text-white text-xs mb-1"
+                >
+                  {candidato.partidoSiglas}
+                </Badge>
+                <h3 className="text-center text-sm font-semibold">{candidato.nombre}</h3>
+              </>
+            ) : (
+              <>
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
+                  <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                </div>
+                <span className="text-xs text-muted-foreground text-center px-2">{placeholder}</span>
+              </>
+            )}
+          </button>
+        </DropdownMenuTrigger>
+        {availableForThisSlot.length > 0 && (
+          <DropdownMenuContent align="center" className="w-56 max-h-64 overflow-y-auto">
+            {availableForThisSlot.map((c) => (
+              <DropdownMenuItem key={c.id} onClick={() => onAdd(c)} className="flex items-center gap-3 p-3">
+                <div className="relative h-10 w-10 overflow-hidden rounded-full flex-shrink-0">
+                  <Image src={c.foto || "/placeholder.svg"} alt={c.nombre} fill className="object-cover" />
+                </div>
+                <div className="min-w-0">
+                  <p className="font-medium text-sm truncate">{c.nombre}</p>
+                  <p className="text-xs text-muted-foreground">{c.partidoSiglas}</p>
+                </div>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        )}
+      </DropdownMenu>
+    )
+  }
+
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
@@ -53,62 +120,126 @@ function CandidateSelector({
         )}
       </div>
       
-      {/* Selected candidates */}
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
-        {selectedCandidatos.map((candidato) => (
-          <div
-            key={candidato.id}
-            className="relative flex flex-col items-center rounded-xl border-2 p-3"
-            style={{ borderColor: candidato.color }}
-          >
-            <button
-              onClick={() => onRemove(candidato.id)}
-              className="absolute right-1 top-1 rounded-full bg-background p-1 shadow-sm hover:bg-muted"
-            >
-              <X className="h-3 w-3" />
-            </button>
-            <div className="relative mb-2 h-12 w-12 overflow-hidden rounded-full md:h-14 md:w-14">
-              <Image
-                src={candidato.foto || "/placeholder.svg"}
-                alt={candidato.nombre}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <Badge style={{ backgroundColor: candidato.color }} className="mb-1 text-white text-xs">
-              {candidato.partidoSiglas}
-            </Badge>
-            <h3 className="text-center text-xs font-semibold md:text-sm">{candidato.nombre}</h3>
-          </div>
-        ))}
-
-        {/* Add candidate button */}
-        {availableCandidatos.length > 0 && (
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button className="flex h-full min-h-[140px] flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-muted-foreground/30 transition-colors hover:border-foreground hover:bg-muted/50">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
-                  <ChevronDown className="h-5 w-5 text-muted-foreground" />
-                </div>
-                <span className="text-xs text-muted-foreground px-2 text-center">Agregar candidato</span>
+      {/* Layout changes based on number of candidates */}
+      {selectedCandidatos.length <= 2 ? (
+        /* First two candidates with VS - only when exactly 2 or less */
+        <div className="flex items-center gap-3 md:gap-4">
+          {/* First candidate */}
+          <div className="flex-1 relative">
+            <CandidateBox 
+              index={0}
+              candidato={firstCandidate}
+              placeholder="Primer candidato"
+            />
+            {firstCandidate && (
+              <button
+                onClick={() => onRemove(firstCandidate.id)}
+                className="absolute right-1 top-1 rounded-full bg-background p-1 shadow-sm hover:bg-muted z-10"
+                aria-label="Remover candidato"
+              >
+                <X className="h-3 w-3" />
               </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="center" className="w-56 max-h-64 overflow-y-auto">
-              {availableCandidatos.map((c) => (
-                <DropdownMenuItem key={c.id} onClick={() => onAdd(c)} className="flex items-center gap-3 p-3">
-                  <div className="relative h-10 w-10 overflow-hidden rounded-full flex-shrink-0">
-                    <Image src={c.foto || "/placeholder.svg"} alt={c.nombre} fill className="object-cover" />
+            )}
+          </div>
+
+          {/* VS icon - only shown when exactly 2 candidates */}
+          {selectedCandidatos.length === 2 && (
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background flex-shrink-0 md:h-10 md:w-10">
+              <span className="text-xs font-bold md:text-sm">VS</span>
+            </div>
+          )}
+
+          {/* Second candidate */}
+          <div className="flex-1 relative">
+            <CandidateBox 
+              index={1}
+              candidato={secondCandidate}
+              placeholder="Segundo candidato"
+            />
+            {secondCandidate && (
+              <button
+                onClick={() => onRemove(secondCandidate.id)}
+                className="absolute right-1 top-1 rounded-full bg-background p-1 shadow-sm hover:bg-muted z-10"
+                aria-label="Remover candidato"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            )}
+          </div>
+
+          {/* Add more button - subtle */}
+          {availableCandidatos.length > 0 && (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex h-8 w-8 items-center justify-center rounded-full border border-muted-foreground/30 bg-background text-muted-foreground transition-colors hover:border-foreground hover:text-foreground flex-shrink-0 md:h-10 md:w-10">
+                  <Plus className="h-4 w-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56 max-h-64 overflow-y-auto">
+                {availableCandidatos.map((c) => (
+                  <DropdownMenuItem key={c.id} onClick={() => onAdd(c)} className="flex items-center gap-3 p-3">
+                    <div className="relative h-10 w-10 overflow-hidden rounded-full flex-shrink-0">
+                      <Image src={c.foto || "/placeholder.svg"} alt={c.nombre} fill className="object-cover" />
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-medium text-sm truncate">{c.nombre}</p>
+                      <p className="text-xs text-muted-foreground">{c.partidoSiglas}</p>
+                    </div>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
+        </div>
+      ) : (
+        /* All candidates in grid when 3 or more - neutral layout */
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+          {selectedCandidatos.map((candidato, index) => (
+            <div key={candidato.id} className="relative">
+              <CandidateBox 
+                index={index}
+                candidato={candidato}
+                placeholder={index === 0 ? "Primer candidato" : index === 1 ? "Segundo candidato" : `Candidato ${index + 1}`}
+              />
+              <button
+                onClick={() => onRemove(candidato.id)}
+                className="absolute right-1 top-1 rounded-full bg-background p-1 shadow-sm hover:bg-muted z-10"
+                aria-label="Remover candidato"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </div>
+          ))}
+
+          {/* Add more button in grid */}
+          {availableCandidatos.length > 0 && (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex h-full min-h-[160px] flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-muted-foreground/30 transition-colors hover:border-foreground hover:bg-muted/50">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
+                    <Plus className="h-5 w-5 text-muted-foreground" />
                   </div>
-                  <div className="min-w-0">
-                    <p className="font-medium text-sm truncate">{c.nombre}</p>
-                    <p className="text-xs text-muted-foreground">{c.partidoSiglas}</p>
-                  </div>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        )}
-      </div>
+                  <span className="text-xs text-muted-foreground px-2 text-center">Agregar candidato</span>
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center" className="w-56 max-h-64 overflow-y-auto">
+                {availableCandidatos.map((c) => (
+                  <DropdownMenuItem key={c.id} onClick={() => onAdd(c)} className="flex items-center gap-3 p-3">
+                    <div className="relative h-10 w-10 overflow-hidden rounded-full flex-shrink-0">
+                      <Image src={c.foto || "/placeholder.svg"} alt={c.nombre} fill className="object-cover" />
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-medium text-sm truncate">{c.nombre}</p>
+                      <p className="text-xs text-muted-foreground">{c.partidoSiglas}</p>
+                    </div>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
+        </div>
+      )}
+
     </div>
   )
 }
@@ -371,7 +502,7 @@ export default function CompararPage() {
               <span className="text-sm font-medium">Comparar</span>
             </div>
             <h1 className="text-2xl font-bold md:text-3xl">Compara Candidatos</h1>
-            <p className="mt-1 text-sm text-muted-foreground">Selecciona dos o más candidatos y un área</p>
+            <p className="mt-1 text-sm text-muted-foreground">Selecciona dos candidatos y un área</p>
           </div>
 
           {/* Candidate Selection */}
