@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
-import { Menu, X, Users, Swords, Home, Calendar, MapPin, ExternalLink } from "lucide-react"
+import { Menu, X, Users, Swords, Home, Calendar, MapPin, ExternalLink, BookOpen } from "lucide-react"
 
 const navItems = [
   { href: "/", label: "Inicio", icon: Home },
   { href: "/candidatos", label: "Candidatos", icon: Users },
   { href: "/comparar", label: "Comparar", icon: Swords },
   { href: "/debates", label: "Debates", icon: Calendar },
+  { href: "/guia", label: "Guia", icon: BookOpen },
 ]
 
 const TSE_URL = "https://www.tse.go.cr/dondevotar/donde-votar.aspx"

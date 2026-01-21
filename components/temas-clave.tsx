@@ -61,14 +61,14 @@ export function TemasKlave({ className }: TemasClaveProps) {
   const scrollLeft = () => {
     const el = scrollRef.current
     if (el) {
-      el.scrollBy({ left: -150, behavior: "smooth" })
+      el.scrollBy({ left: -600, behavior: "smooth" })
     }
   }
 
   const scrollRight = () => {
     const el = scrollRef.current
     if (el) {
-      el.scrollBy({ left: 150, behavior: "smooth" })
+      el.scrollBy({ left: 600, behavior: "smooth" })
     }
   }
 
@@ -107,39 +107,23 @@ export function TemasKlave({ className }: TemasClaveProps) {
         </div>
       </div>
 
-      {/* Desktop: Horizontal pills */}
-      <div className="hidden sm:block relative">
-        {/* Left fade indicator and arrow */}
+      {/* Desktop: Horizontal scroll pills */}
+      <div className="hidden sm:flex relative items-center gap-2">
+        {/* Left scroll arrow - visible when scrolled */}
         {showLeftFade && (
-          <>
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-12 bg-gradient-to-r from-background to-transparent" />
-            <button
-              onClick={scrollLeft}
-              className="absolute left-1 top-1/2 z-20 -translate-y-1/2 rounded-full bg-card p-1.5 shadow-md transition-colors hover:bg-foreground hover:text-background hidden md:flex items-center justify-center"
-              aria-label="Scroll left"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-          </>
+          <button
+            onClick={scrollLeft}
+            className="shrink-0 rounded-full bg-card border border-border p-2 shadow-sm transition-colors hover:bg-foreground hover:text-background"
+            aria-label="Ver temas anteriores"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
         )}
 
-        {/* Right fade indicator and arrow */}
-        {showRightFade && (
-          <>
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-12 bg-gradient-to-l from-background to-transparent" />
-            <button
-              onClick={scrollRight}
-              className="absolute right-1 top-1/2 z-20 -translate-y-1/2 rounded-full bg-card p-1.5 shadow-md transition-colors hover:bg-foreground hover:text-background hidden md:flex items-center justify-center"
-              aria-label="Scroll right"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </button>
-          </>
-        )}
-
+        {/* Pills container */}
         <div
           ref={scrollRef}
-          className="flex gap-3 overflow-x-auto px-1 py-1 justify-center"
+          className="flex gap-3 overflow-x-auto py-1"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {temasDestacados.map((tema) => {
@@ -157,6 +141,17 @@ export function TemasKlave({ className }: TemasClaveProps) {
             )
           })}
         </div>
+
+        {/* Right scroll arrow - always visible when there's overflow */}
+        {showRightFade && (
+          <button
+            onClick={scrollRight}
+            className="shrink-0 rounded-full bg-card border border-border p-2 shadow-sm transition-colors hover:bg-foreground hover:text-background"
+            aria-label="Ver más temas"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        )}
       </div>
     </div>
   )

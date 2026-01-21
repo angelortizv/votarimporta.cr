@@ -22,7 +22,7 @@ export default function HomePage() {
       <MobileNav />
       <NewsBanner />
 
-      <section className="relative flex min-h-[calc(100vh-56px-64px-44px)] flex-col items-center justify-center px-6 py-8 md:min-h-[calc(100vh-64px-44px)] md:px-8 lg:py-12 overflow-hidden">
+      <section className="relative flex min-h-[calc(100vh-56px-64px-44px)] flex-col items-center justify-center px-6 py-8 md:min-h-[calc(100vh-64px-44px)] md:px-8 lg:px-12 lg:py-12 overflow-hidden">
         {/* Mesh Gradient Background */}
         <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
           <div className="hero-orb-blue" />
@@ -33,9 +33,9 @@ export default function HomePage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center w-full max-w-2xl mx-auto">
+        <div className="relative z-10 flex flex-col items-center sm:items-start w-full max-w-4xl mx-auto">
           {/* Text Content */}
-          <div className="text-center">
+          <div className="text-center sm:text-left w-full">
             {/* Pulsing badge */}
             <div className="mb-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-800 text-xs font-bold tracking-wide uppercase">
               <span className="relative flex h-2 w-2">
@@ -50,10 +50,10 @@ export default function HomePage() {
                 el futuro
               </span>
             </h1>
-            <p className="mb-6 max-w-lg text-base md:text-lg text-muted-foreground text-pretty mx-auto">
+            <p className="mb-6 max-w-lg text-base md:text-lg text-muted-foreground text-pretty mx-auto sm:mx-0">
               Informate en minutos. Compará candidatos. Votá consciente.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-3 w-full">
               <Button
                 size="lg"
                 className="w-full sm:w-auto text-sm md:text-base rounded-full px-6 py-5 shadow-lg shadow-primary/10 hover:scale-105 transition-transform"
