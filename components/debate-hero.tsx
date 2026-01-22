@@ -127,7 +127,7 @@ export function DebateHero({ debate }: DebateHeroProps) {
           {/* Right: Countdown & CTA */}
           <div className="flex flex-col items-start gap-3 md:items-end">
             <div className="rounded-lg bg-white/15 px-4 py-2">
-              <span className="font-mono text-lg font-semibold text-blue-200 md:text-xl">
+              <span className="text-lg font-bold text-blue-200 md:text-xl">
                 {countdownText}
               </span>
             </div>
