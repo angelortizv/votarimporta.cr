@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Calendar, Clock, Tv, Radio, Video } from "lucide-react"
 import type { Debate } from "@/lib/data"
 import {
@@ -19,7 +19,22 @@ interface DebateHeroProps {
 export function DebateHero({ debate }: DebateHeroProps) {
   const [showCalendarOptions, setShowCalendarOptions] = useState(false)
   const [imageError, setImageError] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
   const status = getDebateStatus(debate)
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setShowCalendarOptions(false)
+      }
+    }
+
+    if (showCalendarOptions) {
+      document.addEventListener("mousedown", handleClickOutside)
+      return () => document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [showCalendarOptions])
   const dateInfo = formatDebateDate(debate.dateIso)
   const countdownText = getCountdownText(debate.dateIso)
   const isLive = status === "live"
@@ -128,7 +143,7 @@ export function DebateHero({ debate }: DebateHeroProps) {
                 VER EN VIVO
               </a>
             ) : !dateInfo.isTbd ? (
-              <div className="relative">
+              <div className="relative" ref={dropdownRef}>
                 <button
                   onClick={handleAddToCalendar}
                   className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2.5 text-sm font-bold text-slate-900 shadow-lg transition-all hover:bg-slate-100 hover:shadow-xl"
